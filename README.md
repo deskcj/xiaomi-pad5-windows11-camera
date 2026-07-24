@@ -140,15 +140,7 @@ The demonstration includes:
 - Video recording
 - Rear camera development
 - Current project status
-
-## ▶ Watch on YouTube
-
-**INSERT YOUTUBE LINK HERE**
-
-Example:
-
-https://youtu.be/XXXXXXXXXXX
-
+  
 ---
 
 # Technical Highlights
