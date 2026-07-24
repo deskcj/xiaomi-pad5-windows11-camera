@@ -35,6 +35,21 @@ The project is currently under active development.
 - Critical memory allocation issues resolved
 
 ---
+# Support the Project ❤️
+
+Developing camera support for Windows on ARM requires hundreds of hours of reverse engineering, kernel debugging, driver development, and hardware testing.
+
+If you enjoy this project and would like to help accelerate development, consider supporting it.
+
+## ❤️ DonationAlerts
+
+[![Donate](https://img.shields.io/badge/Donate-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
+
+Every contribution helps fund development hardware, testing equipment, and the time required to continue improving the drivers.
+
+Thank you for supporting independent Windows on ARM development!
+
+---
 
 ## 🚧 Currently Working On
 
@@ -151,22 +166,6 @@ The demonstration includes:
 - RAW frame acquisition
 - Windows Camera compatibility
 - Ongoing AVStream pipeline development
-
----
-
-# Support the Project ❤️
-
-Developing camera support for Windows on ARM requires hundreds of hours of reverse engineering, kernel debugging, driver development, and hardware testing.
-
-If you enjoy this project and would like to help accelerate development, consider supporting it.
-
-## ❤️ DonationAlerts
-
-[![Donate](https://img.shields.io/badge/Donate-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
-
-Every contribution helps fund development hardware, testing equipment, and the time required to continue improving the drivers.
-
-Thank you for supporting independent Windows on ARM development!
 
 ---
 
