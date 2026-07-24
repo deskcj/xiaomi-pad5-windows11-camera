@@ -5,8 +5,6 @@
 </p>
 
 ---
-
-# Xiaomi Pad 5 (nabu) — Windows 11 Camera Project 📷
 # Xiaomi Pad 5 (nabu) — Windows 11 Camera Project 📷
 ---
 
