@@ -61,9 +61,16 @@ Every new milestone requires a significant amount of development time, testing, 
 
 If you are interested in this project and would like to help bring fully working cameras and a future public driver release closer to completion, your support genuinely makes a difference.
 
-## ❤️ Support Development via DonationAlerts
+## ❤️ Support Development
+
+You can support the project using whichever method is most convenient for you:
 
 [![Support via DonationAlerts](https://img.shields.io/badge/❤️%20Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
+
+[![Support via PayPal](https://img.shields.io/badge/Support-PayPal-0070BA?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/vladcj)
+
+- **DonationAlerts** — a convenient option for users from CIS countries.
+- **PayPal** — suitable for international support from other countries.
 
 ### Your support helps with
 
