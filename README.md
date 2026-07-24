@@ -72,6 +72,7 @@ If you are unable to donate, you can still help by:
 - 💬 Providing feedback and testing in the future
 
 Thank you for supporting independent Windows on ARM development!
+---
 
 ## 🚧 Currently Working On
 
