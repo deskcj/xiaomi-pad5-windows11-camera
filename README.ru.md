@@ -61,9 +61,16 @@
 
 Если вам интересен этот проект и вы хотите помочь приблизить полноценную работу камер и будущий публичный выпуск драйверов, ваша поддержка действительно имеет значение.
 
-## ❤️ Поддержать разработку через DonationAlerts
+## ❤️ Поддержать разработку
+
+Вы можете поддержать проект удобным для вас способом:
 
 [![Поддержать через DonationAlerts](https://img.shields.io/badge/❤️%20Поддержать-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
+
+[![Поддержать через PayPal](https://img.shields.io/badge/Поддержать-PayPal-0070BA?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/vladcj)
+
+- **DonationAlerts** — удобный способ поддержки для пользователей из стран СНГ.
+- **PayPal** — подходит для международной поддержки из других стран.
 
 ### Ваша поддержка помогает
 
