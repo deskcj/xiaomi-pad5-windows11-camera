@@ -1,150 +1,166 @@
 # Xiaomi Pad 5 (nabu) — Windows 11 Camera Project 📷
 
-An independent research and development project focused on bringing camera support to the **Xiaomi Pad 5 (nabu)** running **Windows 11 on ARM**.
+> Bringing native camera support to the Xiaomi Pad 5 running Windows 11 on ARM.
 
-This repository serves as a public project page, proof-of-concept showcase, and development progress tracker.
-
-> **Important:** Camera drivers and private development files are not currently included in this repository.
-
----
-
-## Project Overview
-
-Camera support is one of the major missing components on the Xiaomi Pad 5 running Windows 11.
-
-This project involves low-level driver development, hardware research, reverse engineering, memory management debugging, CSI configuration, sensor initialization, and extensive testing on real hardware.
-
-The goal is to achieve stable and usable camera support for Windows 11 on the Xiaomi Pad 5.
+![GitHub stars](https://img.shields.io/github/stars/deskcj/xiaomi-pad5-windows11-camera?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows%2011%20ARM-blue?style=for-the-badge)
+![Device](https://img.shields.io/badge/Device-Xiaomi%20Pad%205-green?style=for-the-badge)
 
 ---
 
-## Current Status
+## About
 
-Significant progress has been made with both the camera hardware and the Windows driver stack.
+This project aims to bring native camera support to the **Xiaomi Pad 5 (nabu)** running **Windows 11 on ARM**.
 
-### What has been achieved
+It focuses on reverse engineering the Qualcomm camera stack, developing custom AVStream drivers, debugging low-level memory management, and integrating the camera into the native Windows camera framework.
 
-* The camera sensors can be detected by Windows.
-* The front camera path has produced a working live image.
-* The rear camera sensor has been successfully identified and initialized during development tests.
-* The rear sensor, four-lane CSI connection, and RAW data path have been validated.
-* A critical memory allocation issue between AVStream and the Qualcomm SMMU has been identified and addressed.
-* The camera driver packages can be installed with valid test signatures.
+The project is currently under active development.
 
-### Work in progress
-
-The current development focus is the rear camera video stream.
-
-The hardware is responding, but additional work is required to stabilize buffer handling, CSI data capture, image conversion, and continuous video delivery to the Windows Camera application.
-
-The drivers remain in private testing because they are experimental and may cause crashes, system instability, or require manual configuration.
+**Camera drivers are not publicly available yet.**
 
 ---
 
-## Development Progress
+# Current Progress
 
-* [x] Camera devices detected by Windows
-* [x] Front camera sensor initialization
-* [x] Front camera live image
-* [x] Rear camera hardware detection
-* [x] Rear camera sensor identification
-* [x] Four-lane CSI and RAW path validation
-* [x] Critical SMMU memory issue identified
-* [x] Updated memory allocation implementation
-* [ ] Stable rear camera frame capture
-* [ ] Image orientation and color correction
-* [ ] Long-term stability testing
-* [ ] Simplified installation process
-* [ ] Public driver release
+## ✅ Completed
+
+- Windows detects custom camera devices
+- Front camera initialization
+- Live camera preview
+- Photo capture
+- Video recording
+- Rear camera sensor detection
+- RAW image acquisition from the rear camera
+- Critical memory allocation issues resolved
+
+## 🚧 Currently Working On
+
+The current focus is integrating the rear camera into the Windows AVStream pipeline.
+
+The rear sensor is already producing RAW image data and communicating correctly with the Qualcomm Spectra ISP.
+
+The remaining work involves:
+
+- image conversion
+- AVStream integration
+- stable frame streaming
+- final driver optimization
 
 ---
 
-## Video Demonstration
+# Development Roadmap
 
-A detailed video demonstration will be published on YouTube.
+- ✅ Camera device detection
+- ✅ Front camera support
+- ✅ Live preview
+- ✅ Photo capture
+- ✅ Video recording
+- ✅ Rear sensor initialization
+- ✅ RAW frame acquisition
+- 🔄 AVStream image conversion
+- 🔄 Stable rear camera preview
+- 🔄 Driver optimization
+- 🔄 Public driver release
+
+---
+
+# Screenshots
+
+## Custom Camera Devices
+
+Windows successfully detects the custom front and rear camera devices.
+
+
+<!-- INSERT DEVICE MANAGER SCREENSHOT HERE -->
+
+---
+
+## Front Camera Preview
+
+Live preview from the Xiaomi Pad 5 front camera using the native Windows Camera application.
+
+<!-- INSERT CAMERA SCREENSHOT HERE -->
+
+---
+
+## Captured Photo
+
+Photo captured directly using the Windows Camera application.
+
+<!-- INSERT CAPTURED PHOTO HERE -->
+
+---
+
+## Rear Camera Development
+
+The rear camera sensor is already communicating with the Qualcomm Spectra ISP.
+
+RAW image data has been successfully received and validated.
+
+Current work focuses on converting RAW frames into a standard image stream through the AVStream pipeline.
+
+<!-- INSERT RAW TEST IMAGE HERE -->
+
+---
+
+# Video Demonstration
+
+A complete development demonstration will be available on YouTube.
 
 The video will include:
 
-* Windows 11 running on the Xiaomi Pad 5
-* Camera devices in Device Manager
-* Driver installation and detection
-* Front camera operation
-* Rear camera development progress
-* Current limitations and next development steps
+- Windows 11 running on Xiaomi Pad 5
+- Device Manager
+- Driver initialization
+- Front camera preview
+- Photo capture
+- Video recording
+- Rear camera development
+- Current progress
 
-> 🎬 **YouTube demonstration coming soon**
+🎥 **YouTube video**
 
-After the video is published, its preview and link will be added here.
-
----
-
-## Screenshots and Proof
-
-Screenshots and additional development evidence will be added to this section.
-
-### Device Manager
-
-> Screenshot coming soon
-
-### Windows Camera Application
-
-> Screenshot coming soon
-
-### Rear Camera Development Tests
-
-> Additional proof coming soon
+**(Insert your YouTube link here)**
 
 ---
 
-## Support the Project
+# Support the Project ❤️
 
-Developing camera support for an unsupported Windows on ARM device requires extensive reverse engineering, kernel-level debugging, repeated testing, and many hours of independent work.
+Developing camera support for Windows on ARM requires hundreds of hours of reverse engineering, kernel debugging, testing, and driver development.
 
-Financial support helps cover development hardware, testing equipment, software tools, and the time required to continue improving the drivers.
+If you enjoy this project and would like to help accelerate development, you can support it here:
 
-Supporting the project does not purchase immediate access to the experimental drivers and does not guarantee a specific release date. It directly supports continued research and development.
+## Donate
 
-### DonationAlerts
+### ❤️ DonationAlerts
 
-[![Support via DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
+https://www.donationalerts.com/r/deskcj
 
-**[➡️ Support the Xiaomi Pad 5 Camera Project](https://www.donationalerts.com/r/deskcj)**
+Every donation helps fund hardware testing, development time, and future improvements.
 
-Every contribution, regardless of size, helps move the project forward. Thank you for supporting independent Windows on ARM development.
-
----
-
-## Driver Availability
-
-The camera drivers are not publicly available yet.
-
-They are currently undergoing private testing and may:
-
-* Require manual installation
-* Require test-signing mode
-* Cause system crashes or instability
-* Work only with specific Windows builds
-* Require device-specific registry configuration
-* Change frequently during development
-
-A public release will be considered when the installation process and camera operation become sufficiently stable and safe for broader testing.
-
-Please do not download camera drivers from unofficial sources claiming to represent this project.
+Thank you for supporting independent Windows on ARM development!
 
 ---
 
-## Disclaimer
+# Driver Availability
 
-This is an independent, experimental project.
+The drivers are currently private.
 
-It is not affiliated with, endorsed by, or supported by Xiaomi, Microsoft, or Qualcomm.
+They are still experimental and intended only for development and testing.
 
-All development builds are used at the user's own risk. Experimental kernel drivers can cause crashes, data loss, boot problems, or hardware instability.
+A public release will be considered once the drivers become stable enough for everyday use.
 
 ---
 
-## Contact and Updates
+# Disclaimer
 
-Follow this repository to receive future development updates, screenshots, test results, and the upcoming video demonstration.
+This project is an independent community effort.
 
-⭐ Star the repository if you want to support the project and follow its progress.
+It is **not affiliated with Xiaomi, Microsoft, Qualcomm, or any other company.**
+
+Use experimental software at your own risk.
+
+---
+
+⭐ If you like this project, don't forget to Star the repository!
