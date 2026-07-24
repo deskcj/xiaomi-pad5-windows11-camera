@@ -1,6 +1,6 @@
 # Xiaomi Pad 5 (nabu) — Windows 11 Camera Project 📷
 
-> Bringing native camera support to the Xiaomi Pad 5 running Windows 11 on ARM.
+> 🚀 Bringing native camera support to the Xiaomi Pad 5 running Windows 11 on ARM.
 
 ![GitHub stars](https://img.shields.io/github/stars/deskcj/xiaomi-pad5-windows11-camera?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
@@ -9,15 +9,15 @@
 
 ---
 
-## About
+# About
 
-This project aims to bring native camera support to the **Xiaomi Pad 5 (nabu)** running **Windows 11 on ARM**.
+This project aims to bring native front and rear camera support to the **Xiaomi Pad 5 (nabu)** running **Windows 11 on ARM**.
 
-It focuses on reverse engineering the Qualcomm camera stack, developing custom AVStream drivers, debugging low-level memory management, and integrating the camera into the native Windows camera framework.
+The project focuses on reverse engineering Qualcomm's camera stack, developing custom AVStream drivers, debugging low-level memory management, and integrating the cameras into the native Windows imaging framework.
 
 The project is currently under active development.
 
-**Camera drivers are not publicly available yet.**
+> **Camera drivers are not publicly available at this time.**
 
 ---
 
@@ -31,21 +31,42 @@ The project is currently under active development.
 - Photo capture
 - Video recording
 - Rear camera sensor detection
-- RAW image acquisition from the rear camera
+- RAW frame acquisition from the rear camera
 - Critical memory allocation issues resolved
+
+---
 
 ## 🚧 Currently Working On
 
-The current focus is integrating the rear camera into the Windows AVStream pipeline.
+The current development focus is integrating the rear camera into the Windows AVStream pipeline.
 
-The rear sensor is already producing RAW image data and communicating correctly with the Qualcomm Spectra ISP.
+The rear sensor is already communicating correctly with the Qualcomm Spectra 380 ISP and successfully producing RAW image data.
 
-The remaining work involves:
+The remaining work includes:
 
-- image conversion
+- RAW image conversion
 - AVStream integration
-- stable frame streaming
-- final driver optimization
+- Stable frame streaming
+- Driver optimization
+- Rear camera live preview
+
+---
+
+# Project Status
+
+| Component | Status |
+|-----------|:------:|
+| Device Detection | ✅ |
+| Front Camera | ✅ |
+| Live Preview | ✅ |
+| Photo Capture | ✅ |
+| Video Recording | ✅ |
+| Rear Sensor | ✅ |
+| RAW Frame Acquisition | ✅ |
+| AVStream Integration | 🚧 |
+| Rear Camera Preview | 🚧 |
+| Driver Optimization | 🚧 |
+| Public Release | ⏳ |
 
 ---
 
@@ -71,8 +92,7 @@ The remaining work involves:
 
 Windows successfully detects the custom front and rear camera devices.
 
-
-<!-- INSERT DEVICE MANAGER SCREENSHOT HERE -->
+<img width="1124" height="338" alt="photo_2026-07-24_15-03-30" src="https://github.com/user-attachments/assets/ee59ffbb-2c68-4da4-879a-da1a139d271e" />
 
 ---
 
@@ -80,64 +100,79 @@ Windows successfully detects the custom front and rear camera devices.
 
 Live preview from the Xiaomi Pad 5 front camera using the native Windows Camera application.
 
-<!-- INSERT CAMERA SCREENSHOT HERE -->
+<img width="1280" height="800" alt="photo_2026-07-24_15-03-31" src="https://github.com/user-attachments/assets/6ef4bfe5-6f55-4271-889b-6ee0e294fbea" />
 
 ---
 
-## Captured Photo
+## Captured Photo and video
 
 Photo captured directly using the Windows Camera application.
 
-<!-- INSERT CAPTURED PHOTO HERE -->
+<img width="1280" height="796" alt="photo_2026-07-24_15-03-32" src="https://github.com/user-attachments/assets/a1cbabd6-6867-4284-b4c8-e2a79d41de32" />
+
+https://github.com/user-attachments/assets/b9e4c36c-73e8-4a89-a402-b55aa148bedd
 
 ---
 
 ## Rear Camera Development
 
-The rear camera sensor is already communicating with the Qualcomm Spectra ISP.
+The rear camera sensor is successfully communicating with the Qualcomm Spectra 380 ISP.
 
-RAW image data has been successfully received and validated.
+A complete RAW frame has been captured directly from the sensor, confirming that the sensor, CSI interface, and ISP pipeline are functioning correctly.
 
-Current work focuses on converting RAW frames into a standard image stream through the AVStream pipeline.
+Current development focuses on converting RAW image data into a standard image stream and integrating it into the Windows AVStream pipeline.
 
-<!-- INSERT RAW TEST IMAGE HERE -->
+<img width="1280" height="796" alt="photo_2026-07-24_15-03-32" src="https://github.com/user-attachments/assets/6b7026e5-8646-4d12-b1e1-4b4f025c4f3d" />
 
 ---
 
 # Video Demonstration
 
-A complete development demonstration will be available on YouTube.
+A full demonstration video will be available on YouTube.
 
-The video will include:
+The demonstration includes:
 
 - Windows 11 running on Xiaomi Pad 5
 - Device Manager
 - Driver initialization
-- Front camera preview
+- Front camera live preview
 - Photo capture
 - Video recording
 - Rear camera development
-- Current progress
+- Current project status
 
-🎥 **YouTube video**
+## ▶ Watch on YouTube
 
-**(Insert your YouTube link here)**
+**INSERT YOUTUBE LINK HERE**
+
+Example:
+
+https://youtu.be/XXXXXXXXXXX
+
+---
+
+# Technical Highlights
+
+- Custom AVStream driver
+- Qualcomm Spectra 380 ISP integration
+- Front and rear camera support
+- RAW frame acquisition
+- Windows Camera compatibility
+- Ongoing AVStream pipeline development
 
 ---
 
 # Support the Project ❤️
 
-Developing camera support for Windows on ARM requires hundreds of hours of reverse engineering, kernel debugging, testing, and driver development.
+Developing camera support for Windows on ARM requires hundreds of hours of reverse engineering, kernel debugging, driver development, and hardware testing.
 
-If you enjoy this project and would like to help accelerate development, you can support it here:
+If you enjoy this project and would like to help accelerate development, consider supporting it.
 
-## Donate
+## ❤️ DonationAlerts
 
-### ❤️ DonationAlerts
+[![Donate](https://img.shields.io/badge/Donate-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
 
-https://www.donationalerts.com/r/deskcj
-
-Every donation helps fund hardware testing, development time, and future improvements.
+Every contribution helps fund development hardware, testing equipment, and the time required to continue improving the drivers.
 
 Thank you for supporting independent Windows on ARM development!
 
@@ -147,20 +182,26 @@ Thank you for supporting independent Windows on ARM development!
 
 The drivers are currently private.
 
-They are still experimental and intended only for development and testing.
+They remain experimental and are intended only for internal development and testing.
 
-A public release will be considered once the drivers become stable enough for everyday use.
+A public release will be considered after the drivers become stable, reliable, and safe for everyday use.
+
+Please do not download or redistribute unofficial builds claiming to represent this project.
 
 ---
 
 # Disclaimer
 
-This project is an independent community effort.
+This is an independent community project.
 
-It is **not affiliated with Xiaomi, Microsoft, Qualcomm, or any other company.**
+It is **not affiliated with or endorsed by Xiaomi, Microsoft, Qualcomm, or any other company.**
 
-Use experimental software at your own risk.
+Use experimental software entirely at your own risk.
 
 ---
 
-⭐ If you like this project, don't forget to Star the repository!
+# Stay Updated
+
+⭐ Star this repository to follow development progress and receive updates about future releases.
+
+Thank you for your interest and support!
