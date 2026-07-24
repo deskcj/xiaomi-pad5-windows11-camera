@@ -1,15 +1,15 @@
 # xiaomi-pad5-windows11-camera
 # Xiaomi Pad 5 (nabu) — Windows 11 Camera Project 🚀
-## 📊 Текущий статус и технический прогресс
+## 📊 Current Status & Technical Progress
 
-Мы добились значительного прогресса в запуске задней камеры Xiaomi Pad 5 на Windows 11.
+We have made significant progress in bringing the Xiaomi Pad 5 rear camera to life on Windows 11. 
 
-### 🔧 Что уже сделано
-* **Проверка оборудования:** Тесты успешно доказали, что сам модуль задней камеры, четыре линии CSI и тракт обработки RAW-данных полностью исправны и могут работать в среде Windows 11.
-* **Исправление выделения памяти:** Главное препятствие, приводившее к ранним сбоям системы, было успешно обнаружено и устранено. Ранее архитектура драйвера AVStream передавала неподходящую структуру памяти (pool-MDL) в SMMU (блок управления памятью системы).
-* **Решение:** Драйвер задней камеры был обновлен — теперь он использует тот же самый, уже проверенный метод выделения памяти от Qualcomm, благодаря которому идеально работает фронтальная камера.
+### 🔧 What has been achieved
+* **Hardware Validation:** Tests have successfully proven that the rear camera sensor, the four CSI lines, and the RAW data path are completely functional under Windows 11.
+* **Memory Allocation Fix:** The main roadblock causing early system crashes has been identified and resolved. Previously, the `AVStream` driver architecture passed an incompatible memory structure (pool-MDL) to the SMMU (System Memory Management Unit). 
+* **The Solution:** The rear camera driver has been updated to use the exact same, proven Qualcomm memory allocation method that already makes the front camera work flawlessly.
 
-### ⚠️ Текущая ситуация и следующие шаги
-Основной драйвер камеры сейчас имеет действительные цифровые подписи, а проблема с привязкой памяти полностью решена. Сенсор камеры успешно распознается системой, и процессы инициализации выполняются корректно.
+### ⚠️ Current Situation & Next Steps
+The core camera driver now features valid digital signatures, and the memory mapping issue is completely resolved. The camera sensor is recognized, and initialization steps are executing properly.
 
-Прямо сейчас проект сосредоточен на настройке и стабилизации параметров линий CSI, так как фронтальная камера использует 2 линии, а задней требуется 4 линии. Мы активно дорабатываем драйвер, чтобы добиться стабильного потока живого видео с заднего сенсора.
+Right now, the project is focused on configuring and stabilizing the CSI lane settings, since the front camera uses 2 lines while the rear camera requires 4 lines. We are actively fine-tuning the driver to stabilize the live video stream from the rear sensor.
