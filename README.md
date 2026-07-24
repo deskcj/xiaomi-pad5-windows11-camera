@@ -35,21 +35,43 @@ The project is currently under active development.
 - Critical memory allocation issues resolved
 
 ---
-# Support the Project ❤️
+# ❤️ Support the Project
 
-Developing camera support for Windows on ARM requires hundreds of hours of reverse engineering, kernel debugging, driver development, and hardware testing.
+This project is developed independently in my spare time.
 
-If you enjoy this project and would like to help accelerate development, consider supporting it.
+Bringing full camera support to the Xiaomi Pad 5 on Windows 11 is a long-term reverse engineering effort that involves:
 
-## ❤️ DonationAlerts
+- Reverse engineering Qualcomm camera drivers
+- Developing custom AVStream drivers
+- Kernel debugging and driver testing
+- Hardware validation
+- Countless hours of experimentation and troubleshooting
 
-[![Donate](https://img.shields.io/badge/Donate-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
+Every new milestone requires significant time, testing, and continuous refinement.
 
-Every contribution helps fund development hardware, testing equipment, and the time required to continue improving the drivers.
+If you enjoy this project, find it useful, or simply want to help bring full camera support to the Xiaomi Pad 5 on Windows, your support makes a real difference.
+
+## ❤️ Support Development
+
+[![Donate via DonationAlerts](https://img.shields.io/badge/❤️%20Donate-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
+
+### Your support helps with
+
+- 💻 Development time
+- 🔬 Hardware testing
+- 🛠 Driver research and debugging
+- 📱 Additional Windows on ARM devices for testing
+- 🚀 Faster progress toward a public driver release
+
+Even a small contribution helps keep the project moving forward.
+
+If you are unable to donate, you can still help by:
+
+- ⭐ Starring this repository
+- 📢 Sharing the project with others
+- 💬 Providing feedback and testing in the future
 
 Thank you for supporting independent Windows on ARM development!
-
----
 
 ## 🚧 Currently Working On
 
