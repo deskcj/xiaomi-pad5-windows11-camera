@@ -108,7 +108,7 @@ Live preview from the Xiaomi Pad 5 front camera using the native Windows Camera 
 
 Photo captured directly using the Windows Camera application.
 
-<img width="1280" height="796" alt="photo_2026-07-24_15-03-32" src="https://github.com/user-attachments/assets/a1cbabd6-6867-4284-b4c8-e2a79d41de32" />
+<img width="640" height="480" alt="photo_2026-07-24_15-03-33" src="https://github.com/user-attachments/assets/7aeedc86-b700-45c6-9b43-2e6e9793cc16" />
 
 https://github.com/user-attachments/assets/b9e4c36c-73e8-4a89-a402-b55aa148bedd
 
