@@ -1,4 +1,14 @@
+<p align="center">
+  <b>🌐 Language:</b>
+  🇬🇧 <a href="README.md">English</a> |
+  🇷🇺 <a href="README.ru.md">Русский</a>
+</p>
+
+---
+
 # Xiaomi Pad 5 (nabu) — Windows 11 Camera Project 📷
+# Xiaomi Pad 5 (nabu) — Windows 11 Camera Project 📷
+---
 
 > 🚀 Bringing native camera support to the Xiaomi Pad 5 running Windows 11 on ARM.
 
