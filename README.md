@@ -169,40 +169,6 @@ Android-level image quality has not yet been reached. Achieving it may require a
 
 ---
 
-## Screenshots and proof of progress
-
-### Custom camera devices
-
-Windows successfully detects the custom front and rear camera devices.
-
-<img width="1124" height="338" alt="Xiaomi Pad 5 camera devices in Device Manager" src="https://github.com/user-attachments/assets/01555ca4-fe18-4520-b454-3df4cc5ccbc1" />
-
-### Front camera preview
-
-Live image from the Xiaomi Pad 5 front camera in the native Windows Camera application.
-
-<img width="1280" height="800" alt="Xiaomi Pad 5 front camera running in Windows" src="https://github.com/user-attachments/assets/7304e4f5-d540-4a68-98f8-e8eb4825617c" />
-
-### Captured front-camera photo
-
-This photo was captured directly through the native Windows Camera application.
-
-<img width="640" height="480" alt="Photo captured with the Xiaomi Pad 5 front camera" src="https://github.com/user-attachments/assets/d14b1e05-f7d7-48cf-915f-c73e6355e3f1" />
-
-### Front camera video recording
-
-This video was recorded directly through the native Windows Camera application.
-
-https://github.com/user-attachments/assets/b9e4c36c-73e8-4a89-a402-b55aa148bedd
-
-### First rear-camera RAW milestone
-
-Stage39 produced the first complete optical RAW frame from the rear OV13B10 sensor under Windows on ARM64. Later builds progressed from this RAW milestone to live preview, photo capture, and video recording.
-
-<img width="258" height="191" alt="RAW frame captured from the Xiaomi Pad 5 rear camera" src="https://github.com/user-attachments/assets/7c059fe0-e10a-41e6-805f-d406f9626dba" />
-
----
-
 ## ❤️ Support the project
 
 This project is developed independently in my spare time. Reverse engineering and testing kernel camera drivers on real Windows on ARM hardware requires substantial time, repeated hardware validation, and careful recovery from failed experiments.
