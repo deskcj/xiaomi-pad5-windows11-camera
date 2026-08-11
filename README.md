@@ -17,9 +17,9 @@
 
 ---
 
-## Latest status: both cameras are working
+## Latest status: stable 30 FPS camera prototype
 
-As of **August 10, 2026**, the private AV44–AV47 development builds provide working front and rear cameras in the native Windows Camera application.
+As of **August 11, 2026**, private build **AV87** provides working front and rear cameras in the native Windows Camera application. **AV82** is preserved as a known-good rollback baseline, while **AV88** is under development and is not installed or validated yet.
 
 ### Confirmed results
 
@@ -27,15 +27,16 @@ As of **August 10, 2026**, the private AV44–AV47 development builds provide wo
 - ✅ Switching between the front and rear cameras works
 - ✅ Photo capture works on both cameras
 - ✅ Video recording works on both cameras
-- ✅ Front camera produces approximately **14–15 real FPS**
-- ✅ Rear AV45 warm test: **947 new real frames in 55 seconds** — approximately **17.1 real FPS**
-- ✅ Rear AV45 delivery rate: approximately **21.3 FPS**
-- ✅ Rear video recording was also tested continuously for **1 minute 5 seconds**
-- ✅ No rear-camera freezes, stale RAW frames, capture errors, or session restarts during the clean validation interval
-- ✅ Orientation and general exposure are functional
+- ✅ AV87 front 120-second test: **30.032 delivered FPS** and **28.624 unique FPS**
+- ✅ AV87 rear 120-second test: **30.047 delivered FPS** and **27.272 unique FPS**
+- ✅ No frame delivery failures during either 120-second validation run
+- ✅ Repeated front/rear open and switching cycles complete successfully
+- ✅ Startup no longer presents a previously captured stale frame before the live stream
+- ✅ Orientation, preview, photos, video, and basic adaptive tone processing work on both cameras
+- ✅ Cold first live frame currently arrives in approximately **1.0–1.7 seconds**
 - ✅ The conflicting stock Qualcomm AVStream device can be disabled while the custom stack is active
 
-This is a major functional milestone, but it is **not yet a public release**. Color calibration, image noise, highlight handling, performance tuning, long-duration application testing, and safe release packaging still remain.
+This is a major stability and performance milestone, but it is **not yet a public release**. Android-level image quality has not yet been reached. Sensor auto-exposure, white balance, color calibration, noise reduction, highlight recovery, long application tests, and safe release packaging still remain.
 
 ---
 
@@ -95,7 +96,10 @@ Custom device layout:
 - ✅ Improved rear throughput and verified a clean sustained stream in AV45
 - ✅ Added scene-adaptive shadow lifting in AV46
 - ✅ Rejected invalid out-of-range RAW10 statistics and eliminated white-point jumps in AV47
-- 🔄 AV48 is developing a software-only highlight shoulder curve; it is not yet a confirmed baseline
+- ✅ Progressed through extensive exposure, color, orientation, startup, and throughput tuning after AV48
+- ✅ Preserved AV82 as the known-good rollback build after major image-quality improvements
+- ✅ AV87 removed stale startup-frame presentation, optimized conversion, and passed clean 120-second tests near 30 FPS on both cameras
+- 🔄 AV88 is adding sensor-level auto-exposure for OV8856 and OV13B10, highlight protection, smoother bright/dark transitions, and revised color balance; it is not yet validated
 
 ---
 
@@ -114,12 +118,12 @@ Custom device layout:
 | Photo capture on both cameras | ✅ |
 | Video recording on both cameras | ✅ |
 | Camera switching | ✅ |
-| Rear stale-frame recovery | ✅ |
-| Orientation and basic exposure | ✅ |
-| Front performance | 🚧 14–15 FPS |
-| Rear capture performance | 🚧 ~17.1 real FPS |
+| Stale-frame prevention and recovery | ✅ |
+| Orientation and adaptive tone processing | ✅ |
+| Front performance | ✅ 30.032 delivered / 28.624 unique FPS |
+| Rear performance | ✅ 30.047 delivered / 27.272 unique FPS |
 | Color calibration and denoising | 🚧 |
-| Highlight handling | 🚧 AV48 in development |
+| Sensor auto-exposure and highlight handling | 🚧 AV88 in development |
 | Long Zoom/browser-call validation | 🚧 |
 | Public installer and release package | ⏳ |
 
@@ -145,8 +149,8 @@ The preserved development workspace contains:
 
 - **54** distinct low-level <code>NabuCamOwnStage</code> directories;
 - a hardware investigation series that reached **Stage75**;
-- AVStream development from **AV1 through AV48**;
-- at least **108 completed preserved build/test iterations**, with AV48 currently in progress.
+- AVStream development from **AV1 through AV88**;
+- at least **147 completed preserved build/test iterations**, with AV88 currently in development.
 
 The real number of tablet tests is higher because many builds were installed and exercised multiple times for photo, video, camera switching, orientation, timing, crash, and long-session validation.
 
@@ -154,13 +158,12 @@ The real number of tablet tests is higher because many builds were installed and
 
 ## Current development focus
 
-1. Preserve the AV44/AV45 stability baseline.
-2. Complete and validate AV48 highlight compression without touching sensor registers.
-3. Reduce the remaining color cast and shadow noise.
-4. Tune exposure, gain, and white balance safely.
-5. Improve front-camera throughput beyond 14–15 FPS where possible.
-6. Test long video calls in Zoom, browsers, Telegram, and other applications.
-7. Prepare a safe installer, rollback path, and eventual public package.
+1. Preserve AV82 as the known-good rollback baseline and AV87 as the current validated performance baseline.
+2. Complete and validate AV88 sensor-level auto-exposure without regressing stability or 30 FPS delivery.
+3. Smooth transitions between bright and dark scenes while protecting highlights.
+4. Improve skin tones, white balance, color accuracy, and shadow noise on both sensors.
+5. Validate repeated cold starts, camera switching, long recordings, and video calls.
+6. Prepare a safe installer, rollback path, and eventual public package.
 
 Android-level image quality has not yet been reached. Achieving it may require additional sensor tuning, color calibration, more efficient Bayer conversion, and better use of the Qualcomm imaging pipeline.
 
