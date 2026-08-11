@@ -11,7 +11,7 @@
 > Независимая разработка нативной поддержки фронтальной и задней камер Xiaomi Pad 5 под Windows 11 ARM64.
 
 ![Звёзды GitHub](https://img.shields.io/github/stars/deskcj/xiaomi-pad5-windows11-camera?style=for-the-badge)
-![Статус](https://img.shields.io/badge/Статус-Рабочий%20прототип-brightgreen?style=for-the-badge)
+![Статус](https://img.shields.io/badge/Статус-AV87%20проверена-brightgreen?style=for-the-badge)
 ![Платформа](https://img.shields.io/badge/Платформа-Windows%2011%20ARM-blue?style=for-the-badge)
 ![Устройство](https://img.shields.io/badge/Устройство-Xiaomi%20Pad%205-green?style=for-the-badge)
 
