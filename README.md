@@ -12,7 +12,7 @@ From raw sensor captures to **two usable Windows cameras**: the front and rear c
 
 ## Download
 
-[Download `Xiaomi-Pad-5-Camera-AV137-Community.zip`](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/releases/Xiaomi-Pad-5-Camera-AV137-Community.zip) · SHA-256: `E50FA1AE762E51F3302516C11756B37CF4C55AD7C0119701366E4675A3F8E8B7`
+[Download `Xiaomi-Pad-5-Camera-AV137-Community.zip` from GitHub Releases](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/community-camera-preview/Xiaomi-Pad-5-Camera-AV137-Community.zip) · SHA-256: `135179ED0EE0D095EE4228825B0AB94DE6B6DA12473EB9EBAD1509D5F9DA8968`
 
 The ZIP contains both camera drivers, the correct public certificate, an installer, and an ARM64 DevCon built from Microsoft's open-source MS-PL sample. It contains no private key or experimental Qualcomm driver.
 
@@ -25,7 +25,7 @@ Make a backup and keep a way to restore the original drivers. Close every camera
 3. Right-click `Install-AV137.cmd` and select **Run as administrator**.
 4. Wait for the green success message, then test both cameras in Windows Camera.
 
-The installer checks that the device is Xiaomi Pad 5, verifies the certificate, installs both camera stacks, avoids creating duplicate virtual cameras, and saves `install-av137.log`. If it requests a restart, restart once and run it again. More details are in `README-RU.md` inside the ZIP.
+The installer checks that the device is Xiaomi Pad 5, installs both camera stacks, and avoids creating duplicate virtual cameras. It contains no hidden PowerShell installer: every installation command is visible in `Install-AV137.cmd`. If it requests a restart, restart once and run it again. More details are in `README-RU.md` inside the ZIP.
 
 ## Project progress
 
