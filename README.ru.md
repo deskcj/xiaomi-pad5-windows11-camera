@@ -13,6 +13,8 @@
 ## Скачать
 
 [Скачать `Xiaomi-Pad-5-Camera-AV137-Community.zip` со страницы GitHub Releases](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/community-camera-preview/Xiaomi-Pad-5-Camera-AV137-Community.zip) · SHA-256: `135179ED0EE0D095EE4228825B0AB94DE6B6DA12473EB9EBAD1509D5F9DA8968`
+Или попробовать другую сборку [Xiaomi-Pad-5-Camera-AV137-Community.zip](https://github.com/user-attachments/files/32431303/Xiaomi-Pad-5-Camera-AV137-Community.zip)
+
 
 В архиве находятся обе камеры, правильный открытый сертификат, установщик и ARM64 DevCon, собранный из открытого примера Microsoft под лицензией MS-PL. Закрытого ключа и экспериментального драйвера Qualcomm в архиве нет.
 
