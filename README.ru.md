@@ -14,7 +14,7 @@
 **Для установки нужен включённый Test Mode в Windows** 
 
 ## Скачать
- [Xiaomi-Pad-5-Camera-AV137-Community.zip](https://github.com/user-attachments/files/32431303/Xiaomi-Pad-5-Camera-AV137-Community.zip)
+[Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip](https://github.com/user-attachments/files/32478401/Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip)
 
 
 В архиве находятся обе камеры, правильный открытый сертификат, установщик и ARM64 DevCon, собранный из открытого примера Microsoft под лицензией MS-PL. Закрытого ключа и экспериментального драйвера Qualcomm в архиве нет.
