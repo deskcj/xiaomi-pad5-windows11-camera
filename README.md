@@ -11,10 +11,6 @@ From raw sensor captures to **two usable Windows cameras**: the front and rear c
 **Installation requires Windows Test Mode and the included test certificate.** Use this package only on a Xiaomi Pad 5 (`nabu`) running Windows 11 ARM64.
 
 ## Download
-
-[Download `Xiaomi-Pad-5-Camera-AV137-Community.zip` from GitHub Releases](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/community-camera-preview/Xiaomi-Pad-5-Camera-AV137-Community.zip) · SHA-256: `135179ED0EE0D095EE4228825B0AB94DE6B6DA12473EB9EBAD1509D5F9DA8968`
-
-Or try this
 [Xiaomi-Pad-5-Camera-AV137-Community.zip](https://github.com/user-attachments/files/32431292/Xiaomi-Pad-5-Camera-AV137-Community.zip)
 
 
