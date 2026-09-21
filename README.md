@@ -14,7 +14,7 @@ From raw sensor captures to **two usable Windows cameras**: the front and rear c
 **Installation requires enabled Test Mode** 
 
 ## Download
-[Xiaomi-Pad-5-Camera-AV137-Community.zip](https://github.com/user-attachments/files/32431292/Xiaomi-Pad-5-Camera-AV137-Community.zip)
+[Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip](https://github.com/user-attachments/files/32478379/Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip)
 
 
 The ZIP contains both camera drivers, the correct public certificate, an installer, and an ARM64 DevCon built from Microsoft's open-source MS-PL sample. It contains no private key or experimental Qualcomm driver.
