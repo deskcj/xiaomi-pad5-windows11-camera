@@ -8,7 +8,10 @@ From raw sensor captures to **two usable Windows cameras**: the front and rear c
 
 **At a glance:** ✅ front + rear preview · ✅ photos, video, switching · ✅ real changing frames · 🔄 Android-like quality and sustained 30 FPS
 
-**Installation requires Windows Test Mode and the included test certificate.** Use this package only on a Xiaomi Pad 5 (`nabu`) running Windows 11 ARM64.
+> [!WARNING]
+> Use this package only on a Xiaomi Pad 5 (`nabu`) running Windows 11 ARM64.
+
+**Installation requires enabled Test Mode** 
 
 ## Download
 [Xiaomi-Pad-5-Camera-AV137-Community.zip](https://github.com/user-attachments/files/32431292/Xiaomi-Pad-5-Camera-AV137-Community.zip)
@@ -18,14 +21,15 @@ The ZIP contains both camera drivers, the correct public certificate, an install
 
 ## Install
 
-Make a backup and keep a way to restore the original drivers. Close every camera app first.
+> [!NOTE]
+> Close every camera app first.
 
-1. Enable Windows **Test Mode**. In an administrator terminal run `bcdedit /set testsigning on`, then restart. If Secure Boot blocks it, follow [Microsoft's Test Mode guidance](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/the-testsigning-boot-configuration-option) and check your BitLocker recovery key first.
+1. Disable Secure Boot and enable Windows **Test Mode** on your Xiaomi Pad 5 by following [this guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md).
 2. Extract the ZIP completely.
 3. Right-click `Install-AV137.cmd` and select **Run as administrator**.
 4. Wait for the green success message, then test both cameras in Windows Camera.
 
-The installer checks that the device is Xiaomi Pad 5, installs both camera stacks, and avoids creating duplicate virtual cameras. It contains no hidden PowerShell installer: every installation command is visible in `Install-AV137.cmd`. If it requests a restart, restart once and run it again. More details are in `README-RU.md` inside the ZIP.
+> The installer checks that the device is Xiaomi Pad 5, installs both camera drivers, and avoids creating duplicate virtual cameras. It contains no hidden PowerShell installer: every installation command is visible in `Install-AV137.cmd`. If it requests a restart, restart once and run it again. More details are in `README-RU.md` inside the ZIP.
 
 ## Project progress
 
