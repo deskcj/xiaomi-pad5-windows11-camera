@@ -16,6 +16,10 @@
 ## Скачать
 [Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip](https://github.com/user-attachments/files/32478401/Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip)
 
+Если фронтальная камера не заработала, установить zip ниже
+[Xiaomi-Pad-5-Camera-CPUISP3.zip](https://github.com/user-attachments/files/32521267/Xiaomi-Pad-5-Camera-CPUISP3.zip)
+
+
 
 В архиве находятся обе камеры, правильный открытый сертификат, установщик и ARM64 DevCon, собранный из открытого примера Microsoft под лицензией MS-PL. Закрытого ключа и экспериментального драйвера Qualcomm в архиве нет.
 
