@@ -15,6 +15,7 @@ From raw sensor captures to **two usable Windows cameras**: the front and rear c
 
 ## Download
 [Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip](https://github.com/user-attachments/files/32478379/Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip)
+
 If Front Camera is not working try zip below
 [Xiaomi-Pad-5-Camera-CPUISP3.zip](https://github.com/user-attachments/files/32521203/Xiaomi-Pad-5-Camera-CPUISP3.zip)
 
