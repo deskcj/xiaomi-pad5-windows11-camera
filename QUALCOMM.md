@@ -16,8 +16,6 @@ Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) r
 
 ▶️ **[Watch the demonstration on YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
 
-*GitHub shows a clickable thumbnail; the video plays on YouTube.*
-
 ## ✅ What is working
 
 | Feature | Rear camera | Front camera |
