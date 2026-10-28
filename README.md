@@ -4,9 +4,9 @@
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-From raw sensor captures to **two usable Windows cameras**: the front and rear cameras now produce real images in Windows Camera. This is an **experimental public preview**, not a finished release or an official Xiaomi driver. The next goal is image quality closer to Android. I am also working on the tablet's Qualcomm ISP; [that research has its own progress page](QUALCOMM.md).
+From raw sensor captures to **two working Windows cameras**: the front and rear cameras produce real images in Windows Camera. The public ZIPs below are **experimental builds**, not a finished release or official Xiaomi drivers. In a separate test configuration, **both cameras now work through the hardware Qualcomm ISP**, producing full-resolution photos and good-quality previews in tested scenes. [Qualcomm ISP progress](QUALCOMM.md) is documented separately; that configuration has not yet been published as a ready-to-install package.
 
-**At a glance:** ✅ front + rear preview · ✅ photos, video, switching · ✅ real changing frames · 🔄 Android-like quality and sustained 30 FPS
+**At a glance:** ✅ front + rear preview · ✅ photos, video, switching · ✅ Qualcomm ISP working on both cameras in a test configuration · 🔄 further Android-level tuning and sustained 30 FPS
 
 > [!WARNING]
 > Use this package only on a Xiaomi Pad 5 (`nabu`) running Windows 11 ARM64.
@@ -46,9 +46,9 @@ What is still being worked on:
 
 - 🔄 Android-like exposure, color, detail, and low-light noise reduction. Dark fabric can show colored noise; the front can look soft and the rear is softer and noisier than Android.
 - 🔄 Reliable long sessions, faster starts, and a sustained **real** 30 FPS—not repeated copies of an old frame.
-- 🔄 The [Qualcomm ISP path](QUALCOMM.md): recognizable rear frames and partial front results exist, but **there is no stable, installable two-camera Qualcomm release yet**.
+- ✅ The [Qualcomm ISP path](QUALCOMM.md): **both cameras now produce good-quality photos and previews** in tested scenes; rear autofocus works, and both cameras adjust brightness and white balance automatically. 🔄 Stability, difficult lighting, and frame rate still need further testing; **no ready-to-install public Qualcomm package is available yet**.
 
-The ZIP uses mostly software image processing. A 1280 × 960 output does **not** by itself prove full native sensor detail. This project is moving forward, but it would be misleading to call today's picture Android-quality.
+The published ZIPs use mostly software image processing. A 1280 × 960 output does **not** by itself prove full native sensor detail. The Qualcomm ISP improvements belong to a separate test configuration, not these ZIPs; full Android image-quality parity is not claimed yet.
 
 ## ❤️ Help bring better cameras to Windows on nabu
 
