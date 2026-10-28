@@ -71,6 +71,8 @@ Development involves many hours of work, real-tablet testing and comparison with
 
 You can also help by starring the repository, sharing the project and reporting your experience with the Windows version, application, lighting and selected camera. Donations support continued development; they do not guarantee a delivery date or a specific result.
 
-## Project information
+## Disclaimer
 
-This is an independent community project, not affiliated with or endorsed by Xiaomi, Qualcomm, Microsoft or OmniVision.
+This is an independent community project, **not affiliated with or endorsed by Xiaomi, Qualcomm, Microsoft, or OmniVision**. Company and product names are used only to identify compatible hardware and technologies; rights to those names belong to their respective owners.
+
+The drivers are experimental, test-signed kernel software provided **“as is”**, without any guarantee of Android-level image quality, stability, or support. Crashes, device problems, and data loss are possible. Before installing, keep a backup and a way to recover your device. The decision to test and the associated risks are yours. This notice does not grant permission to redistribute third-party tools contrary to their licenses.
