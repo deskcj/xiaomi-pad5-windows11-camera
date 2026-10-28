@@ -4,9 +4,19 @@
 
 ![Status](https://img.shields.io/badge/status-both%20cameras%20working-success?style=for-the-badge) ![Rear](https://img.shields.io/badge/rear-working-success?style=for-the-badge) ![Front](https://img.shields.io/badge/front-working-success?style=for-the-badge)
 
-**Both cameras now work through Qualcomm ISP under Windows 11 on Xiaomi Pad 5.** The tested configuration provides live preview and photos with good image quality, improved color, rear autofocus and automatic brightness adjustment.
+**Both cameras work through the hardware Qualcomm ISP on Xiaomi Pad 5 (nabu) running Windows 11 ARM64.** The tested configuration uses the IFE/IPE image-processing pipeline and provides live preview and photos with good image quality, improved color, rear autofocus and automatic brightness adjustment.
 
-*Status updated: October 25, 2026.*
+*Page updated: October 28, 2026.*
+
+## 🎬 Video demo: both cameras working with Qualcomm ISP
+
+Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) running Windows 11 ARM64** using the Qualcomm ISP. The video shows a development milestone; image quality and stability are still being refined.
+
+[![Watch Xiaomi Pad 5 (nabu) — both cameras working with Qualcomm ISP](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
+
+▶️ **[Watch the demonstration on YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
+
+*GitHub shows a clickable thumbnail; the video plays on YouTube.*
 
 ## ✅ What is working
 

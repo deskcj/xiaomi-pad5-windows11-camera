@@ -4,9 +4,19 @@
 
 ![Статус](https://img.shields.io/badge/status-both%20cameras%20working-success?style=for-the-badge) ![Задняя](https://img.shields.io/badge/rear-working-success?style=for-the-badge) ![Фронтальная](https://img.shields.io/badge/front-working-success?style=for-the-badge)
 
-**Обе камеры Xiaomi Pad 5 уже работают через Qualcomm ISP в Windows 11.** Проверенная конфигурация даёт предпросмотр и фотографии с хорошим качеством изображения, улучшенной цветопередачей, автофокусом задней камеры и автоматической подстройкой яркости.
+**Обе камеры Xiaomi Pad 5 (nabu) работают через аппаратный Qualcomm ISP в Windows 11 ARM64.** Проверенная конфигурация использует обработку изображения через IFE/IPE и даёт предпросмотр и фотографии с хорошим качеством, улучшенной цветопередачей, автофокусом задней камеры и автоматической подстройкой яркости.
 
-*Статус обновлён: 25 октября 2026 года.*
+*Страница обновлена: 28 октября 2026 года.*
+
+## 🎬 Видео: работа обеих камер через Qualcomm ISP
+
+Демонстрация **задней и фронтальной камер Xiaomi Pad 5 (nabu) под Windows 11 ARM64** с использованием Qualcomm ISP. Видео показывает текущий этап разработки; качество и стабильность продолжают улучшаться.
+
+[![Смотреть видео: Xiaomi Pad 5 (nabu) — обе камеры работают через Qualcomm ISP](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
+
+▶️ **[Смотреть демонстрацию на YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
+
+*На GitHub показано кликабельное превью; видео воспроизводится на YouTube.*
 
 ## ✅ Что уже работает
 
