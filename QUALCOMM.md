@@ -6,8 +6,6 @@
 
 **Both cameras work through the hardware Qualcomm ISP on Xiaomi Pad 5 (nabu) running Windows 11 ARM64.** The tested configuration uses the IFE/IPE image-processing pipeline and provides live preview and photos with good image quality, improved color, rear autofocus and automatic brightness adjustment.
 
-*Page updated: October 28, 2026.*
-
 ## 🎬 Video demo: both cameras working with Qualcomm ISP
 
 Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) running Windows 11 ARM64** using the Qualcomm ISP. The video shows a development milestone; image quality and stability are still being refined.
