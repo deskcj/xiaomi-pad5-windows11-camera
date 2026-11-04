@@ -1,10 +1,8 @@
 # CPU ISP cameras for Xiaomi Pad 5 (nabu)
 
-[Русский](CPUISP.ru.md) · [Project home](README.md)
+[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](CPUISP.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](CPUISP.ru.md) · [Project home](README.md)
 
-![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge)
-
-![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
+![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
 **[Download verified CPUISP3 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** · **[Download available CPU source reference](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-CPUISP3-Sources-20261104.zip)** · [Browse sources](sources/cpuisp/README.md).
 

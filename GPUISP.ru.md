@@ -1,10 +1,8 @@
 # Камеры GPU ISP для Xiaomi Pad 5 (nabu)
 
-[English](GPUISP.md) · [Главная страница](README.ru.md)
+[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](GPUISP.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-2f81f7?style=for-the-badge)](GPUISP.ru.md) · [Главная страница](README.ru.md)
 
-![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge)
-
-![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
+![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
 **[Скачать ZIP драйвера GPU ISP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Скачать снимки исходников GPU](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Просмотреть исходники](sources/gpuisp/README.md).
 

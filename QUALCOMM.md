@@ -1,6 +1,6 @@
 # Qualcomm ISP cameras for Xiaomi Pad 5
 
-[Русский](QUALCOMM.ru.md) · [Project home](README.md)
+[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](QUALCOMM.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](QUALCOMM.ru.md) · [Project home](README.md)
 
 ![Status](https://img.shields.io/badge/status-both%20cameras%20working-success?style=for-the-badge) ![Rear](https://img.shields.io/badge/rear-working-success?style=for-the-badge) ![Front](https://img.shields.io/badge/front-working-success?style=for-the-badge)
 

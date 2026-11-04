@@ -1,6 +1,6 @@
 # Install and diagnose all three camera branches
 
-[Русский](INSTALL.ru.md)
+[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](INSTALL.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](INSTALL.ru.md)
 
 ## Install and diagnostics
 
