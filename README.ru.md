@@ -13,9 +13,9 @@
 
 | Страница ветки | Архив драйвера |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
-| **[GPU ISP](GPUISP.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
-| **[CPU ISP](CPUISP.ru.md)** — программная обработка, проверенный CPUISP3 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[GPU ISP](GPUISP.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
+| **[CPU ISP](CPUISP.ru.md)** — программная обработка, проверенный CPUISP3 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** |
 
 На каждой странице — ссылки на исходники, результаты, плюсы и ограничения. В каждом ZIP — общий установщик, диагностика, подписанные драйверы и доступные исходники разработки. Точный C/C++ исходник CPUISP3 не сохранился: версия исходников для исследования явно помечена CPUISP4. Заводской исходник Qualcomm закрытый.
 
@@ -27,7 +27,7 @@
 4. Если установщик явно попросит перезагрузку, перезагрузите Windows обычным способом и снова запустите `Setup.cmd`. Дождитесь **SUCCESS и кода выхода 0**, затем проверьте обе камеры в «Камере» Windows.
 5. Для диагностики закройте камерные приложения, запустите **`Diagnose.cmd` от имени администратора** и отправьте целиком самую новую папку из `C:\ProgramData\XiaomiPad5Camera\Logs`. Просмотрите диагностические кадры перед отправкой.
 
-`Check.cmd` проверяет целостность архива и платформу; установка и диагностика дополнительно проверяют реальные кадры. [Общая подробная инструкция](INSTALL.ru.md).
+`Check.cmd` проверяет целостность архива и платформу; установка и диагностика дополнительно проверяют реальные кадры.
 
 ## Статус веток
 

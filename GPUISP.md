@@ -4,7 +4,7 @@
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Download GPU ISP driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Download GPU source snapshots](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Browse sources](sources/gpuisp/README.md).
+**[Download GPU ISP driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Download GPU source snapshots](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Browse sources](sources/gpuisp/README.md).
 
 Selected accepted stack: **GPU040** processing/host, physical **rear065**, physical **front066**, and **virtual034** cameras. Later experimental numbers were not chosen merely because they were newer. Accepted driver and processing parameter bytes are unchanged; the package adds the shared guarded installer.
 
@@ -38,7 +38,7 @@ GPU processing reduces reliance on the heavier CPU image-processing path and exp
 
 Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, extract the ZIP fully and run **`Setup.cmd` as administrator**. If a restart is requested, restart normally and run it again; wait for SUCCESS / exit code 0. Then test both cameras in Windows Camera.
 
-For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only. [Full common instructions](INSTALL.md).
+For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only.
 
 
 ## ❤️ Help bring better cameras to Windows on nabu

@@ -8,7 +8,7 @@
 
 ## Download and sources
 
-**[Download Qualcomm ISP 253 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** · **[Download available development sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-Sources-20261104.zip)** · [Browse sources](sources/qualcommisp/README.md).
+**[Download Qualcomm ISP 253 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** · **[Download available development sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-Sources-20261104.zip)** · [Browse sources](sources/qualcommisp/README.md).
 
 Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the shared guarded installer based on the verified R2.4 fixes. The accepted image-processing payload is unchanged. The source archive contains this project's retained patch/development scripts and installer/probe code; the original Qualcomm vendor stack and firmware sources are not available.
 
@@ -16,7 +16,7 @@ Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the shared guard
 
 Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, extract the ZIP fully and run **`Setup.cmd` as administrator**. If a restart is requested, restart normally and run it again; wait for SUCCESS / exit code 0. Then test both cameras in Windows Camera.
 
-For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only. [Full common instructions](INSTALL.md).
+For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only.
 
 
 ## 🎬 Video demo: both cameras working with Qualcomm ISP
@@ -72,7 +72,7 @@ The next goal is to bring both cameras closer to Android in everyday use:
 
 ## 📌 Release scope
 
-This is a public preview. Current release qualification is listed in [VALIDATION.md](VALIDATION.md); it separates fresh installation tests from historical optical/FPS results. The reported rear activation click has not been isolated acoustically. HDR and tap-focus behavior across all applications are not established.
+This is a public preview. Fresh installation checks and historical optical/FPS measurements cover different conditions. The reported rear activation click has not been isolated acoustically. HDR and tap-focus behavior across all applications are not established.
 
 ## ❤️ Support continued development
 

@@ -4,7 +4,7 @@
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Скачать ZIP драйвера GPU ISP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Скачать снимки исходников GPU](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Просмотреть исходники](sources/gpuisp/README.md).
+**[Скачать ZIP драйвера GPU ISP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Скачать снимки исходников GPU](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Просмотреть исходники](sources/gpuisp/README.md).
 
 Выбрана принятая связка: обработка/служба **GPU040**, аппаратная **задняя065**, аппаратная **фронтальная066**, виртуальные камеры **034**. Более поздние экспериментальные номера не выбраны просто потому, что они новее. Файлы принятых драйверов и параметры обработки не изменены; пакет добавляет общий установщик с проверками безопасного состояния.
 
@@ -38,7 +38,7 @@ GPU-путь уменьшает зависимость от тяжёлой CPU-�
 
 Отключите Secure Boot и включите **Test Mode** по [инструкции](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/Russian/disable-secureboot-ru.md). Закройте все камерные приложения, полностью распакуйте ZIP и запустите **`Setup.cmd` от имени администратора**. При запросе перезагрузки перезагрузитесь обычным способом и повторите запуск; дождитесь SUCCESS / кода выхода 0. Затем проверьте обе камеры в «Камере» Windows.
 
-Для новой проверки кадров закройте камерные приложения и запустите **`Diagnose.cmd` от имени администратора**. Отправьте целиком самую новую папку из `C:\ProgramData\XiaomiPad5Camera\Logs`, включая `result.json` и `setup.log`; сначала просмотрите сохранённые кадры. `Check.cmd` проверяет только файлы и платформу. [Общая подробная инструкция](INSTALL.ru.md).
+Для новой проверки кадров закройте камерные приложения и запустите **`Diagnose.cmd` от имени администратора**. Отправьте целиком самую новую папку из `C:\ProgramData\XiaomiPad5Camera\Logs`, включая `result.json` и `setup.log`; сначала просмотрите сохранённые кадры. `Check.cmd` проверяет только файлы и платформу.
 
 
 ## ❤️ Помогите приблизить камеры к качеству Android

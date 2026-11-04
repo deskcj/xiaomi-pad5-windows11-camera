@@ -33,4 +33,4 @@ A preliminary CPU→Qualcomm transition exposed a first front-camera opening tha
 
 Проверки установки и кадров не заменяют отдельные тесты оптического фокуса, вспышки, полноразмерных фото и длительного FPS; исторические результаты отдельно указаны на страницах веток. Работа на всех сторонних образах/драйверах и качество Android не гарантируются.
 
-[Machine-readable result / Результаты JSON](release-validation.json) · [English project home](README.md) · [Главная на русском](README.ru.md)
+[Machine-readable result / Результаты JSON](release-validation.json) · [English project home](../../README.md) · [Главная на русском](../../README.ru.md)

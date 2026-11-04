@@ -8,7 +8,7 @@
 
 ## Скачать и исходники
 
-**[Скачать ZIP драйвера Qualcomm ISP 253](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** · **[Скачать доступные исходники разработки](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-Sources-20261104.zip)** · [Просмотреть исходники](sources/qualcommisp/README.md).
+**[Скачать ZIP драйвера Qualcomm ISP 253](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** · **[Скачать доступные исходники разработки](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-Sources-20261104.zip)** · [Просмотреть исходники](sources/qualcommisp/README.md).
 
 Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b**, общий установщик основан на проверенных исправлениях R2.4. Принятые файлы обработки изображения не изменены. Архив исходников содержит сохранившиеся инструменты изменений/разработки и код установщика/проверки кадров; оригинальный исходник заводского стека и прошивки Qualcomm недоступен.
 
@@ -16,7 +16,7 @@
 
 Отключите Secure Boot и включите **Test Mode** по [инструкции](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/Russian/disable-secureboot-ru.md). Закройте все камерные приложения, полностью распакуйте ZIP и запустите **`Setup.cmd` от имени администратора**. При запросе перезагрузки перезагрузитесь обычным способом и повторите запуск; дождитесь SUCCESS / кода выхода 0. Затем проверьте обе камеры в «Камере» Windows.
 
-Для новой проверки кадров закройте камерные приложения и запустите **`Diagnose.cmd` от имени администратора**. Отправьте целиком самую новую папку из `C:\ProgramData\XiaomiPad5Camera\Logs`, включая `result.json` и `setup.log`; сначала просмотрите сохранённые кадры. `Check.cmd` проверяет только файлы и платформу. [Общая подробная инструкция](INSTALL.ru.md).
+Для новой проверки кадров закройте камерные приложения и запустите **`Diagnose.cmd` от имени администратора**. Отправьте целиком самую новую папку из `C:\ProgramData\XiaomiPad5Camera\Logs`, включая `result.json` и `setup.log`; сначала просмотрите сохранённые кадры. `Check.cmd` проверяет только файлы и платформу.
 
 
 ## 🎬 Видео: работа обеих камер через Qualcomm ISP
@@ -72,7 +72,7 @@
 
 ## 📌 Границы релиза
 
-Это публичный прототип. [VALIDATION.md](VALIDATION.md) разделяет свежие проверки установки и исторические измерения качества/FPS. Источник сообщённого щелчка задней камеры акустически не установлен. HDR и поведение фокуса по касанию во всех приложениях не подтверждены.
+Это публичный прототип. Свежие проверки установки и исторические измерения качества/FPS относятся к разным условиям. Источник сообщённого щелчка задней камеры акустически не установлен. HDR и поведение фокуса по касанию во всех приложениях не подтверждены.
 
 ## ❤️ Поддержать дальнейшую разработку
 

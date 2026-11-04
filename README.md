@@ -13,9 +13,9 @@ One camera project, three processing branches. Both front and rear cameras produ
 
 | Branch page | Driver ZIP |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
-| **[GPU ISP](GPUISP.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
-| **[CPU ISP](CPUISP.md)** — software processing, verified CPUISP3 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[GPU ISP](GPUISP.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
+| **[CPU ISP](CPUISP.md)** — software processing, verified CPUISP3 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** |
 
 Each branch page includes its source-code links, results and limitations. Each driver ZIP includes the shared installer, diagnostics, signed payload and available development sources. CPUISP3's exact C/C++ sources were not preserved; its source reference is explicitly labelled CPUISP4. Qualcomm's original vendor source is closed.
 
@@ -27,7 +27,7 @@ Each branch page includes its source-code links, results and limitations. Each d
 4. If a restart is explicitly requested, restart normally and run `Setup.cmd` again. Wait for **SUCCESS and exit code 0**, then test both cameras in Windows Camera.
 5. For troubleshooting, close camera apps, run **`Diagnose.cmd` as administrator**, and share the newest complete folder from `C:\ProgramData\XiaomiPad5Camera\Logs`. Review diagnostic images before sharing.
 
-`Check.cmd` checks archive integrity and platform; installation and diagnosis additionally check actual camera frames. [Full common instructions](INSTALL.md).
+`Check.cmd` checks archive integrity and platform; installation and diagnosis additionally check actual camera frames.
 
 ## Current branch status
 
