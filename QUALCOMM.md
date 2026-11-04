@@ -78,7 +78,7 @@ This is a public preview. Current release qualification is listed in [VALIDATION
 
 Development involves many hours of work, real-tablet testing and comparison with Android. Support helps improve image quality, focus, speed and reliability on both cameras.
 
-[![Support via DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj) [![Support via PayPal](https://img.shields.io/badge/Support-PayPal-0070BA?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/vladcj)
+[![Support via DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
 
 You can also help by starring the repository, sharing the project and reporting your experience with the Windows version, application, lighting and selected camera. Donations support continued development; they do not guarantee a delivery date or a specific result.
 

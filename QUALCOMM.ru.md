@@ -78,7 +78,7 @@
 
 Разработка требует много времени, тестов на настоящем планшете и сравнений с Android. Поддержка помогает улучшать качество изображения, фокусировку, скорость и надёжность обеих камер.
 
-[![Поддержать через DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj) [![Поддержать через PayPal](https://img.shields.io/badge/Support-PayPal-0070BA?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/vladcj)
+[![Поддержать через DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
 
 Помочь можно и без доната: поставить звезду репозиторию, рассказать о проекте и поделиться результатами с указанием версии Windows, приложения, освещения и выбранной камеры. Донаты поддерживают разработку, но не гарантируют конкретный результат или срок.
 

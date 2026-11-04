@@ -39,7 +39,7 @@
 
 Это независимая работа на настоящем планшете: изучение конвейера камеры, сборка ARM64-драйверов, тестирование обоих сенсоров и поиск ошибок, способных перезагрузить устройство. Прогресс требует аккуратных экспериментов и многократных проверок. Если проект вам полезен, поддержка помогает продолжать работу над более чёткими и надёжными камерами.
 
-[![Поддержать через DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj) [![Поддержать через PayPal](https://img.shields.io/badge/Support-PayPal-0070BA?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/vladcj)
+[![Поддержать через DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
 
 Помочь можно и **без доната**: поставить звезду репозиторию, рассказать о нём другим владельцам nabu и прислать воспроизводимый результат с версией Windows, названием приложения, освещением и указанием камеры. Такая обратная связь помогает выбирать следующие исправления. Донат поддерживает исследование, но не гарантирует результат или срок. Спасибо, что помогаете независимому проекту Windows on ARM развиваться!
 
