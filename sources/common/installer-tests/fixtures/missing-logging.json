@@ -1,0 +1,14 @@
+{
+  "driverActions": false,
+  "cameraDma": {
+    "status": "PENDING_RESTART",
+    "registryChanged": true
+  },
+  "nativeLogging": {
+    "values": [
+      {
+        "keyExists": false
+      }
+    ]
+  }
+}

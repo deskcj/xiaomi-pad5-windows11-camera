@@ -1,0 +1,39 @@
+#pragma once
+
+#define IOCTL_NABU_CAM_HW_CAPTURE_REAR_RAW_BUFFER \
+    CTL_CODE(0x8000, 0x820, METHOD_OUT_DIRECT, \
+             FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+#define IOCTL_NABU_CAM_HW_REAR_SESSION_START \
+    CTL_CODE(0x8000, 0x821, METHOD_BUFFERED, \
+             FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+#define IOCTL_NABU_CAM_HW_REAR_SESSION_GET_FRAME \
+    CTL_CODE(0x8000, 0x822, METHOD_OUT_DIRECT, \
+             FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+#define IOCTL_NABU_CAM_HW_REAR_SESSION_STOP \
+    CTL_CODE(0x8000, 0x823, METHOD_BUFFERED, \
+             FILE_READ_ACCESS | FILE_WRITE_ACCESS)
+
+#ifndef NABU_REAR_WIDTH
+#define NABU_REAR_WIDTH       2104UL
+#endif
+#ifndef NABU_REAR_HEIGHT
+#define NABU_REAR_HEIGHT      1560UL
+#endif
+#ifndef NABU_REAR_STRIDE
+#define NABU_REAR_STRIDE      (NABU_REAR_WIDTH * sizeof(USHORT))
+#endif
+#ifndef NABU_REAR_FRAME_BYTES
+#define NABU_REAR_FRAME_BYTES (NABU_REAR_STRIDE * NABU_REAR_HEIGHT)
+#endif
+
+/*
+ * The AVStream preview only consumes one 2x2 Bayer cell per 640x480 output
+ * pixel.  Transfer those cells as a compact Bayer mosaic instead of copying
+ * the complete 6.5 MB sensor frame through the private bridge.
+ */
+#define NABU_REAR_PREVIEW_RAW_WIDTH  1280UL
+#define NABU_REAR_PREVIEW_RAW_HEIGHT 960UL
+#define NABU_REAR_PREVIEW_RAW_STRIDE \
+    (NABU_REAR_PREVIEW_RAW_WIDTH * sizeof(USHORT))
+#define NABU_REAR_PREVIEW_RAW_BYTES \
+    (NABU_REAR_PREVIEW_RAW_STRIDE * NABU_REAR_PREVIEW_RAW_HEIGHT)

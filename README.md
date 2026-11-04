@@ -1,59 +1,61 @@
-# Xiaomi Pad 5 cameras on Windows 11 ARM64
+# Xiaomi Pad 5 (nabu) cameras on Windows 11 ARM64
 
-[Русский](README.ru.md) · [Qualcomm ISP progress](QUALCOMM.md)
+[Русский](README.ru.md)
 
-![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
+![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge)
 
-The front and rear cameras of Xiaomi Pad 5 (`nabu`) now produce real images on Windows 11 ARM64.
-
-The project has two paths:
-
-- **CPU ISP (software image processing).** Both cameras work for photos and video, but image quality is still noticeably below Android.
-- **[Hardware Qualcomm ISP](QUALCOMM.md).** Both cameras now produce good full-resolution photos and high-quality previews in tested scenes.
+![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
 > [!WARNING]
-> Use this package only on a Xiaomi Pad 5 (`nabu`) running Windows 11 ARM64.
+> Use these packages only on Xiaomi Pad 5 (`nabu`) running Windows 11 ARM64.
 
-**Installation requires enabled Test Mode**
+One camera project, three processing branches. Both front and rear cameras produce real sensor images. Choose a branch below; only one is active at a time. Full Android image-quality parity remains a development goal.
 
 ## Download
 
-**Main package:** [Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip](https://github.com/user-attachments/files/32478379/Xiaomi-Pad-5-Camera-AV137-Community-FIXED.zip)
+| Branch page | Driver ZIP |
+| --- | --- |
+| **[Qualcomm ISP](QUALCOMM.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[GPU ISP](GPUISP.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
+| **[CPU ISP](CPUISP.md)** — software processing, verified CPUISP3 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** |
 
-**If the front camera does not work:** try [Xiaomi-Pad-5-Camera-CPUISP3.zip](https://github.com/user-attachments/files/32521203/Xiaomi-Pad-5-Camera-CPUISP3.zip).
+Each branch page includes its source-code links, results and limitations. Each driver ZIP includes the shared installer, diagnostics, signed payload and available development sources. CPUISP3's exact C/C++ sources were not preserved; its source reference is explicitly labelled CPUISP4. Qualcomm's original vendor source is closed.
 
-The ZIP contains both camera drivers, the correct public certificate, an installer, and an ARM64 DevCon built from Microsoft's open-source MS-PL sample. It contains no private key or experimental Qualcomm driver.
+## Install and diagnose
 
-## Install
+1. Disable Secure Boot and enable Windows **Test Mode** using [this guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md).
+2. Close every camera preview/recording app and fully extract the ZIP.
+3. Run **`Setup.cmd` as administrator**. The command is the same for all three branches.
+4. If a restart is explicitly requested, restart normally and run `Setup.cmd` again. Wait for **SUCCESS and exit code 0**, then test both cameras in Windows Camera.
+5. For troubleshooting, close camera apps, run **`Diagnose.cmd` as administrator**, and share the newest complete folder from `C:\ProgramData\XiaomiPad5Camera\Logs`. Review diagnostic images before sharing.
 
-> [!NOTE]
-> Close every camera app first.
+`Check.cmd` checks archive integrity and platform; installation and diagnosis additionally check actual camera frames. [Full common instructions](INSTALL.md).
 
-1. Disable Secure Boot and enable Windows **Test Mode** on your Xiaomi Pad 5 by following [this guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md).
-2. Extract the ZIP completely.
-3. Right-click `Install-AV137.cmd` and select **Run as administrator**.
-4. Wait for the green success message, then test both cameras in Windows Camera.
+## Current branch status
 
-> The installer checks that the device is Xiaomi Pad 5, installs both camera drivers, and avoids creating duplicate virtual cameras. It contains no hidden PowerShell installer: every installation command is visible in `Install-AV137.cmd`. If it requests a restart, restart once and run it again. More details are in `README-RU.md` inside the ZIP.
+### Qualcomm ISP — reference 253
 
-## What works and what does not yet
+- ✅ Both cameras use hardware IFE/IPE and provide preview and photos. [Branch page](QUALCOMM.md).
+- ✅ Full-resolution photos tested: rear 4160 × 3120, front 3264 × 2448. [Branch page](QUALCOMM.md).
+- ✅ Rear autofocus, automatic brightness/white balance and rear photo flash have been checked in documented tests. [Branch page](QUALCOMM.md).
+- ✅ Video1080p reached about 30 unique FPS in earlier controlled tests; this does not guarantee preview FPS in low light. [Branch page](QUALCOMM.md).
+- 🔄 Mixed lighting, focus transitions, startup/switching and the reported rear activation click still need refinement. Android parity and every Windows image/app are not confirmed. [Branch page](QUALCOMM.md).
 
-### CPU ISP
+### GPU ISP — 040 + rear065/front066 + virtual034
 
-- ✅ Windows detects separate front and rear cameras with real OV8856 and OV13B10 sensor frames.
-- ✅ Preview, photos, video, and front/rear switching have worked in Windows Camera.
-- ✅ Chrome and Telegram have been used with the camera path; other apps still need their own tests.
-- ✅ A **short, three-second** 1280 × 960 check captured **79/79 unique front frames at 25.8 FPS** and **76/76 unique rear frames at 25.0 FPS**, with no read failures in that check.
-- ❌ **CPU ISP does not yet match Android image quality:** dark fabric may show colored noise; the front can look soft, while the rear is softer and noisier than Android. Exposure, color, detail, and noise reduction need further tuning.
-- ❌ **Sustained real 30 FPS has not yet been confirmed in long sessions.** Work continues on freezes and startup speed; the short test above does not establish sustained frame rate or rule out repeated old frames.
+- ✅ Both cameras supply RAW to D3D12 compute processing and expose normal virtual camera interfaces. [Branch page](GPUISP.md).
+- ✅ Earlier clean 20-second tests measured about 28–29 unique FPS without repeated frames. [Branch page](GPUISP.md).
+- ✅ GPU040 color/LSC/gamma tables and rear065 focus logic are retained; front066 fixes the documented RAW transport samples. [Branch page](GPUISP.md).
+- ❌ Android-quality parity, reliable tap-to-focus in every app, rear flash and HDR are not confirmed for this GPU release. [Branch page](GPUISP.md).
+- 🔄 Two background workers and a GPU service are required; color, exposure, optical rear focus and long-session behavior still need work. [Branch page](GPUISP.md).
 
-The published ZIPs use mostly software image processing. A 1280 × 960 output does **not** by itself prove full native sensor detail.
+### CPU ISP — CPUISP3
 
-### Qualcomm ISP
-
-- ✅ **Both cameras work through the hardware Qualcomm ISP** and produce good photos and previews in tested scenes; full-resolution photos have been tested.
-- ✅ Rear autofocus works, and both cameras adjust brightness and white balance automatically. [Read more about Qualcomm ISP progress](QUALCOMM.md).
-- 🔄 Qualcomm ISP stability, difficult lighting, and frame rate need more testing. Full Android image-quality parity is not claimed yet.
+- ✅ Separate front and rear cameras use real OV8856/OV13B10 frames; Windows Camera preview, photos, video and switching have worked. [Branch page](CPUISP.md).
+- ✅ The CPU camera path has been used in Chrome and Telegram; other apps need their own tests. [Branch page](CPUISP.md).
+- ✅ The selected ZIP uses the verified CPUISP3 binaries, rather than AV137. [Branch page](CPUISP.md).
+- ❌ Image quality remains visibly below Android: color noise, softness, exposure and detail need improvement. [Branch page](CPUISP.md).
+- 🔄 Sustained real 30 FPS, Android-like focus/flash/HDR and all-app compatibility are not established. [Branch page](CPUISP.md).
 
 ## ❤️ Help bring better cameras to Windows on nabu
 

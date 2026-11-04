@@ -1,0 +1,399 @@
+{
+  "date": "2026-11-04",
+  "platform": "Xiaomi Pad 5 nabu, Windows 11 ARM64",
+  "installer": "THREE-ISP-PUBLIC-PREVIEW-20261104",
+  "actualPublicCmds": true,
+  "transitions": [
+    {
+      "label": "install-01-QISP253-to-CPUISP3",
+      "profile": "CPUISP3",
+      "status": "PASS_PUBLIC_PREVIEW_CPUISP3_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "dataReference": "CPUISP3",
+      "bothCameras": true,
+      "closed": true,
+      "noReboot": true,
+      "nativeWarmStartRetries": 0,
+      "cameraResults": [
+        {
+          "side": "rear",
+          "frames": 43,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        },
+        {
+          "side": "front",
+          "frames": 193,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        }
+      ]
+    },
+    {
+      "label": "install-02-CPUISP3-to-GPUISP",
+      "profile": "GPUISP",
+      "status": "PASS_PUBLIC_PREVIEW_GPUISP_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "dataReference": "GPUISP040",
+      "bothCameras": true,
+      "closed": true,
+      "noReboot": true,
+      "nativeWarmStartRetries": 0,
+      "cameraResults": [
+        {
+          "side": "rear",
+          "frames": 181,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        },
+        {
+          "side": "front",
+          "frames": 171,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        }
+      ]
+    },
+    {
+      "label": "install-03-GPUISP-to-QISP253",
+      "profile": "QISP253",
+      "status": "PASS_PUBLIC_PREVIEW_QISP253_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "dataReference": "QualcommISP253",
+      "bothCameras": true,
+      "closed": true,
+      "noReboot": true,
+      "nativeWarmStartRetries": 0,
+      "cameraResults": [
+        {
+          "side": "rear",
+          "frames": 188,
+          "width": 1920,
+          "height": 1080,
+          "signal": true,
+          "normalClose": true
+        },
+        {
+          "side": "front",
+          "frames": 158,
+          "width": 1920,
+          "height": 1080,
+          "signal": true,
+          "normalClose": true
+        }
+      ]
+    },
+    {
+      "label": "install-04-QISP253-to-GPUISP",
+      "profile": "GPUISP",
+      "status": "PASS_PUBLIC_PREVIEW_GPUISP_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "dataReference": "GPUISP040",
+      "bothCameras": true,
+      "closed": true,
+      "noReboot": true,
+      "nativeWarmStartRetries": 0,
+      "cameraResults": [
+        {
+          "side": "rear",
+          "frames": 197,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        },
+        {
+          "side": "front",
+          "frames": 177,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        }
+      ]
+    },
+    {
+      "label": "install-05-GPUISP-to-CPUISP3",
+      "profile": "CPUISP3",
+      "status": "PASS_PUBLIC_PREVIEW_CPUISP3_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "dataReference": "CPUISP3",
+      "bothCameras": true,
+      "closed": true,
+      "noReboot": true,
+      "nativeWarmStartRetries": 0,
+      "cameraResults": [
+        {
+          "side": "rear",
+          "frames": 41,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        },
+        {
+          "side": "front",
+          "frames": 187,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        }
+      ]
+    },
+    {
+      "label": "install-06-CPUISP3-to-QISP253",
+      "profile": "QISP253",
+      "status": "PASS_PUBLIC_PREVIEW_QISP253_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "dataReference": "QualcommISP253",
+      "bothCameras": true,
+      "closed": true,
+      "noReboot": true,
+      "nativeWarmStartRetries": 0,
+      "cameraResults": [
+        {
+          "side": "rear",
+          "frames": 188,
+          "width": 1920,
+          "height": 1080,
+          "signal": true,
+          "normalClose": true
+        },
+        {
+          "side": "front",
+          "frames": 157,
+          "width": 1920,
+          "height": 1080,
+          "signal": true,
+          "normalClose": true
+        }
+      ]
+    },
+    {
+      "label": "install-07-QISP253-to-GPUISP",
+      "profile": "GPUISP",
+      "status": "PASS_PUBLIC_PREVIEW_GPUISP_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "dataReference": "GPUISP040",
+      "bothCameras": true,
+      "closed": true,
+      "noReboot": true,
+      "nativeWarmStartRetries": 0,
+      "cameraResults": [
+        {
+          "side": "rear",
+          "frames": 199,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        },
+        {
+          "side": "front",
+          "frames": 182,
+          "width": 1280,
+          "height": 960,
+          "signal": true,
+          "normalClose": true
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "profile": "CPUISP3",
+      "status": "PASS_PUBLIC_PREVIEW_CPUISP3_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "bothCameras": true,
+      "closed": true
+    },
+    {
+      "profile": "GPUISP",
+      "status": "PASS_PUBLIC_PREVIEW_GPUISP_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "bothCameras": true,
+      "closed": true
+    },
+    {
+      "profile": "QISP253",
+      "status": "PASS_PUBLIC_PREVIEW_QISP253_INSTALLED_BOTH_CAMERAS_VERIFIED",
+      "bothCameras": true,
+      "closed": true
+    }
+  ],
+  "localeSuites": [
+    {
+      "locale": "ru-RU",
+      "test": "Test-InstallerR2",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-DmaTransaction",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-CameraSelection",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-NativeLogging",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-FreshLoggingKeys",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-RegistryWrite",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-RestartRecovery",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-InstallerR2",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-DmaTransaction",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-CameraSelection",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-NativeLogging",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-FreshLoggingKeys",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-RegistryWrite",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-RestartRecovery",
+      "exit": 0
+    }
+  ],
+  "unicodePathCmdCheck": "PASS; isolated command-wrapper fixture",
+  "noRestartDuringMatrix": true,
+  "allSignalsAndNormalClosures": true,
+  "scope": "One real tablet; ru-RU/en-US runtime regression fixtures, not two fresh localized Windows installations. Known CPU/GPU/Qualcomm configurations; unknown BSP states are rejected.",
+  "baselineNote": "A preliminary controller compared against a saved state predating the user Android reboot. The final matrix uses the actual kernel baseline; the original controller failure was preserved.",
+  "nativeWarmStartPolicy": "One retry only during installation when the native stream returned zero frames, WinRT/native close and full trace loss=0 are proven, no API error or changed controls, no pending/unsafe owner. The first evidence is retained. Diagnostics and CPU/GPU have no retry.",
+  "warmStartRegressionSuites": [
+    {
+      "locale": "ru-RU",
+      "status": "PASS_BOUNDED_NATIVE_WARM_START_WITH_SAFE_GATES",
+      "tests": 15
+    },
+    {
+      "locale": "en-US",
+      "status": "PASS_BOUNDED_NATIVE_WARM_START_WITH_SAFE_GATES",
+      "tests": 15
+    }
+  ],
+  "portableSourceRegressionSuites": [
+    {
+      "locale": "ru-RU",
+      "test": "Test-InstallerR2",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-DmaTransaction",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-CameraSelection",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-NativeLogging",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-FreshLoggingKeys",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-RegistryWrite",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-RestartRecovery",
+      "exit": 0
+    },
+    {
+      "locale": "ru-RU",
+      "test": "Test-WarmStart",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-InstallerR2",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-DmaTransaction",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-CameraSelection",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-NativeLogging",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-FreshLoggingKeys",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-RegistryWrite",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-RestartRecovery",
+      "exit": 0
+    },
+    {
+      "locale": "en-US",
+      "test": "Test-WarmStart",
+      "exit": 0
+    }
+  ],
+  "portableSourceFixtures": "Only reduced numeric CLOSE/RESULT fields and synthetic missing-key state; no personal logs.",
+  "directedTransitionCoverage": 6,
+  "finalGpuRestored": true
+}

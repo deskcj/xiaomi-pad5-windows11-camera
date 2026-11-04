@@ -6,6 +6,19 @@
 
 **Both cameras work through the hardware Qualcomm ISP on Xiaomi Pad 5 (nabu) running Windows 11 ARM64.** The tested configuration uses the IFE/IPE image-processing pipeline and provides live preview and photos with good image quality, improved color, rear autofocus and automatic brightness adjustment.
 
+## Download and sources
+
+**[Download Qualcomm ISP 253 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** · **[Download available development sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/releases/download/camera-public-preview-20261104/Xiaomi-Pad-5-Camera-QualcommISP253-Sources-20261104.zip)** · [Browse sources](sources/qualcommisp/README.md).
+
+Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the shared guarded installer based on the verified R2.4 fixes. The accepted image-processing payload is unchanged. The source archive contains this project's retained patch/development scripts and installer/probe code; the original Qualcomm vendor stack and firmware sources are not available.
+
+## Install and diagnostics
+
+Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, extract the ZIP fully and run **`Setup.cmd` as administrator**. If a restart is requested, restart normally and run it again; wait for SUCCESS / exit code 0. Then test both cameras in Windows Camera.
+
+For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only. [Full common instructions](INSTALL.md).
+
+
 ## 🎬 Video demo: both cameras working with Qualcomm ISP
 
 Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) running Windows 11 ARM64** using the Qualcomm ISP. The video shows a development milestone; image quality and stability are still being refined.
@@ -57,9 +70,9 @@ The next goal is to bring both cameras closer to Android in everyday use:
 
 **Both cameras working is a confirmed milestone; complete Android image-quality parity and stable 30 FPS in every lighting condition are still being worked toward.**
 
-## 📌 About this page
+## 📌 Release scope
 
-This page shares general Qualcomm ISP progress and confirmed camera capabilities. No Qualcomm driver download or release is provided here. The existing community camera package is documented on the [project home page](README.md).
+This is a public preview. Current release qualification is listed in [VALIDATION.md](VALIDATION.md); it separates fresh installation tests from historical optical/FPS results. The reported rear activation click has not been isolated acoustically. HDR and tap-focus behavior across all applications are not established.
 
 ## ❤️ Support continued development
 

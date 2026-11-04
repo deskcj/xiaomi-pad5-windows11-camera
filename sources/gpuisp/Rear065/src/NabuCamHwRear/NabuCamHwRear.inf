@@ -1,0 +1,49 @@
+; Xiaomi Pad 5 rear-camera hardware owner and one-shot RAW bridge.
+; Hardware is touched only after the private capture IOCTL.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ProviderName%
+DriverVer=10/18/2026,226.2.0.22
+CatalogFile=nabucamhwrear.cat
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir=13
+Drivers_Dir=13
+
+[Manufacturer]
+%ProviderName%=Standard,NTarm64.10.0...16299
+
+[Standard.NTarm64.10.0...16299]
+%DeviceDesc%=NabuCamHwRear_Device,ACPI\QCOM0529
+
+[NabuCamHwRear_Device.NT]
+CopyFiles=Drivers_Dir
+
+[NabuCamHwRear_Device.NT.Services]
+AddService=NabuCamHwRear,0x00000002,NabuCamHwRear_Service_Inst
+
+[NabuCamHwRear_Service_Inst]
+DisplayName=%ServiceName%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%13%\NabuCamHwRear.sys
+
+[Drivers_Dir]
+NabuCamHwRear.sys
+
+[SourceDisksNames]
+1=%DiskName%
+
+[SourceDisksFiles]
+NabuCamHwRear.sys=1
+
+[Strings]
+ProviderName="nabu-camera-project"
+DeviceDesc="Xiaomi Pad 5 Rear Camera Hardware Backend"
+ServiceName="NabuCamHwRear"
+DiskName="Nabu Rear Camera Hardware Backend Disk"
