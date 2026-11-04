@@ -31,29 +31,29 @@ Each branch page includes its source-code links, results and limitations. Each d
 
 ## Current branch status
 
-### Qualcomm ISP — reference 253
+### Qualcomm ISP — reference 253 · [Branch page](QUALCOMM.md)
 
-- ✅ Both cameras use hardware IFE/IPE and provide preview and photos. [Branch page](QUALCOMM.md).
-- ✅ Full-resolution photos tested: rear 4160 × 3120, front 3264 × 2448. [Branch page](QUALCOMM.md).
-- ✅ Rear autofocus, automatic brightness/white balance and rear photo flash have been checked in documented tests. [Branch page](QUALCOMM.md).
-- ✅ Video1080p reached about 30 unique FPS in earlier controlled tests; this does not guarantee preview FPS in low light. [Branch page](QUALCOMM.md).
-- 🔄 Mixed lighting, focus transitions, startup/switching and the reported rear activation click still need refinement. Android parity and every Windows image/app are not confirmed. [Branch page](QUALCOMM.md).
+- ✅ Both cameras use hardware IFE/IPE and provide preview and photos.
+- ✅ Full-resolution photos tested: rear 4160 × 3120, front 3264 × 2448.
+- ✅ Rear autofocus, automatic brightness/white balance and rear photo flash have been checked in documented tests.
+- ✅ Video1080p reached about 30 unique FPS in earlier controlled tests; this does not guarantee preview FPS in low light.
+- 🔄 Mixed lighting, focus transitions, startup/switching and the reported rear activation click still need refinement. Android parity and every Windows image/app are not confirmed.
 
-### GPU ISP — 040 + rear065/front066 + virtual034
+### GPU ISP — 040 + rear065/front066 + virtual034 · [Branch page](GPUISP.md)
 
-- ✅ Both cameras supply RAW to D3D12 compute processing and expose normal virtual camera interfaces. [Branch page](GPUISP.md).
-- ✅ Earlier clean 20-second tests measured about 28–29 unique FPS without repeated frames. [Branch page](GPUISP.md).
-- ✅ GPU040 color/LSC/gamma tables and rear065 focus logic are retained; front066 fixes the documented RAW transport samples. [Branch page](GPUISP.md).
-- ❌ Android-quality parity, reliable tap-to-focus in every app, rear flash and HDR are not confirmed for this GPU release. [Branch page](GPUISP.md).
-- 🔄 Two background workers and a GPU service are required; color, exposure, optical rear focus and long-session behavior still need work. [Branch page](GPUISP.md).
+- ✅ Both cameras supply RAW to D3D12 compute processing and expose normal virtual camera interfaces.
+- ✅ Earlier clean 20-second tests measured about 28–29 unique FPS without repeated frames.
+- ✅ GPU040 color/LSC/gamma tables and rear065 focus logic are retained; front066 fixes the documented RAW transport samples.
+- ❌ Android-quality parity, reliable tap-to-focus in every app, rear flash and HDR are not confirmed for this GPU release.
+- 🔄 Two background workers and a GPU service are required; color, exposure, optical rear focus and long-session behavior still need work.
 
-### CPU ISP — CPUISP3
+### CPU ISP — CPUISP3 · [Branch page](CPUISP.md)
 
-- ✅ Separate front and rear cameras use real OV8856/OV13B10 frames; Windows Camera preview, photos, video and switching have worked. [Branch page](CPUISP.md).
-- ✅ The CPU camera path has been used in Chrome and Telegram; other apps need their own tests. [Branch page](CPUISP.md).
-- ✅ The selected ZIP uses the verified CPUISP3 binaries, rather than AV137. [Branch page](CPUISP.md).
-- ❌ Image quality remains visibly below Android: color noise, softness, exposure and detail need improvement. [Branch page](CPUISP.md).
-- 🔄 Sustained real 30 FPS, Android-like focus/flash/HDR and all-app compatibility are not established. [Branch page](CPUISP.md).
+- ✅ Separate front and rear cameras use real OV8856/OV13B10 frames; Windows Camera preview, photos, video and switching have worked.
+- ✅ The CPU camera path has been used in Chrome and Telegram; other apps need their own tests.
+- ✅ The selected ZIP uses the verified CPUISP3 binaries, rather than AV137.
+- ❌ Image quality remains visibly below Android: color noise, softness, exposure and detail need improvement.
+- 🔄 Sustained real 30 FPS, Android-like focus/flash/HDR and all-app compatibility are not established.
 
 ## ❤️ Help bring better cameras to Windows on nabu
 
