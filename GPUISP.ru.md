@@ -4,9 +4,11 @@
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Скачать ZIP драйвера GPU ISP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Скачать снимки исходников GPU](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Просмотреть исходники](sources/gpuisp/README.md).
+**[Скачать ZIP драйвера GPU ISP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Скачать точные исходники для EWDK](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Просмотреть исходники](sources/gpuisp/README.md).
 
 Выбрана принятая связка: обработка/служба **GPU040**, аппаратная **задняя065**, аппаратная **фронтальная066**, виртуальные камеры **034**. Более поздние экспериментальные номера не выбраны просто потому, что они новее. Файлы принятых драйверов и параметры обработки не изменены; пакет добавляет общий установщик с проверками безопасного состояния.
+
+В архиве исходников — только C/H, C++/HLSL, проекты WDK, INF, профили и `Build.cmd` этой сборки. Сборка через EWDK проверена: секции `.text` всех четырёх SYS и двух EXE побайтово совпали с опубликованными файлами. Команда сборки и требования к подписи — в README исходников.
 
 ## Как это работает
 

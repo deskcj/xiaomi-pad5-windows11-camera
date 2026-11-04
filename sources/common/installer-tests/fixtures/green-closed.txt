@@ -1,4 +1,0 @@
-CLOSE256 reader_stop hr=00000000
-CLOSE256 reader_close hr=00000000
-CLOSE256 capture_close hr=00000000
-RESULT256 hr=00000000 frames=233 duplicatePolls=0 width=1920 height=1080 meanY=0.000000 minY=0 maxY=0 hash=2f17a525 signal=false saved=true controlsChanged=false

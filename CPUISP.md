@@ -4,9 +4,15 @@
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Download verified CPUISP3 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** · **[Download available CPU source reference](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-CPUISP3-Sources-20261104.zip)** · [Browse sources](sources/cpuisp/README.md).
+**[Download verified CPUISP4 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)**
 
-The selected binaries are CPUISP3: front hardware **226.0.0.3**, rear hardware **226.2.0.5**, front virtual camera **226.1.0.1**, rear virtual camera **226.3.0.1**. The driver bytes match the [previously published CPUISP3 package](https://github.com/user-attachments/files/32521203/Xiaomi-Pad-5-Camera-CPUISP3.zip); the shared installer and diagnostics use the same commands as the other branches.
+Selected CPUISP4 binaries: front hardware **226.0.0.3**, rear hardware **226.2.0.10**, virtual front **226.1.0.3**, virtual rear **226.3.0.4**. The ZIP retains the original signed CPUISP4 SYS code with updated INF dates and signed catalogs and uses the common Setup/Check/Diagnose installer commands.
+
+**[Download CPUISP4 C/H sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [Browse code](sources/cpuisp/README.md).
+
+CPUISP4 was selected because its C/H source snapshot and WDK projects are retained. Its four ARM64 drivers were rebuilt with EWDK using the historical compiler options; all published C/H files match the retained snapshot. The rebuilt files are not byte-identical to the original signed binaries.
+
+Public Setup.cmd and Diagnose.cmd passed both 1280 × 960 camera image checks and normal closure on our tablet, from a Cyrillic path with spaces. No restart was required. Updated INF/catalog identity prevents the previous CPUISP3 front-package collision.
 
 ## How it works
 
@@ -17,16 +23,15 @@ The hardware backends configure the OV8856 front and OV13B10 rear sensors and ca
 - ✅ Separate front and rear cameras with real sensor frames.
 - ✅ Windows Camera preview, photos, video and front/rear switching have worked.
 - ✅ Chrome and Telegram have been used with the CPU camera path; other apps need separate tests.
-- ✅ The CPUISP3 rear DMA page-list fallback avoids the original requirement for one large contiguous allocation competing with the front camera.
+- ✅ The CPUISP4 rear DMA page-list fallback avoids the original requirement for one large contiguous allocation competing with the front camera.
 - ❌ Image quality is noticeably below Android: dark fabric may show colored noise; the front can look soft, while the rear is softer and noisier. Exposure, color, detail and noise reduction need refinement.
 - ❌ Sustained real 30 FPS and Android-equivalent focus/flash/HDR are not confirmed.
-- 🔄 An earlier **three-second CPU ISP** test at 1280 × 960 captured front **79/79 unique frames at 25.8 FPS** and rear **76/76 at 25.0 FPS** with no read failures. These are historical CPU-branch results from the former home page, not a new sustained CPUISP3 benchmark. The original CPUISP3 notes describe roughly 20 FPS front preview and 2–3-second startup.
+- 🔄 Historical CPUISP4 comparisons reported rear delivery improving from about 9.9 to 22 FPS, and a restored front detail pass with about 9% higher edge energy at 3% more noise in that comparison. Rear refinement kept its earlier budget because the heavier pass reduced delivery from 15.6 to 12.9 FPS. These are scene-specific development measurements, not guaranteed performance.
+
+CPUISP4 restores front detail reconstruction and noise-adaptive luma refinement, improves rear frame scheduling and caps rear exposure 64 lines below the sensor period. The source ZIP retains those timing and image-processing constants in C/H. The exact CPUISP3 snapshot was not retained; CPUISP4 replaces that download so development can continue from a retained source tree.
 
 A 1280 × 960 output does not by itself prove full native sensor detail. Both camera availability and startup depend on hardware state and application ownership.
 
-## Source availability
-
-The **exact CPUISP3 C/C++ snapshot was not preserved** during the original development. The source link contains the surviving **CPUISP4-reference** tree, clearly identified as a later version, plus the shared installer/probe source. It does not claim to rebuild the CPUISP3 binaries byte for byte.
 
 ## Install and diagnostics
 

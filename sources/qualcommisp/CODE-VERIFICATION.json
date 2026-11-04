@@ -1,0 +1,20 @@
+{
+  "status": "PASS_QISP_PROJECT_C_ASM_MATCH_PUBLISHED_MFT",
+  "mftSHA256": "78f49dab2d22be71589d0f1ffc3e03cc0c59f0cc22cfac3dfa38c7579eb8e5f3",
+  "checks": [
+    {
+      "source": "RearFill062.c",
+      "rva": "0xb35000",
+      "bytes": 660,
+      "matchesPublishedMFT": true,
+      "codeSHA256": "f2e074cecbc4dc14b27001328ae05530305eb0af86612c2c9305cde58571215e"
+    },
+    {
+      "source": "FocusFlags075b.asm",
+      "rva": "0x16d91c",
+      "bytes": 92,
+      "matchesPublishedMFT": true,
+      "codeSHA256": "f4fce61f5dd50c4c8b88999df9b1afbc88ef4185633d8cc0d65198ca659dbd43"
+    }
+  ]
+}

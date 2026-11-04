@@ -13,11 +13,11 @@
 
 | Страница ветки | Архив драйвера |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
-| **[GPU ISP](GPUISP.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
-| **[CPU ISP](CPUISP.ru.md)** — программная обработка, проверенный CPUISP3 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[GPU ISP](GPUISP.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
+| **[CPU ISP](CPUISP.ru.md)** — программная обработка, проверенный CPUISP4 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
-На каждой странице — ссылки на исходники, результаты, плюсы и ограничения. В каждом ZIP — общий установщик, диагностика, подписанные драйверы и доступные исходники разработки. Точный C/C++ исходник CPUISP3 не сохранился: версия исходников для исследования явно помечена CPUISP4. Заводской исходник Qualcomm закрытый.
+ZIP драйверов содержат проверенные подписанные файлы, установщик и диагностику. Точные C/C++/HLSL исходники GPU ISP и команда сборки EWDK скачиваются отдельно со страницы ветки. Для CPUISP4 доступны C/H-проекты. Для Qualcomm — код доработок, точные параметры и описание IFE/IPE; заводские исходники недоступны.
 
 ## Установка и диагностика
 
@@ -47,11 +47,11 @@
 - ❌ Для этой GPU-сборки не подтверждены качество Android, надёжный фокус по касанию во всех приложениях, задняя вспышка и HDR.
 - 🔄 Нужны GPU-служба и два фоновых обработчика; цвета, экспозиция, оптический задний фокус и длительная работа ещё требуют доводки.
 
-### CPU ISP — CPUISP3 · [Страница ветки](CPUISP.ru.md)
+### CPU ISP — CPUISP4 · [Страница ветки](CPUISP.ru.md)
 
 - ✅ Отдельные камеры используют реальные кадры OV8856/OV13B10; в «Камере» Windows работали предпросмотр, фото, видео и переключение.
 - ✅ Камерный CPU-путь использовался в Chrome и Telegram; остальные приложения требуют собственных проверок.
-- ✅ Выбран ZIP с проверенными бинарными драйверами CPUISP3, а не AV137.
+- ✅ Для CPUISP4 есть сохранённые C/H, команда EWDK и новая проверка Setup/Diagnose с кадрами обеих камер.
 - ❌ Качество заметно уступает Android: цветной шум, мягкость изображения, экспозиция и детализация требуют улучшения.
 - 🔄 Устойчивые реальные 30 кадров/с, фокус/вспышка/HDR уровня Android и совместимость со всеми приложениями не установлены.
 

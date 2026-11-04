@@ -4,9 +4,11 @@
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Download GPU ISP driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Download GPU source snapshots](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Browse sources](sources/gpuisp/README.md).
+**[Download GPU ISP driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Download matching EWDK sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Browse sources](sources/gpuisp/README.md).
 
 Selected accepted stack: **GPU040** processing/host, physical **rear065**, physical **front066**, and **virtual034** cameras. Later experimental numbers were not chosen merely because they were newer. Accepted driver and processing parameter bytes are unchanged; the package adds the shared guarded installer.
+
+The source ZIP contains only matching C/H, C++/HLSL, WDK projects, INF files, profiles and `Build.cmd`. EWDK rebuilding was checked: `.text` matched all four published SYS and both EXE files byte for byte. See the source README for the build command and signing requirements.
 
 ## How it works
 

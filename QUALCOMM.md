@@ -6,11 +6,13 @@
 
 **Both cameras work through the hardware Qualcomm ISP on Xiaomi Pad 5 (nabu) running Windows 11 ARM64.** The tested configuration uses the IFE/IPE image-processing pipeline and provides live preview and photos with good image quality, improved color, rear autofocus and automatic brightness adjustment.
 
-## Download and sources
+## Download
 
-**[Download Qualcomm ISP 253 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** · **[Download available development sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-Sources-20261104.zip)** · [Browse sources](sources/qualcommisp/README.md).
+**[Download Qualcomm ISP 253 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)**
 
-Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the shared guarded installer based on the verified R2.4 fixes. The accepted image-processing payload is unchanged. The source archive contains this project's retained patch/development scripts and installer/probe code; the original Qualcomm vendor stack and firmware sources are not available.
+Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the shared guarded installer based on the verified R2.4 fixes. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
+
+**[Download project code, tuning and IFE/IPE notes](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Browse development kit](sources/qualcommisp/README.md).
 
 ## Install and diagnostics
 

@@ -1,0 +1,232 @@
+{
+  "status": "PASS248_NATIVE_METERING_ALL_ANDROID_VALUES_EXACT",
+  "sessions": [
+    {
+      "camera": "rear",
+      "candidateSHA": "b2ae0cfe6f4759f4c394cba8e05c9eca4f473e9c747bed858695e8ddf81bf33c",
+      "case": {
+        "camera": "rear-candidate",
+        "sourceSHA": "b2ae0cfe6f4759f4c394cba8e05c9eca4f473e9c747bed858695e8ddf81bf33c",
+        "root": "0x4001020",
+        "truncated": false,
+        "canariesPASS": true,
+        "inputReadOnlyPASS": true,
+        "nativeVisits": {
+          "0x4a8bf0": 7
+        },
+        "stubs": {
+          "MSVC frame": 2,
+          "strcmp equality": 2,
+          "private allocator": 9,
+          "exact memset": 11,
+          "bounded type/string": 4
+        },
+        "rootCursor": 2792,
+        "allocations": [
+          {
+            "address": 67112992,
+            "bytes": 2704,
+            "sha": "78ff9d8af824d02266e09c1aa492a1c47734c5ef420da2490883482493bec280"
+          },
+          {
+            "address": 67115760,
+            "bytes": 9,
+            "sha": "023dca3e579811e349a9ee1364da0f9c85946197d8fc2c422bf85a6a176976b4"
+          },
+          {
+            "address": 67115840,
+            "bytes": 2,
+            "sha": "e61c21ca716b3b1aefb7d1198f83679c4ca4d596e5792275dd6203b49216237d"
+          },
+          {
+            "address": 67115920,
+            "bytes": 96,
+            "sha": "fc5ad7e43d3fd8d335ebb8ff3477864a1ee41a8b26bbfaa09e9bd76b20f1755e"
+          },
+          {
+            "address": 67116080,
+            "bytes": 96,
+            "sha": "f90d8abc001b62020589a6137d3caac23cef7d984d85a5a1890cfef88cf71df4"
+          },
+          {
+            "address": 67116240,
+            "bytes": 928,
+            "sha": "c5c134284c4a88d5bbc9fbabe69304bff0b8f0bca98a22e26b2cfacba82bce4a"
+          },
+          {
+            "address": 67117232,
+            "bytes": 12,
+            "sha": "d68ffa1117f5ec9a45a9dc335bf77dc7e06a55ed81e1476a3acd253c751e356d"
+          },
+          {
+            "address": 67117312,
+            "bytes": 140,
+            "sha": "ace2ec424fb4f263b50f542ddb725f80702f34f30fa02e6eb40c74aefa0ff5bf"
+          },
+          {
+            "address": 67117520,
+            "bytes": 36,
+            "sha": "0930deea5064989f137faca5cb99405bee6a98e21960bffca39077c2c4a5c52e"
+          }
+        ],
+        "referenceWitness": [
+          {
+            "parent": 109,
+            "offset": 32,
+            "child": 2009,
+            "caller": "0x83ac4"
+          },
+          {
+            "parent": 109,
+            "offset": 2216,
+            "child": 2010,
+            "caller": "0xb72c0"
+          },
+          {
+            "parent": 109,
+            "offset": 2232,
+            "child": 2011,
+            "caller": "0xbf730"
+          },
+          {
+            "parent": 109,
+            "offset": 2304,
+            "child": 2012,
+            "caller": "0xb6f74"
+          },
+          {
+            "parent": 109,
+            "offset": 2352,
+            "child": 2013,
+            "caller": "0xb68c8"
+          },
+          {
+            "parent": 109,
+            "offset": 2488,
+            "child": 2014,
+            "caller": "0xb6758"
+          },
+          {
+            "parent": 109,
+            "offset": 2760,
+            "child": 2015,
+            "caller": "0xb6518"
+          }
+        ]
+      },
+      "original": {
+        "camera": "rear-android",
+        "sourceSHA": "169f8f4f6063b12d134dee392c81e38cc840ca2d469776bfc2e628c9df9f0e8e",
+        "root": "0x4001020",
+        "truncated": false,
+        "canariesPASS": true,
+        "inputReadOnlyPASS": true,
+        "nativeVisits": {
+          "0x4a8bf0": 7
+        },
+        "stubs": {
+          "MSVC frame": 2,
+          "strcmp equality": 2,
+          "private allocator": 9,
+          "exact memset": 11,
+          "bounded type/string": 4
+        },
+        "rootCursor": 2792,
+        "allocations": [
+          {
+            "address": 67112992,
+            "bytes": 2704,
+            "sha": "3ca5a0e9a4a8c074a79d40ce1d8faee7575ece076c74803003d978077f481d85"
+          },
+          {
+            "address": 67115760,
+            "bytes": 9,
+            "sha": "023dca3e579811e349a9ee1364da0f9c85946197d8fc2c422bf85a6a176976b4"
+          },
+          {
+            "address": 67115840,
+            "bytes": 2,
+            "sha": "e61c21ca716b3b1aefb7d1198f83679c4ca4d596e5792275dd6203b49216237d"
+          },
+          {
+            "address": 67115920,
+            "bytes": 96,
+            "sha": "fc5ad7e43d3fd8d335ebb8ff3477864a1ee41a8b26bbfaa09e9bd76b20f1755e"
+          },
+          {
+            "address": 67116080,
+            "bytes": 96,
+            "sha": "f90d8abc001b62020589a6137d3caac23cef7d984d85a5a1890cfef88cf71df4"
+          },
+          {
+            "address": 67116240,
+            "bytes": 928,
+            "sha": "c5c134284c4a88d5bbc9fbabe69304bff0b8f0bca98a22e26b2cfacba82bce4a"
+          },
+          {
+            "address": 67117232,
+            "bytes": 12,
+            "sha": "d68ffa1117f5ec9a45a9dc335bf77dc7e06a55ed81e1476a3acd253c751e356d"
+          },
+          {
+            "address": 67117312,
+            "bytes": 140,
+            "sha": "ace2ec424fb4f263b50f542ddb725f80702f34f30fa02e6eb40c74aefa0ff5bf"
+          },
+          {
+            "address": 67117520,
+            "bytes": 36,
+            "sha": "0930deea5064989f137faca5cb99405bee6a98e21960bffca39077c2c4a5c52e"
+          }
+        ],
+        "referenceWitness": [
+          {
+            "parent": 87,
+            "offset": 32,
+            "child": 953,
+            "caller": "0x83ac4"
+          },
+          {
+            "parent": 87,
+            "offset": 2216,
+            "child": 954,
+            "caller": "0xb72c0"
+          },
+          {
+            "parent": 87,
+            "offset": 2232,
+            "child": 955,
+            "caller": "0xbf730"
+          },
+          {
+            "parent": 87,
+            "offset": 2304,
+            "child": 956,
+            "caller": "0xb6f74"
+          },
+          {
+            "parent": 87,
+            "offset": 2352,
+            "child": 957,
+            "caller": "0xb68c8"
+          },
+          {
+            "parent": 87,
+            "offset": 2488,
+            "child": 958,
+            "caller": "0xb6758"
+          },
+          {
+            "parent": 87,
+            "offset": 2760,
+            "child": 959,
+            "caller": "0xb6518"
+          }
+        ]
+      },
+      "allNativeMaterializedAndroidValuesExact": true,
+      "normalizedHeaderAndReferenceIdentityOnly": true
+    }
+  ],
+  "deviceAccess": false
+}

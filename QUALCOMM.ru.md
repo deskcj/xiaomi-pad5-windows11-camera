@@ -6,11 +6,13 @@
 
 **Обе камеры Xiaomi Pad 5 (nabu) работают через аппаратный Qualcomm ISP в Windows 11 ARM64.** Проверенная конфигурация использует обработку изображения через IFE/IPE и даёт предпросмотр и фотографии с хорошим качеством, улучшенной цветопередачей, автофокусом задней камеры и автоматической подстройкой яркости.
 
-## Скачать и исходники
+## Скачать
 
-**[Скачать ZIP драйвера Qualcomm ISP 253](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** · **[Скачать доступные исходники разработки](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-Sources-20261104.zip)** · [Просмотреть исходники](sources/qualcommisp/README.md).
+**[Скачать ZIP драйвера Qualcomm ISP 253](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)**
 
-Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b**, общий установщик основан на проверенных исправлениях R2.4. Принятые файлы обработки изображения не изменены. Архив исходников содержит сохранившиеся инструменты изменений/разработки и код установщика/проверки кадров; оригинальный исходник заводского стека и прошивки Qualcomm недоступен.
+Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b**, общий установщик основан на проверенных исправлениях R2.4. Принятые файлы обработки изображения не изменены. Оригинальные C/C++ исходники заводского стека и прошивки Qualcomm недоступны; эта сборка не пересобирается из исходников через EWDK.
+
+**[Скачать код доработок, параметры и описание IFE/IPE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Просмотреть комплект](sources/qualcommisp/README.md).
 
 ## Установка и диагностика
 

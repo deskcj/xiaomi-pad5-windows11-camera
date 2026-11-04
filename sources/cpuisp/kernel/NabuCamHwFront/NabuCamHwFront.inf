@@ -1,0 +1,49 @@
+; Xiaomi Pad 5 front-camera hardware owner and RAW bridge.
+; Hardware is touched only after the private capture IOCTL.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ProviderName%
+DriverVer=11/04/2026,226.0.0.3
+CatalogFile=CodexCPUISP4-NabuCamHwFront.cat
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir=13
+Drivers_Dir=13
+
+[Manufacturer]
+%ProviderName%=Standard,NTarm64.10.0...16299
+
+[Standard.NTarm64.10.0...16299]
+%DeviceDesc%=NabuCamHwFront_Device,ACPI\QCOM05A4
+
+[NabuCamHwFront_Device.NT]
+CopyFiles=Drivers_Dir
+
+[NabuCamHwFront_Device.NT.Services]
+AddService=NabuCamHwFront,0x00000002,NabuCamHwFront_Service_Inst
+
+[NabuCamHwFront_Service_Inst]
+DisplayName=%ServiceName%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%13%\NabuCamHwFront.sys
+
+[Drivers_Dir]
+NabuCamHwFront.sys
+
+[SourceDisksNames]
+1=%DiskName%
+
+[SourceDisksFiles]
+NabuCamHwFront.sys=1
+
+[Strings]
+ProviderName="nabu-camera-project"
+DeviceDesc="Xiaomi Pad 5 Front Camera Hardware Backend"
+ServiceName="NabuCamHwFront"
+DiskName="Nabu Front Camera Hardware Backend Disk"

@@ -13,11 +13,11 @@ One camera project, three processing branches. Both front and rear cameras produ
 
 | Branch page | Driver ZIP |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
-| **[GPU ISP](GPUISP.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
-| **[CPU ISP](CPUISP.md)** — software processing, verified CPUISP3 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/sources/packages/Xiaomi-Pad-5-Camera-CPUISP3-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[GPU ISP](GPUISP.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
+| **[CPU ISP](CPUISP.md)** — software processing, verified CPUISP4 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
-Each branch page includes its source-code links, results and limitations. Each driver ZIP includes the shared installer, diagnostics, signed payload and available development sources. CPUISP3's exact C/C++ sources were not preserved; its source reference is explicitly labelled CPUISP4. Qualcomm's original vendor source is closed.
+Driver ZIPs contain the tested signed drivers, installer and diagnostics. Matching GPU ISP C/C++/HLSL sources and the EWDK build command are a separate download on its branch page. CPUISP4 provides its retained C/H projects. Qualcomm provides the project modifications, exact tuning and IFE/IPE notes; the original vendor sources are unavailable.
 
 ## Install and diagnose
 
@@ -47,11 +47,11 @@ Each branch page includes its source-code links, results and limitations. Each d
 - ❌ Android-quality parity, reliable tap-to-focus in every app, rear flash and HDR are not confirmed for this GPU release.
 - 🔄 Two background workers and a GPU service are required; color, exposure, optical rear focus and long-session behavior still need work.
 
-### CPU ISP — CPUISP3 · [Branch page](CPUISP.md)
+### CPU ISP — CPUISP4 · [Branch page](CPUISP.md)
 
 - ✅ Separate front and rear cameras use real OV8856/OV13B10 frames; Windows Camera preview, photos, video and switching have worked.
 - ✅ The CPU camera path has been used in Chrome and Telegram; other apps need their own tests.
-- ✅ The selected ZIP uses the verified CPUISP3 binaries, rather than AV137.
+- ✅ CPUISP4 has retained C/H sources, an EWDK build command and newly checked Setup/Diagnose output from both cameras.
 - ❌ Image quality remains visibly below Android: color noise, softness, exposure and detail need improvement.
 - 🔄 Sustained real 30 FPS, Android-like focus/flash/HDR and all-app compatibility are not established.
 

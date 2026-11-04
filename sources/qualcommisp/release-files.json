@@ -1,0 +1,117 @@
+[
+  {
+    "path": "AVStream/codexqisp080avstream.cat",
+    "bytes": 3816,
+    "sha256": "d8a784284af51e548b30eacc9f65bc8a3765afbd0d827aec8980ac20989a2142"
+  },
+  {
+    "path": "AVStream/libcdsprpc.dll",
+    "bytes": 177408,
+    "sha256": "d2e158169012dd9f7caec50f128814d566adb3d88fca01f1dafb67739c40b817"
+  },
+  {
+    "path": "AVStream/libcdsprpcarm32.dll",
+    "bytes": 136936,
+    "sha256": "ffc1e15f97327086803f0516b7fdae97ec4a2b7ce36e7930451ea9569b793d00"
+  },
+  {
+    "path": "AVStream/qccamavs8150.inf",
+    "bytes": 47144,
+    "sha256": "3131d2f2b457c28d4a78545e74c5e35ea07fb453f6df253e856d8005efba792a"
+  },
+  {
+    "path": "AVStream/qccamavs8150.sys",
+    "bytes": 420640,
+    "sha256": "cfda67e6369beecb864dbb1bdd552c220e99b460124abcac1b1e97b0e904f3bb"
+  },
+  {
+    "path": "AVStream/QcDeviceMFT8150.dll",
+    "bytes": 9471376,
+    "sha256": "78f49dab2d22be71589d0f1ffc3e03cc0c59f0cc22cfac3dfa38c7579eb8e5f3"
+  },
+  {
+    "path": "FrontData/com.qti.sensormodule.nabu_aac_ov8856.bin",
+    "bytes": 111312,
+    "sha256": "05f57f2f45c20a06036f06d22410cb40ca2c8ef569b3c2baa6c09694af1896b5"
+  },
+  {
+    "path": "FrontData/com.qti.tuned.nabu_aac_ov8856_front.bin",
+    "bytes": 8367392,
+    "sha256": "9fe7d5bbd848bcfeadb2a418d68462bfea1cebc221335ea1106e79818a9d73de"
+  },
+  {
+    "path": "FrontSensor/codexqisp061frontsensor.cat",
+    "bytes": 2582,
+    "sha256": "99ae98ea7e6e6f3637068d2304d13b2a7b7334076c06f9d5010fb9dd20cdc307"
+  },
+  {
+    "path": "FrontSensor/qccamfrontsensor8150.inf",
+    "bytes": 3380,
+    "sha256": "224b0accc6ba5115110f8dfaa8346e058ea11e435cf93c9daed63fe9072166bd"
+  },
+  {
+    "path": "FrontSensor/qccamfrontsensor8150.sys",
+    "bytes": 89888,
+    "sha256": "06699007aec478c1c3e201dfc8a048e681a54b1f5bc9002dca74e335af016ea0"
+  },
+  {
+    "path": "ISP/CAMERA_ICP_AAAAAA.elf",
+    "bytes": 3598424,
+    "sha256": "043834591ac6b6a2ab79db5b6d524b5e9412b8c1588aa6c43015db495fe122f1"
+  },
+  {
+    "path": "ISP/codexqisp061isp.cat",
+    "bytes": 2898,
+    "sha256": "614d1260a85644963295be9ecbb3ba5caf7e69c0f916c7cc5e3632fcd6ef36a6"
+  },
+  {
+    "path": "ISP/mipad5_camisp.inf",
+    "bytes": 1997,
+    "sha256": "b384ae67c124fcf1e12aacf6f441c7e52c6be2e5faebe0efe199dc0930617d15"
+  },
+  {
+    "path": "ISP/qccamisp8150.sys",
+    "bytes": 350608,
+    "sha256": "6c710e5d3a7dada47d6b458edf91ef3e95d7b457f40a16da0b9d39654d0a65bf"
+  },
+  {
+    "path": "MIPI/codexqisp061mipi.cat",
+    "bytes": 2466,
+    "sha256": "dccb2ed45896225e0d26148b57ef773d851fd7f62b74d93f0e501a2ef13eff0d"
+  },
+  {
+    "path": "MIPI/qccammipicsi8150.inf",
+    "bytes": 2262,
+    "sha256": "1a0a4456371d8f5cbdca3e81fa4d2eb7e4319927886dad3efcf31d5c0dd66bb9"
+  },
+  {
+    "path": "MIPI/qccammipicsi8150.sys",
+    "bytes": 57632,
+    "sha256": "0e871b6252ae557a16bcdc277c35d8178188adefb9013c86a8de904feb99ca57"
+  },
+  {
+    "path": "RearData/com.qti.sensormodule.nabu_ofilm_ov13b10.bin",
+    "bytes": 77512,
+    "sha256": "9a041f7a74fcacea8a40c0e2cd9335adf4f56e545afa5ab0123aaeceb5795336"
+  },
+  {
+    "path": "RearData/com.qti.tuned.nabu_ofilm_ov13b10_wide.bin",
+    "bytes": 3338816,
+    "sha256": "b2ae0cfe6f4759f4c394cba8e05c9eca4f473e9c747bed858695e8ddf81bf33c"
+  },
+  {
+    "path": "RearSensor/codexqisp061rearsensor.cat",
+    "bytes": 2574,
+    "sha256": "7c44a45f924266a9297d28a50aaea4494304184931e0e3d3790e6891b4ed3369"
+  },
+  {
+    "path": "RearSensor/qccamrearsensor8150.inf",
+    "bytes": 3319,
+    "sha256": "31c44e3203f63db645f4e2c7361e8e22887a70ffe6a69c9c38af209387ead071"
+  },
+  {
+    "path": "RearSensor/qccamrearsensor8150.sys",
+    "bytes": 86928,
+    "sha256": "b3132f7cabfe3ea9f9b1df6791dbed2df05de510cb20301e3741b2e9254c069e"
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "status": "PASS248_EXACT_ANDROID_METERING_GRAPH_OFFLINE",
+  "sessions": [
+    {
+      "camera": "rear",
+      "sourceSHA": "e71085cb471e6f30912c6c4ef131a47258009e37365acbaefa24bf92e4e691a8",
+      "androidSourceSHA": "169f8f4f6063b12d134dee392c81e38cc840ca2d469776bfc2e628c9df9f0e8e",
+      "candidateSHA": "b2ae0cfe6f4759f4c394cba8e05c9eca4f473e9c747bed858695e8ddf81bf33c",
+      "bytes": 3338816,
+      "addedRows": [
+        {
+          "tag": 2009,
+          "androidTag": 953,
+          "name": "revision",
+          "bytes": 8,
+          "referenceOffsets": {},
+          "sourceSHA": "14e4b8ac16877a5d25661d84f8558c1481bf795a165d92feee46191b3224cde5",
+          "candidateSHA": "14e4b8ac16877a5d25661d84f8558c1481bf795a165d92feee46191b3224cde5"
+        },
+        {
+          "tag": 2010,
+          "androidTag": 954,
+          "name": "rgnAdjZone",
+          "bytes": 192,
+          "referenceOffsets": {},
+          "sourceSHA": "de291d4379d69a5bff9ad050b7456629034e847279745c10a5f9fd3c59f80ea1",
+          "candidateSHA": "de291d4379d69a5bff9ad050b7456629034e847279745c10a5f9fd3c59f80ea1"
+        },
+        {
+          "tag": 2011,
+          "androidTag": 955,
+          "name": "luxLumaTargetZone",
+          "bytes": 192,
+          "referenceOffsets": {},
+          "sourceSHA": "12976a7bc1a3698a6d844a4f821b492a355544bb393733f754aa94ec640b0cc8",
+          "candidateSHA": "12976a7bc1a3698a6d844a4f821b492a355544bb393733f754aa94ec640b0cc8"
+        },
+        {
+          "tag": 2012,
+          "androidTag": 956,
+          "name": "histLumaTargetZone",
+          "bytes": 1856,
+          "referenceOffsets": {},
+          "sourceSHA": "740a71d7cd044d1cbfe1c8b9c2a4813f33e4a57ce432e99f6897d3013b61fe23",
+          "candidateSHA": "740a71d7cd044d1cbfe1c8b9c2a4813f33e4a57ce432e99f6897d3013b61fe23"
+        },
+        {
+          "tag": 2013,
+          "androidTag": 957,
+          "name": "ADRCGainAdjustZone",
+          "bytes": 24,
+          "referenceOffsets": {},
+          "sourceSHA": "2a4a75ee85bf83bc009f22ef27bbbb0c6b51c541e54b424bb0beb70be6f5dd21",
+          "candidateSHA": "2a4a75ee85bf83bc009f22ef27bbbb0c6b51c541e54b424bb0beb70be6f5dd21"
+        },
+        {
+          "tag": 2014,
+          "androidTag": 958,
+          "name": "extrmClrLumaTargetZone",
+          "bytes": 224,
+          "referenceOffsets": {},
+          "sourceSHA": "6a83ed64fa21074b2445c18038ddd106a06ac0347b314355184ff226ce50cbbe",
+          "candidateSHA": "6a83ed64fa21074b2445c18038ddd106a06ac0347b314355184ff226ce50cbbe"
+        },
+        {
+          "tag": 2015,
+          "androidTag": 959,
+          "name": "suppressNonLinearZone",
+          "bytes": 72,
+          "referenceOffsets": {},
+          "sourceSHA": "24aa9b064f9aa616a0f9a5e54e8209cd07a7d3357b1e933a15132437a4b71671",
+          "candidateSHA": "24aa9b064f9aa616a0f9a5e54e8209cd07a7d3357b1e933a15132437a4b71671"
+        }
+      ],
+      "rootTag": 109,
+      "androidRootTag": 87,
+      "rootBytes": 2792,
+      "originalDirectoryRowsPreserved": true,
+      "unrelatedPayloadBytesPreserved": true,
+      "modeSectionPreserved": true
+    }
+  ],
+  "installed": false
+}
