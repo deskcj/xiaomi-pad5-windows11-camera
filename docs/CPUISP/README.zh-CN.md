@@ -1,6 +1,6 @@
 # Xiaomi Pad 5（nabu）的 CPU ISP 相机
 
-[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](CPUISP.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](CPUISP.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-2f81f7?style=for-the-badge)](CPUISP.zh-CN.md) [![项目主页](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-57606a?style=for-the-badge&logo=github&logoColor=white)](README.zh-CN.md)
+[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](README.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](README.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-2f81f7?style=for-the-badge)](README.zh-CN.md) [![项目主页](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-57606a?style=for-the-badge&logo=github&logoColor=white)](../README.zh-CN.md)
 
 ![状态：公开预览版](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![设备：Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![平台：Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
@@ -8,7 +8,7 @@
 
 选用的 CPUISP4 驱动版本：前置硬件 **226.0.0.3**、后置硬件 **226.2.0.10**、虚拟前置 **226.1.0.3**、虚拟后置 **226.3.0.4**。ZIP 保留原有已签名 CPUISP4 SYS 代码，更新了 INF 日期和签名目录，并使用通用的 `Setup.cmd`/`Check.cmd`/`Diagnose.cmd` 安装及诊断命令。
 
-**[下载 CPUISP4 C/H 源码](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [浏览源码](sources/cpuisp/README.md)。
+**[下载 CPUISP4 C/H 源码](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [浏览源码](../../sources/cpuisp/README.md)。
 
 选择 CPUISP4，是因为它的 C/H 源码快照和 WDK 项目仍有保留。其四个 ARM64 驱动已使用 EWDK 和历史编译选项重新构建；已发布的 C/H 文件均与保留的快照一致。重新构建的文件与原有已签名二进制文件并非逐字节相同。
 

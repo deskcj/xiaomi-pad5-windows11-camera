@@ -1,6 +1,6 @@
 # CPU ISP cameras for Xiaomi Pad 5 (nabu)
 
-[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](CPUISP.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](CPUISP.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](CPUISP.zh-CN.md) [![Project home](https://img.shields.io/badge/Project%20home-57606a?style=for-the-badge&logo=github&logoColor=white)](README.md)
+[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](README.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](README.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](README.zh-CN.md) [![Project home](https://img.shields.io/badge/Project%20home-57606a?style=for-the-badge&logo=github&logoColor=white)](../README.md)
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
@@ -8,7 +8,7 @@
 
 Selected CPUISP4 binaries: front hardware **226.0.0.3**, rear hardware **226.2.0.10**, virtual front **226.1.0.3**, virtual rear **226.3.0.4**. The ZIP retains the original signed CPUISP4 SYS code with updated INF dates and signed catalogs and uses the common Setup/Check/Diagnose installer commands.
 
-**[Download CPUISP4 C/H sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [Browse code](sources/cpuisp/README.md).
+**[Download CPUISP4 C/H sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [Browse code](../../sources/cpuisp/README.md).
 
 CPUISP4 was selected because its C/H source snapshot and WDK projects are retained. Its four ARM64 drivers were rebuilt with EWDK using the historical compiler options; all published C/H files match the retained snapshot. The rebuilt files are not byte-identical to the original signed binaries.
 

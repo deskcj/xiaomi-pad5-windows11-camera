@@ -1,10 +1,10 @@
 # Камеры GPU ISP для Xiaomi Pad 5 (nabu)
 
-[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](GPUISP.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-2f81f7?style=for-the-badge)](GPUISP.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](GPUISP.zh-CN.md) [![Главная](https://img.shields.io/badge/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-57606a?style=for-the-badge&logo=github&logoColor=white)](README.ru.md)
+[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](README.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-2f81f7?style=for-the-badge)](README.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](README.zh-CN.md) [![Главная](https://img.shields.io/badge/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-57606a?style=for-the-badge&logo=github&logoColor=white)](../README.ru.md)
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Скачать ZIP драйвера GPU ISP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Скачать точные исходники для EWDK](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Просмотреть исходники](sources/gpuisp/README.md).
+**[Скачать ZIP драйвера GPU ISP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Скачать точные исходники для EWDK](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Просмотреть исходники](../../sources/gpuisp/README.md).
 
 Выбрана принятая связка: обработка/служба **GPU040**, аппаратная **задняя065**, аппаратная **фронтальная066**, виртуальные камеры **034**. Более поздние экспериментальные номера не выбраны просто потому, что они новее. Файлы принятых драйверов и параметры обработки не изменены; пакет добавляет общий установщик с проверками безопасного состояния.
 

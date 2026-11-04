@@ -1,10 +1,10 @@
 # GPU ISP cameras for Xiaomi Pad 5 (nabu)
 
-[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](GPUISP.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](GPUISP.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](GPUISP.zh-CN.md) [![Project home](https://img.shields.io/badge/Project%20home-57606a?style=for-the-badge&logo=github&logoColor=white)](README.md)
+[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](README.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](README.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](README.zh-CN.md) [![Project home](https://img.shields.io/badge/Project%20home-57606a?style=for-the-badge&logo=github&logoColor=white)](../README.md)
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Download GPU ISP driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Download matching EWDK sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Browse sources](sources/gpuisp/README.md).
+**[Download GPU ISP driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[Download matching EWDK sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [Browse sources](../../sources/gpuisp/README.md).
 
 Selected accepted stack: **GPU040** processing/host, physical **rear065**, physical **front066**, and **virtual034** cameras. Later experimental numbers were not chosen merely because they were newer. Accepted driver and processing parameter bytes are unchanged; the package adds the shared guarded installer.
 

@@ -1,6 +1,6 @@
 # Xiaomi Pad 5 的 Qualcomm ISP 相机
 
-[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](QUALCOMM.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](QUALCOMM.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-2f81f7?style=for-the-badge)](QUALCOMM.zh-CN.md) [![项目主页](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-57606a?style=for-the-badge&logo=github&logoColor=white)](README.zh-CN.md)
+[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](README.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](README.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-2f81f7?style=for-the-badge)](README.zh-CN.md) [![项目主页](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-57606a?style=for-the-badge&logo=github&logoColor=white)](../README.zh-CN.md)
 
 ![状态](https://img.shields.io/badge/status-both%20cameras%20working-success?style=for-the-badge) ![后置](https://img.shields.io/badge/rear-working-success?style=for-the-badge) ![前置](https://img.shields.io/badge/front-working-success?style=for-the-badge)
 
@@ -12,7 +12,7 @@
 
 选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带基于已验证 R2.4 修复的通用防护式安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
 
-**[下载项目代码、调校数据和 IFE/IPE 说明](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [浏览开发资料](sources/qualcommisp/README.md)。
+**[下载项目代码、调校数据和 IFE/IPE 说明](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [浏览开发资料](../../sources/qualcommisp/README.md)。
 
 ## 安装与诊断
 

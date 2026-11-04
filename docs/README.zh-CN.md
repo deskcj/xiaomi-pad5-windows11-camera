@@ -13,9 +13,9 @@
 
 | 路线介绍 | 驱动 ZIP |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
-| **[GPU ISP](GPUISP.zh-CN.md)** — D3D12 计算着色器，GPU040 + rear065/front066 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
-| **[CPU ISP](CPUISP.zh-CN.md)** — 软件处理，已验证的 CPUISP4 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[GPU ISP](GPUISP/README.zh-CN.md)** — D3D12 计算着色器，GPU040 + rear065/front066 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
+| **[CPU ISP](CPUISP/README.zh-CN.md)** — 软件处理，已验证的 CPUISP4 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
 驱动 ZIP 包含已测试、已签名的驱动、安装程序和诊断工具。GPU ISP 分支页面另有与驱动匹配的 C/C++/HLSL 源码和 EWDK 构建命令。CPUISP4 保留了 C/H 项目。Qualcomm 分支提供本项目的修改、精确的调校数据以及 IFE/IPE 说明；原厂源码不可获取。
 
@@ -31,7 +31,7 @@
 
 ## 各路线当前状态
 
-### Qualcomm ISP — 参考版本 253 · [路线介绍](QUALCOMM.zh-CN.md)
+### Qualcomm ISP — 参考版本 253 · [路线介绍](QUALCOMM/README.zh-CN.md)
 
 - ✅ 前后摄像头都使用硬件 IFE/IPE，并能预览和拍照。
 - ✅ 已测试全分辨率照片：后置 4160 × 3120，前置 3264 × 2448。
@@ -39,7 +39,7 @@
 - ✅ 早期受控测试中，Video1080p 达到约 30 个不重复帧/秒；这不保证低照度下的预览帧率。
 - 🔄 混合光照、对焦过渡、启动/切换，以及反馈的后置相机启动咔嗒声仍需改进。尚未确认达到 Android 画质，也未验证所有 Windows 系统镜像和应用。
 
-### GPU ISP — 040 + rear065/front066 + virtual034 · [路线介绍](GPUISP.zh-CN.md)
+### GPU ISP — 040 + rear065/front066 + virtual034 · [路线介绍](GPUISP/README.zh-CN.md)
 
 - ✅ 两个传感器都向 D3D12 计算处理流程提供 RAW 数据，并通过标准虚拟相机接口输出画面。
 - ✅ 较早的一次干净的 20 秒测试测得约 28–29 个不重复帧/秒，没有重复帧。
@@ -47,7 +47,7 @@
 - ❌ 尚未确认达到 Android 画质，也未验证所有应用中的可靠点按对焦、后置闪光灯和 HDR。
 - 🔄 该路线需要两个后台工作进程和一个 GPU 服务；色彩、曝光、后置光学对焦和长时间运行仍需改进。
 
-### CPU ISP — CPUISP4 · [路线介绍](CPUISP.zh-CN.md)
+### CPU ISP — CPUISP4 · [路线介绍](CPUISP/README.zh-CN.md)
 
 - ✅ 前后摄像头分别使用真实的 OV8856/OV13B10 帧；Windows「相机」中的预览、拍照、录像及切换均曾正常工作。
 - ✅ CPU 相机路线曾在 Chrome 和 Telegram 中使用；其他应用需分别测试。

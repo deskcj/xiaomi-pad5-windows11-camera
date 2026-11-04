@@ -1,6 +1,6 @@
 # Камеры CPU ISP для Xiaomi Pad 5 (nabu)
 
-[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](CPUISP.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-2f81f7?style=for-the-badge)](CPUISP.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](CPUISP.zh-CN.md) [![Главная](https://img.shields.io/badge/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-57606a?style=for-the-badge&logo=github&logoColor=white)](README.ru.md)
+[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](README.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-2f81f7?style=for-the-badge)](README.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](README.zh-CN.md) [![Главная](https://img.shields.io/badge/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-57606a?style=for-the-badge&logo=github&logoColor=white)](../README.ru.md)
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
@@ -8,7 +8,7 @@
 
 Выбраны готовые CPUISP4: передний аппаратный **226.0.0.3**, задний аппаратный **226.2.0.10**, виртуальная фронтальная **226.1.0.3**, виртуальная задняя **226.3.0.4**. В ZIP — оригинальные подписанные SYS CPUISP4 с обновлёнными датами INF и подписанными каталогами и общий установщик Setup/Check/Diagnose.
 
-**[Скачать C/H исходники CPUISP4](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [Просмотреть код](sources/cpuisp/README.md).
+**[Скачать C/H исходники CPUISP4](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [Просмотреть код](../../sources/cpuisp/README.md).
 
 Выбран CPUISP4: сохранились его C/H и проекты WDK. Четыре ARM64 драйвера пересобраны через EWDK с историческими параметрами компилятора; все опубликованные C/H совпадают со снимком. Пересобранные файлы не побайтово идентичны исходным подписанным бинарникам.
 

@@ -13,9 +13,9 @@
 
 | Страница ветки | Архив драйвера |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
-| **[GPU ISP](GPUISP.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
-| **[CPU ISP](CPUISP.ru.md)** — программная обработка, проверенный CPUISP4 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM/README.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[GPU ISP](GPUISP/README.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
+| **[CPU ISP](CPUISP/README.ru.md)** — программная обработка, проверенный CPUISP4 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
 ZIP драйверов содержат проверенные подписанные файлы, установщик и диагностику. Точные C/C++/HLSL исходники GPU ISP и команда сборки EWDK скачиваются отдельно со страницы ветки. Для CPUISP4 доступны C/H-проекты. Для Qualcomm — код доработок, точные параметры и описание IFE/IPE; заводские исходники недоступны.
 
@@ -31,7 +31,7 @@ ZIP драйверов содержат проверенные подписан�
 
 ## Статус веток
 
-### Qualcomm ISP — конфигурация 253 · [Страница ветки](QUALCOMM.ru.md)
+### Qualcomm ISP — конфигурация 253 · [Страница ветки](QUALCOMM/README.ru.md)
 
 - ✅ Обе камеры используют аппаратные IFE/IPE, дают предпросмотр и фотографии.
 - ✅ Проверены полноразмерные фото: задняя 4160 × 3120, фронтальная 3264 × 2448.
@@ -39,7 +39,7 @@ ZIP драйверов содержат проверенные подписан�
 - ✅ В прежних контролируемых тестах Video1080p достигал около 30 уникальных кадров/с; это не гарантия скорости предпросмотра в темноте.
 - 🔄 Смешанное освещение, переходы фокуса, запуск/переключение и сообщённый щелчок задней камеры требуют дальнейшего исследования. Паритет с Android и работа на каждом образе Windows/в каждом приложении не подтверждены.
 
-### GPU ISP — 040 + задняя065/фронтальная066 + virtual034 · [Страница ветки](GPUISP.ru.md)
+### GPU ISP — 040 + задняя065/фронтальная066 + virtual034 · [Страница ветки](GPUISP/README.ru.md)
 
 - ✅ Обе камеры передают RAW в обработку D3D12 compute и доступны через обычные виртуальные интерфейсы камер.
 - ✅ В прежних чистых 20-секундных тестах получено около 28–29 уникальных кадров/с без повторов.
@@ -47,7 +47,7 @@ ZIP драйверов содержат проверенные подписан�
 - ❌ Для этой GPU-сборки не подтверждены качество Android, надёжный фокус по касанию во всех приложениях, задняя вспышка и HDR.
 - 🔄 Нужны GPU-служба и два фоновых обработчика; цвета, экспозиция, оптический задний фокус и длительная работа ещё требуют доводки.
 
-### CPU ISP — CPUISP4 · [Страница ветки](CPUISP.ru.md)
+### CPU ISP — CPUISP4 · [Страница ветки](CPUISP/README.ru.md)
 
 - ✅ Отдельные камеры используют реальные кадры OV8856/OV13B10; в «Камере» Windows работали предпросмотр, фото, видео и переключение.
 - ✅ Камерный CPU-путь использовался в Chrome и Telegram; остальные приложения требуют собственных проверок.

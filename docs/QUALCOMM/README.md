@@ -1,6 +1,6 @@
 # Qualcomm ISP cameras for Xiaomi Pad 5
 
-[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](QUALCOMM.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](QUALCOMM.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](QUALCOMM.zh-CN.md) [![Project home](https://img.shields.io/badge/Project%20home-57606a?style=for-the-badge&logo=github&logoColor=white)](README.md)
+[![English](https://img.shields.io/badge/English-2f81f7?style=for-the-badge)](README.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-57606a?style=for-the-badge)](README.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](README.zh-CN.md) [![Project home](https://img.shields.io/badge/Project%20home-57606a?style=for-the-badge&logo=github&logoColor=white)](../README.md)
 
 ![Status](https://img.shields.io/badge/status-both%20cameras%20working-success?style=for-the-badge) ![Rear](https://img.shields.io/badge/rear-working-success?style=for-the-badge) ![Front](https://img.shields.io/badge/front-working-success?style=for-the-badge)
 
@@ -12,7 +12,7 @@
 
 Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the shared guarded installer based on the verified R2.4 fixes. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
 
-**[Download project code, tuning and IFE/IPE notes](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Browse development kit](sources/qualcommisp/README.md).
+**[Download project code, tuning and IFE/IPE notes](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Browse development kit](../../sources/qualcommisp/README.md).
 
 ## Install and diagnostics
 
