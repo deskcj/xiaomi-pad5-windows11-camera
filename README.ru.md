@@ -61,6 +61,8 @@ ZIP драйверов содержат проверенные подписан�
 
 [![Поддержать через DonationAlerts](https://img.shields.io/badge/Support-DonationAlerts-orange?style=for-the-badge)](https://www.donationalerts.com/r/deskcj)
 
+Связаться со мной: [![Telegram](https://img.shields.io/badge/Contact-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/deskcj) [![Написать письмо](https://img.shields.io/badge/Contact-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:deskcj@gmail.com)
+
 Помочь можно и **без доната**: поставить звезду репозиторию, рассказать о нём другим владельцам nabu и прислать воспроизводимый результат с версией Windows, названием приложения, освещением и указанием камеры. Такая обратная связь помогает выбирать следующие исправления. Донат поддерживает исследование, но не гарантирует результат или срок. Спасибо, что помогаете независимому проекту Windows on ARM развиваться!
 
 ## Отказ от ответственности
