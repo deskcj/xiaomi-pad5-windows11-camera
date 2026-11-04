@@ -1,6 +1,6 @@
 # Камеры Qualcomm ISP для Xiaomi Pad 5
 
-[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](QUALCOMM.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-2f81f7?style=for-the-badge)](QUALCOMM.ru.md) [![Главная](https://img.shields.io/badge/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-57606a?style=for-the-badge&logo=github&logoColor=white)](README.ru.md)
+[![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](QUALCOMM.md) [![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-2f81f7?style=for-the-badge)](QUALCOMM.ru.md) [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-57606a?style=for-the-badge)](QUALCOMM.zh-CN.md) [![Главная](https://img.shields.io/badge/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-57606a?style=for-the-badge&logo=github&logoColor=white)](README.ru.md)
 
 ![Статус](https://img.shields.io/badge/status-both%20cameras%20working-success?style=for-the-badge) ![Задняя](https://img.shields.io/badge/rear-working-success?style=for-the-badge) ![Фронтальная](https://img.shields.io/badge/front-working-success?style=for-the-badge)
 
