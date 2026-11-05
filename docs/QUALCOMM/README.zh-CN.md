@@ -8,15 +8,15 @@
 
 ## 下载
 
-**[下载 Qualcomm ISP 253 驱动 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)**
+**[下载 Qualcomm ISP 253 驱动 ZIP（安装程序 R2.5）](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)**
 
-选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带基于已验证 R2.4 修复的通用防护式安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
+选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带 R2.5 安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
 
 **[下载项目代码、调校数据和 IFE/IPE 说明](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [浏览开发资料](../../sources/qualcommisp/README.md)。
 
 ## 安装与诊断
 
-按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot 并启用 **测试模式（Test Mode）**。关闭所有相机应用，完整解压 ZIP，然后**以管理员身份运行 `Setup.cmd`**。若要求重启，正常重启后再次运行；等待 SUCCESS / 退出代码 0，再在 Windows「相机」中测试两颗摄像头。
+按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot 并启用 **测试模式（Test Mode）**。关闭相机应用，完整解压 ZIP，然后**以管理员身份运行 `Install.cmd`**。安装程序可能要求先正常重启 Windows；重启后不要先打开相机应用，直接再次运行 `Install.cmd`。等待 **SUCCESS / 退出代码 0**，再在 Windows「相机」中测试两颗摄像头。不要删除安全日志，也不要同时运行其他安装程序。
 
 若需重新检查实际画面，关闭相机应用，**以管理员身份运行 `Diagnose.cmd`**。分享 `C:\ProgramData\XiaomiPad5Camera\Logs` 中最新的完整文件夹，包括 `result.json` 和 `setup.log`；分享前请先查看保存的诊断帧。`Check.cmd` 只检查文件和平台。
 

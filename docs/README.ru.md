@@ -13,7 +13,7 @@
 
 | Страница ветки | Архив драйвера |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM/README.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** |
 | **[GPU ISP](GPUISP/README.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
 | **[CPU ISP](CPUISP/README.ru.md)** — программная обработка, проверенный CPUISP4 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
@@ -23,8 +23,8 @@ ZIP драйверов содержат проверенные подписан�
 
 1. Отключите Secure Boot и включите **Test Mode** по [этой инструкции](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/Russian/disable-secureboot-ru.md).
 2. Закройте все приложения с предпросмотром/записью камеры и полностью распакуйте ZIP.
-3. Запустите **`Setup.cmd` от имени администратора** — одинаково для всех трёх веток.
-4. Если установщик явно попросит перезагрузку, перезагрузите Windows обычным способом и снова запустите `Setup.cmd`. Дождитесь **SUCCESS и кода выхода 0**, затем проверьте обе камеры в «Камере» Windows.
+3. Запустите **`Setup.cmd` от имени администратора**. У Qualcomm ISP есть также короткий запуск `Install.cmd`.
+4. Если установщик попросит перезагрузку, перезагрузите Windows обычным способом и снова запустите тот же файл, не открывая до этого камеру. Дождитесь **SUCCESS и кода выхода 0**, затем проверьте обе камеры в «Камере» Windows.
 5. Для диагностики закройте камерные приложения, запустите **`Diagnose.cmd` от имени администратора** и отправьте целиком самую новую папку из `C:\ProgramData\XiaomiPad5Camera\Logs`. Просмотрите диагностические кадры перед отправкой.
 
 `Check.cmd` проверяет целостность архива и платформу; установка и диагностика дополнительно проверяют реальные кадры.

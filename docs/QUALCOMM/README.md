@@ -8,15 +8,15 @@
 
 ## Download
 
-**[Download Qualcomm ISP 253 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)**
+**[Download Qualcomm ISP 253 driver ZIP (installer R2.5)](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)**
 
-Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the shared guarded installer based on the verified R2.4 fixes. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
+Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer R2.5. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
 
 **[Download project code, tuning and IFE/IPE notes](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Browse development kit](../../sources/qualcommisp/README.md).
 
 ## Install and diagnostics
 
-Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, extract the ZIP fully and run **`Setup.cmd` as administrator**. If a restart is requested, restart normally and run it again; wait for SUCCESS / exit code 0. Then test both cameras in Windows Camera.
+Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, fully extract the ZIP and run **`Install.cmd` as administrator**. The installer may ask for a normal Windows restart before replacing drivers. After restarting, run `Install.cmd` again before opening any camera app. Wait for **SUCCESS / exit code 0**, then test both cameras in Windows Camera. Do not delete the safety journals or run another installer concurrently.
 
 For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only.
 

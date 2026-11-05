@@ -13,7 +13,7 @@ One camera project, three processing branches. Both front and rear cameras produ
 
 | Branch page | Driver ZIP |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM/README.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** |
 | **[GPU ISP](GPUISP/README.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
 | **[CPU ISP](CPUISP/README.md)** — software processing, verified CPUISP4 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
@@ -23,8 +23,8 @@ Driver ZIPs contain the tested signed drivers, installer and diagnostics. Matchi
 
 1. Disable Secure Boot and enable Windows **Test Mode** using [this guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md).
 2. Close every camera preview/recording app and fully extract the ZIP.
-3. Run **`Setup.cmd` as administrator**. The command is the same for all three branches.
-4. If a restart is explicitly requested, restart normally and run `Setup.cmd` again. Wait for **SUCCESS and exit code 0**, then test both cameras in Windows Camera.
+3. Run **`Setup.cmd` as administrator**. Qualcomm ISP also has a short `Install.cmd` launcher.
+4. If a restart is requested, restart normally and run the same installer again before opening a camera app. Wait for **SUCCESS and exit code 0**, then test both cameras in Windows Camera.
 5. For troubleshooting, close camera apps, run **`Diagnose.cmd` as administrator**, and share the newest complete folder from `C:\ProgramData\XiaomiPad5Camera\Logs`. Review diagnostic images before sharing.
 
 `Check.cmd` checks archive integrity and platform; installation and diagnosis additionally check actual camera frames.

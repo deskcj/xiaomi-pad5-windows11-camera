@@ -13,7 +13,7 @@
 
 | 路线介绍 | 驱动 ZIP |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)** |
+| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** |
 | **[GPU ISP](GPUISP/README.zh-CN.md)** — D3D12 计算着色器，GPU040 + rear065/front066 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
 | **[CPU ISP](CPUISP/README.zh-CN.md)** — 软件处理，已验证的 CPUISP4 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
@@ -23,8 +23,8 @@
 
 1. 按照[此指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot，并启用 Windows **测试模式（Test Mode）**。
 2. 关闭所有使用相机预览或录像的应用，并完整解压 ZIP。
-3. **以管理员身份运行 `Setup.cmd`**。三条路线使用相同的安装命令。
-4. 仅当安装程序明确要求重启时，正常重启 Windows，再运行一次 `Setup.cmd`。等待出现 **SUCCESS 且退出代码为 0**，然后在 Windows「相机」应用中测试前后摄像头。
+3. **以管理员身份运行 `Setup.cmd`**。Qualcomm ISP 还提供简短的 `Install.cmd` 启动入口。
+4. 如果安装程序要求重启，请正常重启 Windows，并在打开任何相机应用之前再次运行同一个安装文件。等待出现 **SUCCESS 且退出代码为 0**，然后在 Windows「相机」应用中测试前后摄像头。
 5. 如需排查问题，先关闭相机应用，再**以管理员身份运行 `Diagnose.cmd`**。分享 `C:\ProgramData\XiaomiPad5Camera\Logs` 中最新的完整文件夹；分享前请检查诊断图像。
 
 `Check.cmd` 只检查压缩包完整性和平台；安装与诊断还会检查实际相机画面。

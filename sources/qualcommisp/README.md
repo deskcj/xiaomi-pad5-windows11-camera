@@ -12,7 +12,7 @@ and make guarded offline changes to the exact released binaries.
 Use Python 3 and the separate QISP253 driver ZIP:
 
 ```bat
-python tools/Workspace.py import "Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip" work
+python tools/Workspace.py import "Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip" work
 python tools/Workspace.py tuning work/RearData/com.qti.tuned.nabu_ofilm_ov13b10_wide.bin rear-directory.json
 Build.cmd "E:\EWDK"
 ```

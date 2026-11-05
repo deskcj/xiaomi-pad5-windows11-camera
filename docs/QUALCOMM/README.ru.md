@@ -8,15 +8,15 @@
 
 ## Скачать
 
-**[Скачать ZIP драйвера Qualcomm ISP 253](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-20261104.zip)**
+**[Скачать ZIP драйвера Qualcomm ISP 253 (установщик R2.5)](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)**
 
-Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b**, общий установщик основан на проверенных исправлениях R2.4. Принятые файлы обработки изображения не изменены. Оригинальные C/C++ исходники заводского стека и прошивки Qualcomm недоступны; эта сборка не пересобирается из исходников через EWDK.
+Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b** с установщиком R2.5. Принятые файлы обработки изображения не изменены. Оригинальные C/C++ исходники заводского стека и прошивки Qualcomm недоступны; эта сборка не пересобирается из исходников через EWDK.
 
 **[Скачать код доработок, параметры и описание IFE/IPE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Просмотреть комплект](../../sources/qualcommisp/README.md).
 
 ## Установка и диагностика
 
-Отключите Secure Boot и включите **Test Mode** по [инструкции](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/Russian/disable-secureboot-ru.md). Закройте все камерные приложения, полностью распакуйте ZIP и запустите **`Setup.cmd` от имени администратора**. При запросе перезагрузки перезагрузитесь обычным способом и повторите запуск; дождитесь SUCCESS / кода выхода 0. Затем проверьте обе камеры в «Камере» Windows.
+Отключите Secure Boot и включите **Test Mode** по [инструкции](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/Russian/disable-secureboot-ru.md). Закройте камерные приложения, полностью распакуйте ZIP и запустите **`Install.cmd` от имени администратора**. Установщик может попросить обычную перезагрузку до замены драйверов. После неё снова запустите `Install.cmd`, не открывая камеру. Дождитесь **SUCCESS / кода выхода 0**, затем проверьте обе камеры в «Камере» Windows. Не удаляйте защитные журналы и не запускайте второй установщик параллельно.
 
 Для новой проверки кадров закройте камерные приложения и запустите **`Diagnose.cmd` от имени администратора**. Отправьте целиком самую новую папку из `C:\ProgramData\XiaomiPad5Camera\Logs`, включая `result.json` и `setup.log`; сначала просмотрите сохранённые кадры. `Check.cmd` проверяет только файлы и платформу.
 
