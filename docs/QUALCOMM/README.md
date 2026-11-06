@@ -6,6 +6,14 @@
 
 **Both cameras work through the hardware Qualcomm ISP on Xiaomi Pad 5 (nabu) running Windows 11 ARM64.** The tested configuration uses the IFE/IPE image-processing pipeline and provides live preview and photos with good image quality, improved color, rear autofocus and automatic brightness adjustment.
 
+## 🎬 Video demo: both cameras working with Qualcomm ISP
+
+Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) running Windows 11 ARM64** using the Qualcomm ISP. The video shows a development milestone; image quality and stability are still being refined.
+
+[![Watch Xiaomi Pad 5 (nabu) — both cameras working with Qualcomm ISP](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
+
+▶️ **[Watch the demonstration on YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
+
 ## Download
 
 **[Download Qualcomm ISP 253 driver EXE (installer R2.5)](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
@@ -24,14 +32,6 @@ Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer R2.5. 
 
 If installation stops with an error, click **Save report** and send the report to the [developer](https://t.me/deskcj). App logs are saved in `Qualcomm ISP Drivers\Data\Logs` on your desktop.
 
-
-## 🎬 Video demo: both cameras working with Qualcomm ISP
-
-Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) running Windows 11 ARM64** using the Qualcomm ISP. The video shows a development milestone; image quality and stability are still being refined.
-
-[![Watch Xiaomi Pad 5 (nabu) — both cameras working with Qualcomm ISP](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
-
-▶️ **[Watch the demonstration on YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
 
 ## ✅ What is working
 

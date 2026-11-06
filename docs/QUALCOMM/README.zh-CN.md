@@ -6,6 +6,14 @@
 
 **在运行 Windows 11 ARM64 的 Xiaomi Pad 5（nabu）上，前后摄像头均已通过 Qualcomm 硬件 ISP 工作。** 已测试的配置使用 IFE/IPE 图像处理流程，提供实时预览和照片，并实现较好的画质、改善的色彩、后置自动对焦及自动亮度调节。
 
+## 🎬 视频演示：前后摄像头通过 Qualcomm ISP 工作
+
+观看运行 Windows 11 ARM64 的 **Xiaomi Pad 5（nabu）前后摄像头**使用 Qualcomm ISP 的演示。视频展示的是开发里程碑；画质和稳定性仍在继续改进。
+
+[![观看 Xiaomi Pad 5（nabu）前后摄像头通过 Qualcomm ISP 工作的演示](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
+
+▶️ **[在 YouTube 观看演示](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
+
 ## 下载
 
 **[下载 Qualcomm ISP 253 驱动 EXE（安装程序 R2.5）](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
@@ -23,14 +31,6 @@
 5. 等待显示 **Installation complete** 和 **100%**。打开 **Cameras**，选择 **Rear / Front**，依次查看后置和前置摄像头的实时画面。
 
 如果安装因错误而停止，请点击 **Save report**，并将报告发送给[开发者](https://t.me/deskcj)。应用日志保存在桌面的 `Qualcomm ISP Drivers\Data\Logs` 文件夹中。
-
-## 🎬 视频演示：前后摄像头通过 Qualcomm ISP 工作
-
-观看运行 Windows 11 ARM64 的 **Xiaomi Pad 5（nabu）前后摄像头**使用 Qualcomm ISP 的演示。视频展示的是开发里程碑；画质和稳定性仍在继续改进。
-
-[![观看 Xiaomi Pad 5（nabu）前后摄像头通过 Qualcomm ISP 工作的演示](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
-
-▶️ **[在 YouTube 观看演示](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
 
 ## ✅ 已实现功能
 

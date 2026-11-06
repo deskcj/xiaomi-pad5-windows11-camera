@@ -6,6 +6,14 @@
 
 **Обе камеры Xiaomi Pad 5 (nabu) работают через аппаратный Qualcomm ISP в Windows 11 ARM64.** Проверенная конфигурация использует обработку изображения через IFE/IPE и даёт предпросмотр и фотографии с хорошим качеством, улучшенной цветопередачей, автофокусом задней камеры и автоматической подстройкой яркости.
 
+## 🎬 Видео: работа обеих камер через Qualcomm ISP
+
+Демонстрация **задней и фронтальной камер Xiaomi Pad 5 (nabu) под Windows 11 ARM64** с использованием Qualcomm ISP. Видео показывает текущий этап разработки; качество и стабильность продолжают улучшаться.
+
+[![Смотреть видео: Xiaomi Pad 5 (nabu) — обе камеры работают через Qualcomm ISP](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
+
+▶️ **[Смотреть демонстрацию на YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
+
 ## Скачать
 
 **[Скачать EXE драйвера Qualcomm ISP 253 (установщик R2.5)](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
@@ -24,14 +32,6 @@
 
 Если установка остановилась с ошибкой, нажмите **Save report / Сохранить отчёт** и отправьте отчёт [разработчику](https://t.me/deskcj). Логи программы сохраняются в папке `Qualcomm ISP Drivers\Data\Logs` на рабочем столе.
 
-
-## 🎬 Видео: работа обеих камер через Qualcomm ISP
-
-Демонстрация **задней и фронтальной камер Xiaomi Pad 5 (nabu) под Windows 11 ARM64** с использованием Qualcomm ISP. Видео показывает текущий этап разработки; качество и стабильность продолжают улучшаться.
-
-[![Смотреть видео: Xiaomi Pad 5 (nabu) — обе камеры работают через Qualcomm ISP](https://img.youtube.com/vi/ue8ANiYQOg0/hqdefault.jpg)](https://www.youtube.com/watch?v=ue8ANiYQOg0)
-
-▶️ **[Смотреть демонстрацию на YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
 
 ## ✅ Что уже работает
 
