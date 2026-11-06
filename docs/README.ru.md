@@ -11,7 +11,7 @@
 
 ## Скачать
 
-| Страница ветки | Архив драйвера |
+| Страница ветки | Скачать |
 | --- | --- |
 | **[Qualcomm ISP](QUALCOMM/README.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
 | **[GPU ISP](GPUISP/README.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
