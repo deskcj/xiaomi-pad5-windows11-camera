@@ -19,16 +19,6 @@
 
 驱动 ZIP 包含已测试、已签名的驱动、安装程序和诊断工具。GPU ISP 分支页面另有与驱动匹配的 C/C++/HLSL 源码和 EWDK 构建命令。CPUISP4 保留了 C/H 项目。Qualcomm 分支提供本项目的修改、精确的调校数据以及 IFE/IPE 说明；原厂源码不可获取。
 
-## 安装与诊断
-
-1. 按照[此指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot，并启用 Windows **测试模式（Test Mode）**。
-2. 关闭所有使用相机预览或录像的应用，并完整解压 ZIP。
-3. **以管理员身份运行 `Setup.cmd`**。Qualcomm ISP 还提供简短的 `Install.cmd` 启动入口。
-4. 如果安装程序要求重启，请正常重启 Windows，并在打开任何相机应用之前再次运行同一个安装文件。等待出现 **SUCCESS 且退出代码为 0**，然后在 Windows「相机」应用中测试前后摄像头。
-5. 如需排查问题，先关闭相机应用，再**以管理员身份运行 `Diagnose.cmd`**。分享 `C:\ProgramData\XiaomiPad5Camera\Logs` 中最新的完整文件夹；分享前请检查诊断图像。
-
-`Check.cmd` 只检查压缩包完整性和平台；安装与诊断还会检查实际相机画面。
-
 ## 各路线当前状态
 
 ### Qualcomm ISP — 参考版本 253 · [路线介绍](QUALCOMM/README.zh-CN.md)
