@@ -36,6 +36,20 @@ Those FPS values come from earlier controlled tests of this exact accepted stack
 
 GPU processing reduces reliance on the heavier CPU image-processing path and exposes an editable compute-shader pipeline with retained source snapshots. It requires a service, two workers and free RAM; it still needs independent AE/AWB, tone and focus work. Use at least **900 MiB available RAM** during activation. The front camera is fixed-focus in hardware.
 
+## Switch to Qualcomm ISP
+
+To replace GPU/CPU camera drivers with Qualcomm ISP 253, use the new EXE. The app scans devices and installs the Qualcomm ISP package.
+
+**[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
+
+1. Disable Secure Boot and enable Windows **Test Mode** using [this guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md).
+2. Close camera apps and run **`Qualcomm-ISP-Drivers-Setup.exe`**. It creates a **Qualcomm ISP Drivers** folder and shortcut on your desktop.
+3. Let the app scan devices, click **Install**, and approve the Windows administrator prompt. The shortcut can be started normally; elevation is requested when needed.
+4. When **Restart required** appears, click **Restart system**. After restarting, sign in to Windows and wait a little (normally 15–30 seconds): **the app opens automatically and continues installation**. If another restart is requested, repeat this step. Keep the desktop folder in place until installation finishes.
+5. Wait for **Installation complete / 100%**, then open **Cameras** and select **Rear / Front** to view each live camera.
+
+**Diagnostics:** use **Save report** in the app. Local logs and frames stay in `Desktop\Qualcomm ISP Drivers\Data\Logs`. If automatic launch does not occur, open the same desktop shortcut and click Install.
+
 ## Install and diagnostics
 
 Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, extract the ZIP fully and run **`Setup.cmd` as administrator**. If a restart is requested, restart normally and run it again; wait for SUCCESS / exit code 0. Then test both cameras in Windows Camera.

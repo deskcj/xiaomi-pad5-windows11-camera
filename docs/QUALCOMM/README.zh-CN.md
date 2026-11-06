@@ -8,17 +8,21 @@
 
 ## 下载
 
-**[下载 Qualcomm ISP 253 驱动 ZIP（安装程序 R2.5）](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)**
+**[下载 EXE · Qualcomm ISP 253](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
 
-选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带 R2.5 安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
+选定组合为 **253 调校、SYS080、DeviceMFT075b**，配套桌面安装程序和相机应用。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此这些厂商组件无法仅凭源码使用 EWDK 重新构建。
 
 **[下载项目代码、调校数据和 IFE/IPE 说明](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [浏览开发资料](../../sources/qualcommisp/README.md)。
 
 ## 安装与诊断
 
-按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot 并启用 **测试模式（Test Mode）**。关闭相机应用，完整解压 ZIP，然后**以管理员身份运行 `Install.cmd`**。安装程序可能要求先正常重启 Windows；重启后不要先打开相机应用，直接再次运行 `Install.cmd`。等待 **SUCCESS / 退出代码 0**，再在 Windows「相机」中测试两颗摄像头。不要删除安全日志，也不要同时运行其他安装程序。
+1. 按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot，并启用 Windows **测试模式（Test Mode）**。
+2. 关闭相机应用，运行 **`Qualcomm-ISP-Drivers-Setup.exe`**。安装程序会在桌面创建 **Qualcomm ISP Drivers** 文件夹和快捷方式。
+3. 等待设备扫描完成，点击 **Install**，并确认 Windows 管理员权限提示。快捷方式可以正常启动；需要权限时，应用会自行请求提升。
+4. 出现 **Restart required** 时，点击 **Restart system**。重启后登录 Windows，稍等片刻（通常 15–30 秒）：**应用会自动打开并继续安装**。如果再次要求重启，请重复此步骤。安装完成之前，请保留桌面文件夹。
+5. 等待 **Installation complete / 100%**，然后打开 **Cameras**，选择 **Rear / Front**，依次查看前后摄像头的实时画面。
 
-若需重新检查实际画面，关闭相机应用，**以管理员身份运行 `Diagnose.cmd`**。分享 `C:\ProgramData\XiaomiPad5Camera\Logs` 中最新的完整文件夹，包括 `result.json` 和 `setup.log`；分享前请先查看保存的诊断帧。`Check.cmd` 只检查文件和平台。
+**诊断：**在应用中点击 **Save report**。日志和图像保存在 `桌面\Qualcomm ISP Drivers\Data\Logs`。如果应用没有自动打开，请启动同一个桌面快捷方式并点击 Install。
 
 ## 🎬 视频演示：前后摄像头通过 Qualcomm ISP 工作
 

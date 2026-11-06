@@ -11,23 +11,25 @@ One camera project, three processing branches. Both front and rear cameras produ
 
 ## Download
 
-| Branch page | Driver ZIP |
+| Branch page | Download |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** |
+| **[Qualcomm ISP](QUALCOMM/README.md)** — hardware IFE/IPE, reference 253 | **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
 | **[GPU ISP](GPUISP/README.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
 | **[CPU ISP](CPUISP/README.md)** — software processing, verified CPUISP4 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
-Driver ZIPs contain the tested signed drivers, installer and diagnostics. Matching GPU ISP C/C++/HLSL sources and the EWDK build command are a separate download on its branch page. CPUISP4 provides its retained C/H projects. Qualcomm provides the project modifications, exact tuning and IFE/IPE notes; the original vendor sources are unavailable.
+The Qualcomm ISP EXE includes driver 253, the desktop application, repair, verification and camera preview. GPU/CPU ZIPs contain their own drivers, installers and diagnostics. Matching sources and development notes are linked on each branch page.
 
 ## Install and diagnose
 
 1. Disable Secure Boot and enable Windows **Test Mode** using [this guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md).
-2. Close every camera preview/recording app and fully extract the ZIP.
-3. Run **`Setup.cmd` as administrator**. Qualcomm ISP also has a short `Install.cmd` launcher.
-4. If a restart is requested, restart normally and run the same installer again before opening a camera app. Wait for **SUCCESS and exit code 0**, then test both cameras in Windows Camera.
-5. For troubleshooting, close camera apps, run **`Diagnose.cmd` as administrator**, and share the newest complete folder from `C:\ProgramData\XiaomiPad5Camera\Logs`. Review diagnostic images before sharing.
+2. Close camera apps and run **`Qualcomm-ISP-Drivers-Setup.exe`**. It creates a **Qualcomm ISP Drivers** folder and shortcut on your desktop.
+3. Let the app scan devices, click **Install**, and approve the Windows administrator prompt. The shortcut can be started normally; elevation is requested when needed.
+4. When **Restart required** appears, click **Restart system**. After restarting, sign in to Windows and wait a little (normally 15–30 seconds): **the app opens automatically and continues installation**. If another restart is requested, repeat this step. Keep the desktop folder in place until installation finishes.
+5. Wait for **Installation complete / 100%**, then open **Cameras** and select **Rear / Front** to view each live camera.
 
-`Check.cmd` checks archive integrity and platform; installation and diagnosis additionally check actual camera frames.
+**Diagnostics:** use **Save report** in the app. Local logs and frames stay in `Desktop\Qualcomm ISP Drivers\Data\Logs`. If automatic launch does not occur, open the same desktop shortcut and click Install.
+
+For the GPU ISP / CPU ISP ZIP installers, follow their branch pages. Automatic resume above applies to the Qualcomm ISP EXE.
 
 ## Current branch status
 

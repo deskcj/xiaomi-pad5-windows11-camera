@@ -11,23 +11,25 @@
 
 ## 下载
 
-| 路线介绍 | 驱动 ZIP |
+| 路线介绍 | 下载 |
 | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** |
+| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
 | **[GPU ISP](GPUISP/README.zh-CN.md)** — D3D12 计算着色器，GPU040 + rear065/front066 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** |
 | **[CPU ISP](CPUISP/README.zh-CN.md)** — 软件处理，已验证的 CPUISP4 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** |
 
-驱动 ZIP 包含已测试、已签名的驱动、安装程序和诊断工具。GPU ISP 分支页面另有与驱动匹配的 C/C++/HLSL 源码和 EWDK 构建命令。CPUISP4 保留了 C/H 项目。Qualcomm 分支提供本项目的修改、精确的调校数据以及 IFE/IPE 说明；原厂源码不可获取。
+Qualcomm ISP EXE 包含 253 驱动、桌面应用、安装修复、验证及相机预览。GPU/CPU ZIP 仍包含各自的驱动、安装程序和诊断工具。相应源码与开发资料可在各路线页面下载。
 
 ## 安装与诊断
 
-1. 按照[此指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot，并启用 Windows **测试模式（Test Mode）**。
-2. 关闭所有使用相机预览或录像的应用，并完整解压 ZIP。
-3. **以管理员身份运行 `Setup.cmd`**。Qualcomm ISP 还提供简短的 `Install.cmd` 启动入口。
-4. 如果安装程序要求重启，请正常重启 Windows，并在打开任何相机应用之前再次运行同一个安装文件。等待出现 **SUCCESS 且退出代码为 0**，然后在 Windows「相机」应用中测试前后摄像头。
-5. 如需排查问题，先关闭相机应用，再**以管理员身份运行 `Diagnose.cmd`**。分享 `C:\ProgramData\XiaomiPad5Camera\Logs` 中最新的完整文件夹；分享前请检查诊断图像。
+1. 按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot，并启用 Windows **测试模式（Test Mode）**。
+2. 关闭相机应用，运行 **`Qualcomm-ISP-Drivers-Setup.exe`**。安装程序会在桌面创建 **Qualcomm ISP Drivers** 文件夹和快捷方式。
+3. 等待设备扫描完成，点击 **Install**，并确认 Windows 管理员权限提示。快捷方式可以正常启动；需要权限时，应用会自行请求提升。
+4. 出现 **Restart required** 时，点击 **Restart system**。重启后登录 Windows，稍等片刻（通常 15–30 秒）：**应用会自动打开并继续安装**。如果再次要求重启，请重复此步骤。安装完成之前，请保留桌面文件夹。
+5. 等待 **Installation complete / 100%**，然后打开 **Cameras**，选择 **Rear / Front**，依次查看前后摄像头的实时画面。
 
-`Check.cmd` 只检查压缩包完整性和平台；安装与诊断还会检查实际相机画面。
+**诊断：**在应用中点击 **Save report**。日志和图像保存在 `桌面\Qualcomm ISP Drivers\Data\Logs`。如果应用没有自动打开，请启动同一个桌面快捷方式并点击 Install。
+
+GPU ISP / CPU ISP 自身 ZIP 包的安装方法见相应路线页面；上述自动续装功能属于 Qualcomm ISP EXE。
 
 ## 各路线当前状态
 
