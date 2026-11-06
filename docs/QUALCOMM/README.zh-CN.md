@@ -16,9 +16,13 @@
 
 ## 安装与诊断
 
-按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot 并启用 **测试模式（Test Mode）**。关闭相机应用，完整解压 ZIP，然后**以管理员身份运行 `Install.cmd`**。安装程序可能要求先正常重启 Windows；重启后不要先打开相机应用，直接再次运行 `Install.cmd`。等待 **SUCCESS / 退出代码 0**，再在 Windows「相机」中测试两颗摄像头。不要删除安全日志，也不要同时运行其他安装程序。
+1. 按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot，并启用 Windows **测试模式（Test Mode）**。应用会检查这些条件，因为驱动目前采用测试签名。
+2. 关闭使用相机的应用，运行下载的 **`Qualcomm-ISP-Drivers-Setup.exe`**。安装程序会在桌面创建 **Qualcomm ISP Drivers** 文件夹，将应用安装到其中，并在旁边创建快捷方式。以后可直接通过此快捷方式正常启动应用。
+3. 等待自动扫描设备完成，点击 **Install**，并确认 Windows 管理员权限提示。随后应用会自动安装 Qualcomm ISP 253 驱动、修复已知安装问题、清理不再需要且存在冲突的相机驱动包，并检查前后摄像头的实际画面。
+4. 如果出现 **Restart required**，点击 **Restart system**。重启后登录 Windows，稍等片刻：**应用会自动打开并继续安装和验证**。通常在登录后 15–30 秒内启动。如果还需要重启，再次点击同一按钮即可。安装完成前请保留桌面的应用文件夹。如果窗口没有自动打开，请使用同一个桌面快捷方式启动。
+5. 等待显示 **Installation complete** 和 **100%**。打开 **Cameras**，选择 **Rear / Front**，依次查看后置和前置摄像头的实时画面。
 
-若需重新检查实际画面，关闭相机应用，**以管理员身份运行 `Diagnose.cmd`**。分享 `C:\ProgramData\XiaomiPad5Camera\Logs` 中最新的完整文件夹，包括 `result.json` 和 `setup.log`；分享前请先查看保存的诊断帧。`Check.cmd` 只检查文件和平台。
+如果安装因错误而停止，请点击 **Save report**，并将报告发送给[开发者](https://t.me/deskcj)。应用日志保存在桌面的 `Qualcomm ISP Drivers\Data\Logs` 文件夹中。
 
 ## 🎬 视频演示：前后摄像头通过 Qualcomm ISP 工作
 

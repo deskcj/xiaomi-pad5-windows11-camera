@@ -16,9 +16,13 @@ Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer R2.5. 
 
 ## Install and diagnostics
 
-Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, fully extract the ZIP and run **`Install.cmd` as administrator**. The installer may ask for a normal Windows restart before replacing drivers. After restarting, run `Install.cmd` again before opening any camera app. Wait for **SUCCESS / exit code 0**, then test both cameras in Windows Camera. Do not delete the safety journals or run another installer concurrently.
+1. Disable Secure Boot and enable Windows **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). The app checks these requirements: the drivers are currently test-signed.
+2. Close apps that use the camera and run the downloaded **`Qualcomm-ISP-Drivers-Setup.exe`**. It installs the app in a **Qualcomm ISP Drivers** folder on your desktop and creates a shortcut beside it. You can open the app normally using that shortcut.
+3. Wait for the automatic device scan, then click **Install** and approve the Windows administrator prompt. The app then installs Qualcomm ISP 253 drivers, repairs known installation problems, removes unnecessary conflicting camera packages and checks frames from both cameras automatically.
+4. If **Restart required** appears, click **Restart system**. After restarting, sign in to Windows and wait a little: **the app opens automatically and continues installation and verification**. It normally opens 15–30 seconds after sign-in. If another restart is needed, click the same button again. Keep the app folder until installation finishes. If the window does not open automatically, use the same desktop shortcut.
+5. Wait for **Installation complete** and **100%**. Open **Cameras** and select **Rear / Front** to view live images from the rear and front cameras one at a time.
 
-For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only.
+If installation stops with an error, click **Save report** and send the report to the [developer](https://t.me/deskcj). App logs are saved in `Qualcomm ISP Drivers\Data\Logs` on your desktop.
 
 
 ## 🎬 Video demo: both cameras working with Qualcomm ISP
