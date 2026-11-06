@@ -16,11 +16,13 @@
 
 ## 下载
 
-**[下载 Qualcomm ISP 253 驱动 EXE（安装程序 R2.5）](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
+| 驱动 ZIP | 驱动 EXE | 源码 ZIP |
+| --- | --- | --- |
+| **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
 
 选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带 R2.5 安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
 
-**[下载项目代码、调校数据和 IFE/IPE 说明](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [浏览开发资料](../../sources/qualcommisp/README.md)。
+[浏览开发资料](../../sources/qualcommisp/README.md)。
 
 ## 安装与诊断
 
