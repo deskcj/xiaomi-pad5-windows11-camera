@@ -4,7 +4,13 @@
 
 ![状态：公开预览版](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![设备：Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![平台：Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[下载 GPU ISP 驱动 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** · **[下载匹配的 EWDK 源码](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** · [浏览源码](../../sources/gpuisp/README.md)。
+## 下载
+
+| 驱动 ZIP | 驱动 EXE | 源码 ZIP |
+| --- | --- | --- |
+| **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** | — | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-Sources-20261104.zip)** |
+
+[浏览源码](../../sources/gpuisp/README.md)。
 
 选定并接受的组合：**GPU040** 图像处理/主机程序、物理后置 **rear065**、物理前置 **front066** 和 **virtual034** 虚拟相机。没有仅因为版本号更高就选择后来的实验版本。已接受的驱动和处理参数字节没有变化；此包加入了通用的防护式安装程序。
 

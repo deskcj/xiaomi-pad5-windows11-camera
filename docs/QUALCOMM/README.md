@@ -16,11 +16,13 @@ Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) r
 
 ## Download
 
-**[Download Qualcomm ISP 253 driver EXE (installer R2.5)](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
+| Driver ZIP | Driver EXE | Sources ZIP |
+| --- | --- | --- |
+| **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** | **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
 
 Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer R2.5. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
 
-**[Download project code, tuning and IFE/IPE notes](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Browse development kit](../../sources/qualcommisp/README.md).
+[Browse development kit](../../sources/qualcommisp/README.md).
 
 ## Install and diagnostics
 

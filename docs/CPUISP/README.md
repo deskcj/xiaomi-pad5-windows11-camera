@@ -4,11 +4,15 @@
 
 ![Status: public preview](https://img.shields.io/badge/status-public%20preview-orange?style=for-the-badge) ![Device: Xiaomi Pad 5](https://img.shields.io/badge/device-Xiaomi%20Pad%205-blue?style=for-the-badge) ![Platform: Windows 11 ARM64](https://img.shields.io/badge/platform-Windows%2011%20ARM64-0078D4?style=for-the-badge)
 
-**[Download verified CPUISP4 driver ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)**
+## Download
+
+| Driver ZIP | Driver EXE | Sources ZIP |
+| --- | --- | --- |
+| **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** | — | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** |
 
 Selected CPUISP4 binaries: front hardware **226.0.0.3**, rear hardware **226.2.0.10**, virtual front **226.1.0.3**, virtual rear **226.3.0.4**. The ZIP retains the original signed CPUISP4 SYS code with updated INF dates and signed catalogs and uses the common Setup/Check/Diagnose installer commands.
 
-**[Download CPUISP4 C/H sources](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-Sources-20261104.zip)** · [Browse code](../../sources/cpuisp/README.md).
+[Browse code](../../sources/cpuisp/README.md).
 
 CPUISP4 was selected because its C/H source snapshot and WDK projects are retained. Its four ARM64 drivers were rebuilt with EWDK using the historical compiler options; all published C/H files match the retained snapshot. The rebuilt files are not byte-identical to the original signed binaries.
 
