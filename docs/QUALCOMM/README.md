@@ -8,21 +8,18 @@
 
 ## Download
 
-**[Download EXE · Qualcomm ISP 253](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
+**[Download Qualcomm ISP 253 driver EXE (installer R2.5)](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
 
-Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with the desktop installer and camera application. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; those vendor components cannot be rebuilt from source with EWDK.
+Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer R2.5. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
 
 **[Download project code, tuning and IFE/IPE notes](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** · [Browse development kit](../../sources/qualcommisp/README.md).
 
 ## Install and diagnostics
 
-1. Disable Secure Boot and enable Windows **Test Mode** using [this guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md).
-2. Close camera apps and run **`Qualcomm-ISP-Drivers-Setup.exe`**. It creates a **Qualcomm ISP Drivers** folder and shortcut on your desktop.
-3. Let the app scan devices, click **Install**, and approve the Windows administrator prompt. The shortcut can be started normally; elevation is requested when needed.
-4. When **Restart required** appears, click **Restart system**. After restarting, sign in to Windows and wait a little (normally 15–30 seconds): **the app opens automatically and continues installation**. If another restart is requested, repeat this step. Keep the desktop folder in place until installation finishes.
-5. Wait for **Installation complete / 100%**, then open **Cameras** and select **Rear / Front** to view each live camera.
+Disable Secure Boot and enable **Test Mode** using [the guide](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md). Close all camera apps, fully extract the ZIP and run **`Install.cmd` as administrator**. The installer may ask for a normal Windows restart before replacing drivers. After restarting, run `Install.cmd` again before opening any camera app. Wait for **SUCCESS / exit code 0**, then test both cameras in Windows Camera. Do not delete the safety journals or run another installer concurrently.
 
-**Diagnostics:** use **Save report** in the app. Local logs and frames stay in `Desktop\Qualcomm ISP Drivers\Data\Logs`. If automatic launch does not occur, open the same desktop shortcut and click Install.
+For a fresh image test, close camera apps and run **`Diagnose.cmd` as administrator**. Send the newest complete folder in `C:\ProgramData\XiaomiPad5Camera\Logs`, including `result.json` and `setup.log`; review saved diagnostic frames first. `Check.cmd` checks files and platform only.
+
 
 ## 🎬 Video demo: both cameras working with Qualcomm ISP
 

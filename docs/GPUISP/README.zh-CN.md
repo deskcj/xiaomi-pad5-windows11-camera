@@ -36,20 +36,6 @@
 
 GPU 处理降低了对较重的 CPU 图像处理路线的依赖，并提供保留源码快照、可编辑的计算着色器流程。它需要一个服务、两个工作进程及空闲内存；AE/AWB、色调与对焦仍需独立改进。启动时至少保留 **900 MiB 可用内存**。前置摄像头在硬件上是固定对焦。
 
-## 切换到 Qualcomm ISP
-
-如需将现有 GPU/CPU 驱动切换到 Qualcomm ISP 253，请使用新的 EXE。应用会扫描设备并安装 Qualcomm ISP 驱动包。
-
-**[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)**
-
-1. 按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot，并启用 Windows **测试模式（Test Mode）**。
-2. 关闭相机应用，运行 **`Qualcomm-ISP-Drivers-Setup.exe`**。安装程序会在桌面创建 **Qualcomm ISP Drivers** 文件夹和快捷方式。
-3. 等待设备扫描完成，点击 **Install**，并确认 Windows 管理员权限提示。快捷方式可以正常启动；需要权限时，应用会自行请求提升。
-4. 出现 **Restart required** 时，点击 **Restart system**。重启后登录 Windows，稍等片刻（通常 15–30 秒）：**应用会自动打开并继续安装**。如果再次要求重启，请重复此步骤。安装完成之前，请保留桌面文件夹。
-5. 等待 **Installation complete / 100%**，然后打开 **Cameras**，选择 **Rear / Front**，依次查看前后摄像头的实时画面。
-
-**诊断：**在应用中点击 **Save report**。日志和图像保存在 `桌面\Qualcomm ISP Drivers\Data\Logs`。如果应用没有自动打开，请启动同一个桌面快捷方式并点击 Install。
-
 ## 安装与诊断
 
 按照[指南（英文）](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/blob/main/guide/English/disable-secureboot-en.md)关闭 Secure Boot 并启用 **测试模式（Test Mode）**。关闭所有相机应用，完整解压 ZIP，然后**以管理员身份运行 `Setup.cmd`**。若要求重启，正常重启后再次运行；等待 SUCCESS / 退出代码 0，再在 Windows「相机」中测试两颗摄像头。
