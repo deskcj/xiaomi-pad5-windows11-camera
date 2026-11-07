@@ -18,9 +18,11 @@
 
 | 驱动 ZIP | 驱动 EXE | 源码 ZIP |
 | --- | --- | --- |
-| **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
+| **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R27-20261107.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
 
-选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带 R2.5 安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
+**安装器 1.0.6（R27）更新：** EXE 和 PowerShell ZIP 共用同一修复引擎，可恢复缺失的 Camera Platform/JPEG/Flash 驱动、删除已断开的重复相机设备，并备份后移除冲突的旧传感器扩展包。重启请求集中处理；登录后 PowerShell 自动继续，多次重启仍无进展时会停止并生成报告。驱动保留在 Windows DriverStore，必要的相机数据位于 `C:\Windows\System32\drivers\XiaomiPad5Camera`。程序和 ZIP 的日志、备份留在桌面文件夹，完成后可删除该文件夹。**已验证的 ISP253 / SYS080 / MFT075b 二进制和图像调校不变**；本次修复安装与恢复流程。
+
+选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带 1.0.6（R27）安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
 
 [浏览开发资料](../../sources/qualcommisp/README.md)。
 
