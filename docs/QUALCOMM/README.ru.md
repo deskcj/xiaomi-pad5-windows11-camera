@@ -136,13 +136,13 @@
 
 **Nabu Light 1.1.1** — компактный переносимый фонарик для Windows 11 ARM64. Программа управляет задним светодиодом через установленные драйверы камер Qualcomm ISP.
 
-| Фонарик EXE | Исходники ZIP |
-| --- | --- |
-| **[Скачать EXE](../../downloads/Nabu-Flashlight.exe)** | **[Скачать ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
-
 | Компактное окно | Раскрытые настройки |
 | --- | --- |
 | <a href="assets/nabu-light-1.1.1-ru.png"><img src="assets/nabu-light-1.1.1-ru.png" alt="Компактное окно Nabu Light 1.1.1" width="360"></a> | <a href="assets/nabu-light-1.1.1-settings-ru.png"><img src="assets/nabu-light-1.1.1-settings-ru.png" alt="Nabu Light 1.1.1 с раскрытыми настройками" width="360"></a> |
+
+| Фонарик EXE | Исходники ZIP |
+| --- | --- |
+| **[Скачать EXE](../../downloads/Nabu-Flashlight.exe)** | **[Скачать ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
 
 - **Режимы:** постоянный свет, мигание, быстрое мигание, SOS и своё сообщение азбукой Морзе с русскими или английскими буквами.
 - **Понятный статус:** во время работы режима иконка включения постоянно подсвечена; рядом видны выбранный режим и время работы.

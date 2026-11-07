@@ -135,13 +135,13 @@
 
 **Nabu Light 1.1.1** 是适用于 Windows 11 ARM64 的小巧便携手电筒应用，通过已安装的 Qualcomm ISP 相机驱动控制后置 LED。
 
-| 手电筒 EXE | 源码 ZIP |
-| --- | --- |
-| **[下载 EXE](../../downloads/Nabu-Flashlight.exe)** | **[下载 ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
-
 | 小巧窗口 | 展开的设置 |
 | --- | --- |
 | <a href="assets/nabu-light-1.1.1-en.png"><img src="assets/nabu-light-1.1.1-en.png" alt="Nabu Light 1.1.1 小巧窗口" width="360"></a> | <a href="assets/nabu-light-1.1.1-settings-en.png"><img src="assets/nabu-light-1.1.1-settings-en.png" alt="Nabu Light 1.1.1 展开的设置" width="360"></a> |
+
+| 手电筒 EXE | 源码 ZIP |
+| --- | --- |
+| **[下载 EXE](../../downloads/Nabu-Flashlight.exe)** | **[下载 ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
 
 - **模式：** 常亮、闪烁、快速闪烁、SOS，以及使用俄语或英语字母的自定义摩尔斯电码消息。
 - **清晰状态：** 模式运行时，电源图标保持点亮；选定模式和运行时间持续显示。

@@ -136,13 +136,13 @@ The drivers are experimental, test-signed kernel software provided **“as is”
 
 **Nabu Light 1.1.1** is a compact, portable flashlight app for Windows 11 ARM64. It controls the rear LED through the installed Qualcomm ISP camera drivers.
 
-| Flashlight EXE | Sources ZIP |
-| --- | --- |
-| **[Download EXE](../../downloads/Nabu-Flashlight.exe)** | **[Download ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
-
 | Compact window | Settings expanded |
 | --- | --- |
 | <a href="assets/nabu-light-1.1.1-en.png"><img src="assets/nabu-light-1.1.1-en.png" alt="Nabu Light 1.1.1 compact window" width="360"></a> | <a href="assets/nabu-light-1.1.1-settings-en.png"><img src="assets/nabu-light-1.1.1-settings-en.png" alt="Nabu Light 1.1.1 with settings expanded" width="360"></a> |
+
+| Flashlight EXE | Sources ZIP |
+| --- | --- |
+| **[Download EXE](../../downloads/Nabu-Flashlight.exe)** | **[Download ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
 
 - **Modes:** Steady, Blink, Fast blink, SOS and a custom Morse message with Russian or English letters.
 - **Clear status:** the power icon stays lit while a mode is running; the selected mode and elapsed time remain visible.
