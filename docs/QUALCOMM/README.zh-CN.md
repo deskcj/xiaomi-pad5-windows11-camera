@@ -14,13 +14,43 @@
 
 ▶️ **[在 YouTube 观看演示](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
 
+## 更新历史
+
+### 2026-11-07 — 1.0.7（R28），最新版本
+
+- 修复移除旧传感器扩展包后，后置闪光灯和手电筒无法初始化的问题。
+- EXE 和 PowerShell ZIP 在验证相机画面时同时检查闪光灯初始化错误。相机关闭后只允许一次针对性恢复尝试；再次失败则停止并生成报告。
+- 在项目平板上检查了旧扩展包升级、两颗相机以及暗场中的 On/Auto 闪光，无需重启 Windows。
+
+**ISP253 / SYS080 / MFT075b 二进制文件和图像调校保持不变。本次更新改进安装与恢复流程。**
+
+<details>
+<summary>以前的更新</summary>
+
+#### 2026-11-07 — 1.0.6（R27）
+
+- 新增备份后移除冲突的旧传感器扩展包，以及清理已断开的重复相机设备。
+- PowerShell ZIP 改用与 EXE 相同的恢复引擎；需要重启时，登录 Windows 后继续安装。
+
+#### 2026-11-07 — 1.0.5
+
+- 新增缺失 Camera Platform/JPEG/Flash 驱动的恢复，以及更严格的已安装相机文件检查。
+- 集中处理重启请求；重复重启仍无进展时停止并生成报告。
+- 驱动保留在 Windows DriverStore，必要的相机数据存放在系统驱动文件夹；程序日志和设置留在桌面文件夹。
+
+#### 2026-11-07 — 1.0.4
+
+- 在应用中新增连续相机预览。
+
+</details>
+
 ## 下载
 
 | 驱动 ZIP | 驱动 EXE | 源码 ZIP |
 | --- | --- | --- |
 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
 
-**安装器 1.0.7（R28）更新：** 修复移除旧传感器扩展包后，后置闪光灯和手电筒无法初始化的问题。EXE 和 PowerShell ZIP 现在会在重新配置相机后重启实际闪光灯设备，并在验证画面时检查明确的闪光灯错误。相机关闭后只允许一次恢复尝试；再次失败则停止并生成报告。在项目平板上，旧扩展包升级、两颗相机以及暗场中的 On/Auto 闪光均已检查，无需重启 Windows。**ISP253 / SYS080 / MFT075b 二进制文件和图像调校保持不变**；本次更新修复安装与恢复流程。[安装器 1.0.7 源码 ZIP](../../downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)。
+[安装器 1.0.7 源码 ZIP](../../downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)。
 
 选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带 1.0.7（R28）安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
 

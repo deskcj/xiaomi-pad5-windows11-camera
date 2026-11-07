@@ -14,13 +14,43 @@ Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) r
 
 ▶️ **[Watch the demonstration on YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
 
+## Update history
+
+### 2026-11-07 — 1.0.7 (R28), latest
+
+- Fixed rear flash and torch initialization after removing old sensor extensions.
+- EXE and PowerShell ZIP check flash initialization errors alongside camera frames. After the camera closes, one targeted recovery attempt is allowed; another failure stops with a report.
+- Checked the old-extension upgrade, both cameras and flash On/Auto in a dark scene on the project tablet without restarting Windows.
+
+**ISP253 / SYS080 / MFT075b binaries and image tuning are unchanged. This release updates installation and recovery.**
+
+<details>
+<summary>Previous updates</summary>
+
+#### 2026-11-07 — 1.0.6 (R27)
+
+- Added backed-up removal of conflicting old sensor extensions and cleanup of disconnected camera duplicates.
+- Updated the PowerShell ZIP to share the EXE recovery engine and continue after sign-in when a restart is needed.
+
+#### 2026-11-07 — 1.0.5
+
+- Added recovery of missing Camera Platform/JPEG/Flash prerequisites and stricter checks of installed camera files.
+- Batched restart requests and stopped repeated unsuccessful restarts with a report.
+- Kept drivers in Windows DriverStore and required camera data in the system drivers folder; app logs and preferences stay in the desktop folder.
+
+#### 2026-11-07 — 1.0.4
+
+- Added continuous camera preview in the application.
+
+</details>
+
 ## Download
 
 | Driver ZIP | Driver EXE | Sources ZIP |
 | --- | --- | --- |
 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
 
-**New in installer 1.0.7 (R28):** fixes rear flash/torch initialization after removal of old sensor extensions. EXE and PowerShell ZIP now restart the real flash device after camera reconfiguration and check explicit flash errors as well as camera frames. One recovery attempt is allowed after the camera is closed; a repeated failure stops with a report. The extension-upgrade scenario, both cameras and flash On/Auto in a dark scene were checked on the project tablet without a Windows restart. **ISP253 / SYS080 / MFT075b binaries and image tuning are unchanged**; this update fixes installation and recovery. [Installer sources 1.0.7 ZIP](../../downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip).
+[Installer sources 1.0.7 ZIP](../../downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip).
 
 Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer 1.0.7 (R28). The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
 
