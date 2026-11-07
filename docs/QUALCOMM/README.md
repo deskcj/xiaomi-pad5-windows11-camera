@@ -127,3 +127,23 @@ You can also help by starring the repository, sharing the project and reporting 
 This is an independent community project, **not affiliated with or endorsed by Xiaomi, Qualcomm, Microsoft, or OmniVision**. Company and product names are used only to identify compatible hardware and technologies; rights to those names belong to their respective owners.
 
 The drivers are experimental, test-signed kernel software provided **“as is”**, without any guarantee of Android-level image quality, stability, or support. Crashes, device problems, and data loss are possible. Before installing, keep a backup and a way to recover your device. The decision to test and the associated risks are yours. This notice does not grant permission to redistribute third-party tools contrary to their licenses.
+
+## 🔦 Nabu Light — flashlight app for Xiaomi Pad 5
+
+**Nabu Light 1.1.1** is a compact, portable flashlight app for Windows 11 ARM64. It controls the rear LED through the installed Qualcomm ISP camera drivers.
+
+**[Download flashlight EXE](../../downloads/Nabu-Flashlight.exe)** · [Source ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)
+
+| Compact window | Settings expanded |
+| --- | --- |
+| <a href="assets/nabu-light-1.1.1-en.png"><img src="assets/nabu-light-1.1.1-en.png" alt="Nabu Light 1.1.1 compact window" width="360"></a> | <a href="assets/nabu-light-1.1.1-settings-en.png"><img src="assets/nabu-light-1.1.1-settings-en.png" alt="Nabu Light 1.1.1 with settings expanded" width="360"></a> |
+
+- **Modes:** Steady, Blink, Fast blink, SOS and a custom Morse message with Russian or English letters.
+- **Clear status:** the power icon stays lit while a mode is running; the selected mode and elapsed time remain visible.
+- **Settings:** Morse dot duration, message and an automatic off timer. The app follows the Windows theme, with manual light/dark selection and EN/RU switching. The current Qualcomm ISP driver provides fixed torch brightness.
+
+1. Install the current Qualcomm ISP drivers linked above, close other camera apps and run **Nabu-Flashlight.exe**. No installation or administrator access is needed for the flashlight app.
+2. Select a mode and press **TURN ON**. Open **Settings** for the timer or Morse message.
+3. Press **TURN OFF** or **Esc** to stop. Closing the app also turns the light off; **Space** toggles it on/off.
+
+The **Developer** button opens [deskcj on Telegram](https://t.me/deskcj).
