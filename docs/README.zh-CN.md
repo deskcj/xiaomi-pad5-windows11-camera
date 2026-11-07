@@ -13,7 +13,7 @@
 
 | 路线介绍 | 驱动 ZIP | 驱动 EXE |
 | --- | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
+| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R27-20261107.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
 | **[GPU ISP](GPUISP/README.zh-CN.md)** — D3D12 计算着色器，GPU040 + rear065/front066 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** | — |
 | **[CPU ISP](CPUISP/README.zh-CN.md)** — 软件处理，已验证的 CPUISP4 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** | — |
 

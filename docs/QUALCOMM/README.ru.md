@@ -18,9 +18,11 @@
 
 | Драйвер ZIP | Драйвер EXE | Исходники ZIP |
 | --- | --- | --- |
-| **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** | **[Скачать EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
+| **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R27-20261107.zip)** | **[Скачать EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
 
-Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b** с установщиком R2.5. Принятые файлы обработки изображения не изменены. Оригинальные C/C++ исходники заводского стека и прошивки Qualcomm недоступны; эта сборка не пересобирается из исходников через EWDK.
+**Новое в установщике 1.0.6 (R27):** EXE и PowerShell ZIP используют одно восстановление отсутствующих Camera Platform/JPEG/Flash, удаление отключённых дублей камер и конфликтующих старых расширений датчиков с резервной копией. Запросы перезагрузки объединяются; PowerShell продолжает после входа, а повторяющиеся безрезультатные перезагрузки останавливаются с отчётом. Драйверы остаются в Windows DriverStore, нужные данные камер — в `C:\Windows\System32\drivers\XiaomiPad5Camera`. Логи и резервные копии программы/ZIP остаются в папке на рабочем столе; её можно удалить после завершения. **Проверенные двоичные драйверы ISP253 / SYS080 / MFT075b и настройки изображения не изменены**: в этом выпуске исправлены установка и восстановление.
+
+Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b** с установщиком 1.0.6 (R27). Принятые файлы обработки изображения не изменены. Оригинальные C/C++ исходники заводского стека и прошивки Qualcomm недоступны; эта сборка не пересобирается из исходников через EWDK.
 
 [Просмотреть комплект](../../sources/qualcommisp/README.md).
 

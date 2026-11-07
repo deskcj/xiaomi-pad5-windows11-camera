@@ -18,9 +18,11 @@ Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) r
 
 | Driver ZIP | Driver EXE | Sources ZIP |
 | --- | --- | --- |
-| **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R25-20261106.zip)** | **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
+| **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R27-20261107.zip)** | **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
 
-Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer R2.5. The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
+**New in installer 1.0.6 (R27):** EXE and PowerShell ZIP now share recovery of missing Camera Platform/JPEG/Flash drivers, removal of disconnected camera duplicates and backed-up removal of conflicting old sensor extensions. Restart requests are batched and PowerShell resumes after sign-in; repeated unsuccessful restarts stop with a report. Drivers stay in Windows DriverStore, with required camera data in `C:\Windows\System32\drivers\XiaomiPad5Camera`. App/ZIP logs and backups stay in the desktop folder; that folder can be deleted after completion. **The accepted ISP253 / SYS080 / MFT075b binaries and image tuning are unchanged**; this release fixes installation and recovery.
+
+Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer 1.0.6 (R27). The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
 
 [Browse development kit](../../sources/qualcommisp/README.md).
 
