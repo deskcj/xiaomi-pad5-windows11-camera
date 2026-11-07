@@ -122,6 +122,10 @@ Development involves many hours of work, real-tablet testing and comparison with
 
 You can also help by starring the repository, sharing the project and reporting your experience with the Windows version, application, lighting and selected camera. Donations support continued development; they do not guarantee a delivery date or a specific result.
 
+## Contact me
+
+[![Telegram](https://img.shields.io/badge/Contact-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/deskcj) [![Send an email](https://img.shields.io/badge/Contact-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:deskcj@gmail.com)
+
 ## Disclaimer
 
 This is an independent community project, **not affiliated with or endorsed by Xiaomi, Qualcomm, Microsoft, or OmniVision**. Company and product names are used only to identify compatible hardware and technologies; rights to those names belong to their respective owners.
@@ -132,7 +136,9 @@ The drivers are experimental, test-signed kernel software provided **“as is”
 
 **Nabu Light 1.1.1** is a compact, portable flashlight app for Windows 11 ARM64. It controls the rear LED through the installed Qualcomm ISP camera drivers.
 
-**[Download flashlight EXE](../../downloads/Nabu-Flashlight.exe)** · [Source ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)
+| Flashlight EXE | Sources ZIP |
+| --- | --- |
+| **[Download EXE](../../downloads/Nabu-Flashlight.exe)** | **[Download ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
 
 | Compact window | Settings expanded |
 | --- | --- |
@@ -145,5 +151,3 @@ The drivers are experimental, test-signed kernel software provided **“as is”
 1. Install the current Qualcomm ISP drivers linked above, close other camera apps and run **Nabu-Flashlight.exe**. No installation or administrator access is needed for the flashlight app.
 2. Select a mode and press **TURN ON**. Open **Settings** for the timer or Morse message.
 3. Press **TURN OFF** or **Esc** to stop. Closing the app also turns the light off; **Space** toggles it on/off.
-
-The **Developer** button opens [deskcj on Telegram](https://t.me/deskcj).

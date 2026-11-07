@@ -121,6 +121,10 @@
 
 您也可以给仓库点星、分享项目，并反馈使用体验，说明 Windows 版本、应用、光照条件和所用摄像头。捐款用于支持持续开发，不保证交付日期或特定结果。
 
+## 联系我
+
+[![Telegram](https://img.shields.io/badge/Contact-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/deskcj) [![发送邮件](https://img.shields.io/badge/Contact-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:deskcj@gmail.com)
+
 ## 免责声明
 
 这是独立的社区项目，**与 Xiaomi、Qualcomm、Microsoft 或 OmniVision 无关联，也未获得其认可**。公司和产品名称仅用于说明兼容硬件和技术；相关权利属于各自的所有者。
@@ -131,7 +135,9 @@
 
 **Nabu Light 1.1.1** 是适用于 Windows 11 ARM64 的小巧便携手电筒应用，通过已安装的 Qualcomm ISP 相机驱动控制后置 LED。
 
-**[下载手电筒 EXE](../../downloads/Nabu-Flashlight.exe)** · [源码 ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)
+| 手电筒 EXE | 源码 ZIP |
+| --- | --- |
+| **[下载 EXE](../../downloads/Nabu-Flashlight.exe)** | **[下载 ZIP](../../downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
 
 | 小巧窗口 | 展开的设置 |
 | --- | --- |
@@ -144,5 +150,3 @@
 1. 安装上方链接中的当前 Qualcomm ISP 驱动，关闭其他相机应用，然后运行 **Nabu-Flashlight.exe**。手电筒应用无需安装或管理员权限。
 2. 选择模式并点击 **TURN ON**。打开 **Settings** 可调整计时器或摩尔斯消息。
 3. 点击 **TURN OFF** 或按 **Esc** 停止。关闭应用也会关闭灯光；**空格键**切换开关。
-
-**Developer** 按钮打开 [deskcj 的 Telegram](https://t.me/deskcj)。
