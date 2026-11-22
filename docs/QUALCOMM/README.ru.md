@@ -14,6 +14,17 @@
 
 ▶️ **[Смотреть демонстрацию на YouTube](https://www.youtube.com/watch?v=ue8ANiYQOg0)**
 
+## Скачать
+
+| Скачать | Что внутри |
+| --- | --- |
+| **[Установщик EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | Готовый установщик для Windows 11 ARM64. |
+| **[Исходники установщика ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)** | Код установщика версии 1.0.7, скрипты сборки и готовые файлы драйверов, которые входят в EXE. |
+| **[Драйверы с установщиком ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | Готовые драйверы, скрипты установки PowerShell и CMD, а также диагностика. Перед установкой распакуйте ZIP. |
+| **[Исходники доработок драйверов ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** | Исходные файлы доработок проекта, параметры настройки и документация по IFE/IPE. |
+
+В сборке **R28** используются **настройки 253, SYS080 и DeviceMFT075b** и установщик **1.0.7**. Оригинальный код драйверов и прошивки Qualcomm недоступен.
+
 ## История обновлений
 
 ### 07.11.2026 — 1.0.7 (R28), последняя версия
@@ -43,17 +54,6 @@
 - Добавлен непрерывный предпросмотр камеры в приложении.
 
 </details>
-
-## Скачать
-
-| Скачать | Что внутри |
-| --- | --- |
-| **[Установщик EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | Готовый установщик для Windows 11 ARM64. |
-| **[Исходники установщика ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)** | Код установщика версии 1.0.7, скрипты сборки и готовые файлы драйверов, которые входят в EXE. |
-| **[Драйверы с установщиком ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | Готовые драйверы, скрипты установки PowerShell и CMD, а также диагностика. Перед установкой распакуйте ZIP. |
-| **[Исходники доработок драйверов ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** | Исходные файлы доработок проекта, параметры настройки и документация по IFE/IPE. |
-
-В сборке **R28** используются **настройки 253, SYS080 и DeviceMFT075b** и установщик **1.0.7**. Оригинальный код драйверов и прошивки Qualcomm недоступен.
 
 ## Установка и диагностика
 
