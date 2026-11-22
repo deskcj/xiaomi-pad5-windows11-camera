@@ -46,15 +46,14 @@
 
 ## Скачать
 
-| Драйвер ZIP | Драйвер EXE | Исходники ZIP |
-| --- | --- | --- |
-| **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[Скачать EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
+| Скачать | Что внутри |
+| --- | --- |
+| **[Установщик EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | Готовый установщик для Windows 11 ARM64. |
+| **[Исходники установщика ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)** | Код установщика версии 1.0.7, скрипты сборки и готовые файлы драйверов, которые входят в EXE. |
+| **[Драйверы с установщиком ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | Готовые драйверы, скрипты установки PowerShell и CMD, а также диагностика. Перед установкой распакуйте ZIP. |
+| **[Исходники доработок драйверов ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** | Исходные файлы доработок проекта, параметры настройки и документация по IFE/IPE. |
 
-[Исходники установщика 1.0.7 ZIP](../../downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip).
-
-Выбрана конфигурация **253 tuning, SYS080, DeviceMFT075b** с установщиком 1.0.7 (R28). Принятые файлы обработки изображения не изменены. Оригинальные C/C++ исходники заводского стека и прошивки Qualcomm недоступны; эта сборка не пересобирается из исходников через EWDK.
-
-[Просмотреть комплект](../../sources/qualcommisp/README.md).
+В сборке **R28** используются **настройки 253, SYS080 и DeviceMFT075b** и установщик **1.0.7**. Оригинальный код драйверов и прошивки Qualcomm недоступен.
 
 ## Установка и диагностика
 

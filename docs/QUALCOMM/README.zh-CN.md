@@ -46,15 +46,14 @@
 
 ## 下载
 
-| 驱动 ZIP | 驱动 EXE | 源码 ZIP |
-| --- | --- | --- |
-| **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
+| 下载 | 包含内容 |
+| --- | --- |
+| **[安装程序 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | 可直接运行的 Windows 11 ARM64 安装程序。 |
+| **[安装程序源码 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)** | 1.0.7 版安装程序的源码、构建脚本，以及打包到 EXE 中的已编译驱动文件。 |
+| **[驱动安装包 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | 已编译的驱动、PowerShell 和 CMD 安装脚本及诊断工具。安装前请先解压 ZIP。 |
+| **[驱动改动源码 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** | 本项目对驱动的改动源码、调校数据及 IFE/IPE 文档。 |
 
-[安装器 1.0.7 源码 ZIP](../../downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)。
-
-选定的参考组合为 **253 调校、SYS080、DeviceMFT075b**，附带 1.0.7（R28）安装程序。已接受的图像处理载荷未变。原始 Qualcomm C/C++ 厂商栈及固件源码不可获取，因此无法仅凭源码使用 EWDK 重新构建整个版本。
-
-[浏览开发资料](../../sources/qualcommisp/README.md)。
+**R28** 采用 **253 调校、SYS080 和 DeviceMFT075b**，并附带 **1.0.7** 版安装程序。Qualcomm 原厂驱动和固件的源码无法获取。
 
 ## 安装与诊断
 

@@ -46,15 +46,14 @@ Watch the demonstration of the **rear and front cameras on Xiaomi Pad 5 (nabu) r
 
 ## Download
 
-| Driver ZIP | Driver EXE | Sources ZIP |
-| --- | --- | --- |
-| **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** |
+| Download | What’s included |
+| --- | --- |
+| **[Installer EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** | Ready-to-run installer for Windows 11 ARM64. |
+| **[Installer Sources ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip)** | Installer 1.0.7 source code, build scripts, and the compiled driver files bundled in the EXE. |
+| **[Driver Installer ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | Compiled drivers, PowerShell and CMD installation scripts, and diagnostics. Extract the ZIP before running setup. |
+| **[Driver Sources ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-Development-20261104.zip)** | Source files for the project’s driver modifications, tuning data, and IFE/IPE documentation. |
 
-[Installer sources 1.0.7 ZIP](../../downloads/Qualcomm-ISP-Installer-Sources-1.0.7.zip).
-
-Selected reference: **253 tuning, SYS080, DeviceMFT075b**, with installer 1.0.7 (R28). The accepted image-processing payload is unchanged. The original Qualcomm C/C++ vendor stack and firmware sources are unavailable; this release cannot be rebuilt from source with EWDK.
-
-[Browse development kit](../../sources/qualcommisp/README.md).
+Release **R28** uses **253 tuning, SYS080, DeviceMFT075b** and installer **1.0.7**. Qualcomm’s original driver and firmware source code is unavailable.
 
 ## Install and diagnostics
 
