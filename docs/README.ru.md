@@ -11,13 +11,11 @@
 
 ## Скачать
 
-| Страница ветки | Архив драйвера ZIP | Драйвер EXE |
-| --- | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.ru.md)** — аппаратные IFE/IPE, конфигурация 253 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[Скачать EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
-| **[GPU ISP](GPUISP/README.ru.md)** — D3D12 compute, GPU040 + задняя065/фронтальная066 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** | — |
-| **[CPU ISP](CPUISP/README.ru.md)** — программная обработка, проверенный CPUISP4 | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** | — |
+Откройте страницу нужной ветки, чтобы скачать драйверы, посмотреть инструкции по установке и доступные исходники.
 
-ZIP драйверов содержат проверенные подписанные файлы, установщик и диагностику. Точные C/C++/HLSL исходники GPU ISP и команда сборки EWDK скачиваются отдельно со страницы ветки. Для CPUISP4 доступны C/H-проекты. Для Qualcomm — код доработок, точные параметры и описание IFE/IPE; заводские исходники недоступны.
+- **[Qualcomm ISP](QUALCOMM/README.ru.md)** — аппаратные IFE/IPE, конфигурация 253
+- **[GPU ISP](GPUISP/README.ru.md)** — обработка на GPU через Direct3D 12, сборка GPU040 + rear065/front066
+- **[CPU ISP](CPUISP/README.ru.md)** — программная обработка, проверенный CPUISP4
 
 ## Статус веток
 
@@ -62,3 +60,23 @@ ZIP драйверов содержат проверенные подписан�
 Это независимый проект сообщества, **не связанный с Xiaomi, Qualcomm, Microsoft или OmniVision и не одобренный ими**. Названия компаний и продуктов используются только для обозначения совместимого оборудования и технологий; права на них принадлежат владельцам.
 
 Драйверы — экспериментальное ПО ядра с тестовой подписью, предоставляемое **«как есть»**, без гарантии качества уровня Android, стабильности или поддержки. Возможны сбои, проблемы с устройством и потеря данных. Перед установкой сохраните резервную копию и способ восстановления. Решение о тестировании и связанные с ним риски остаются за вами. Этот текст не даёт права распространять сторонние утилиты вопреки их лицензиям.
+
+## 🔦 Nabu Light — фонарик для Xiaomi Pad 5
+
+**Nabu Light 1.1.1** — компактный переносимый фонарик для Windows 11 ARM64. Программа управляет задним светодиодом через установленные драйверы камер Qualcomm ISP.
+
+| Компактное окно | Раскрытые настройки |
+| --- | --- |
+| <a href="QUALCOMM/assets/nabu-light-1.1.1-ru.png"><img src="QUALCOMM/assets/nabu-light-1.1.1-ru.png" alt="Компактное окно Nabu Light 1.1.1" width="360"></a> | <a href="QUALCOMM/assets/nabu-light-1.1.1-settings-ru.png"><img src="QUALCOMM/assets/nabu-light-1.1.1-settings-ru.png" alt="Nabu Light 1.1.1 с раскрытыми настройками" width="360"></a> |
+
+| Фонарик EXE | Исходники ZIP |
+| --- | --- |
+| **[Скачать EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Nabu-Flashlight.exe)** | **[Скачать ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
+
+- **Режимы:** постоянный свет, мигание, быстрое мигание, SOS и своё сообщение азбукой Морзе с русскими или английскими буквами.
+- **Понятный статус:** во время работы режима иконка включения постоянно подсвечена; рядом видны выбранный режим и время работы.
+- **Настройки:** длительность точки Морзе, сообщение и таймер автовыключения. Тема следует за Windows; доступны ручной выбор светлой/тёмной темы и переключение EN/RU. У текущего драйвера Qualcomm ISP яркость фонарика фиксированная.
+
+1. Установите актуальные [драйверы камер Qualcomm ISP](QUALCOMM/README.ru.md#скачать), закройте другие приложения камеры и запустите **Nabu-Flashlight.exe**. Фонарик не требует установки и прав администратора.
+2. Выберите режим и нажмите **ВКЛЮЧИТЬ**. В **Настройках** можно изменить таймер или сообщение Морзе.
+3. Нажмите **ВЫКЛЮЧИТЬ** или **Esc**, чтобы остановить фонарик. При закрытии программы свет тоже гаснет; **Пробел** переключает включение и выключение.

@@ -11,13 +11,11 @@ One camera project, three processing branches. Both front and rear cameras produ
 
 ## Download
 
-| Branch page | Driver ZIP | Driver EXE |
-| --- | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.md)** — hardware IFE/IPE, reference 253 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
-| **[GPU ISP](GPUISP/README.md)** — D3D12 compute, GPU040 + rear065/front066 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** | — |
-| **[CPU ISP](CPUISP/README.md)** — software processing, verified CPUISP4 | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** | — |
+Open the branch page for driver downloads, installation instructions, and available source files.
 
-Driver ZIPs contain the tested signed drivers, installer and diagnostics. Matching GPU ISP C/C++/HLSL sources and the EWDK build command are a separate download on its branch page. CPUISP4 provides its retained C/H projects. Qualcomm provides the project modifications, exact tuning and IFE/IPE notes; the original vendor sources are unavailable.
+- **[Qualcomm ISP](QUALCOMM/README.md)** — hardware IFE/IPE, reference 253
+- **[GPU ISP](GPUISP/README.md)** — D3D12 compute, GPU040 + rear065/front066
+- **[CPU ISP](CPUISP/README.md)** — software processing, verified CPUISP4
 
 ## Current branch status
 
@@ -62,3 +60,23 @@ You can also help **without donating**: star the repository, share it with other
 This is an independent community project, **not affiliated with or endorsed by Xiaomi, Qualcomm, Microsoft, or OmniVision**. Company and product names identify compatible hardware and technologies only; their owners retain their rights.
 
 The drivers are experimental, test-signed kernel software supplied **as is**, without a warranty or promise of Android-equivalent quality, stability, or support. They may cause crashes, device problems, or data loss. Back up your system and keep a recovery method before installing. You choose whether to test them and do so at your own risk. This notice does not grant permission to redistribute third-party tools or override their licenses.
+
+## 🔦 Nabu Light — flashlight app for Xiaomi Pad 5
+
+**Nabu Light 1.1.1** is a compact, portable flashlight app for Windows 11 ARM64. It controls the rear LED through the installed Qualcomm ISP camera drivers.
+
+| Compact window | Settings expanded |
+| --- | --- |
+| <a href="QUALCOMM/assets/nabu-light-1.1.1-en.png"><img src="QUALCOMM/assets/nabu-light-1.1.1-en.png" alt="Nabu Light 1.1.1 compact window" width="360"></a> | <a href="QUALCOMM/assets/nabu-light-1.1.1-settings-en.png"><img src="QUALCOMM/assets/nabu-light-1.1.1-settings-en.png" alt="Nabu Light 1.1.1 with settings expanded" width="360"></a> |
+
+| Flashlight EXE | Sources ZIP |
+| --- | --- |
+| **[Download EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Nabu-Flashlight.exe)** | **[Download ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
+
+- **Modes:** Steady, Blink, Fast blink, SOS and a custom Morse message with Russian or English letters.
+- **Clear status:** the power icon stays lit while a mode is running; the selected mode and elapsed time remain visible.
+- **Settings:** Morse dot duration, message and an automatic off timer. The app follows the Windows theme, with manual light/dark selection and EN/RU switching. The current Qualcomm ISP driver provides fixed torch brightness.
+
+1. Install the current [Qualcomm ISP camera drivers](QUALCOMM/README.md#download), close other camera apps and run **Nabu-Flashlight.exe**. No installation or administrator access is needed for the flashlight app.
+2. Select a mode and press **TURN ON**. Open **Settings** for the timer or Morse message.
+3. Press **TURN OFF** or **Esc** to stop. Closing the app also turns the light off; **Space** toggles it on/off.

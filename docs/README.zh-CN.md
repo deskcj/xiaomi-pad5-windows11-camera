@@ -11,13 +11,11 @@
 
 ## 下载
 
-| 路线介绍 | 驱动 ZIP | 驱动 EXE |
-| --- | --- | --- |
-| **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-QualcommISP253-R28-20261107.zip)** | **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Qualcomm-ISP-Drivers-Setup.exe)** |
-| **[GPU ISP](GPUISP/README.zh-CN.md)** — D3D12 计算着色器，GPU040 + rear065/front066 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-GPUISP040-20261104.zip)** | — |
-| **[CPU ISP](CPUISP/README.zh-CN.md)** — 软件处理，已验证的 CPUISP4 | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Xiaomi-Pad-5-Camera-CPUISP4-20261104.zip)** | — |
+请打开对应的路线页面，下载驱动并查看安装说明和可用的源码。
 
-驱动 ZIP 包含已测试、已签名的驱动、安装程序和诊断工具。GPU ISP 分支页面另有与驱动匹配的 C/C++/HLSL 源码和 EWDK 构建命令。CPUISP4 保留了 C/H 项目。Qualcomm 分支提供本项目的修改、精确的调校数据以及 IFE/IPE 说明；原厂源码不可获取。
+- **[Qualcomm ISP](QUALCOMM/README.zh-CN.md)** — 硬件 IFE/IPE，参考版本 253
+- **[GPU ISP](GPUISP/README.zh-CN.md)** — D3D12 计算着色器，GPU040 + rear065/front066
+- **[CPU ISP](CPUISP/README.zh-CN.md)** — 软件处理，已验证的 CPUISP4
 
 ## 各路线当前状态
 
@@ -62,3 +60,23 @@
 这是独立的社区项目，**与 Xiaomi、Qualcomm、Microsoft 或 OmniVision 无关联，也未获得其认可**。公司和产品名称仅用于说明兼容硬件和技术；相关权利属于各自的所有者。
 
 这些驱动是采用测试签名的实验性内核软件，按**“现状”**提供，不保证达到 Android 的画质、稳定性或支持水平。使用中可能发生崩溃、设备故障或数据丢失。安装前请备份系统，并保留恢复设备的方法。是否测试及相关风险由您自行承担。本声明并不授权违反第三方工具许可协议进行再分发。
+
+## 🔦 Nabu Light — Xiaomi Pad 5 手电筒应用
+
+**Nabu Light 1.1.1** 是适用于 Windows 11 ARM64 的小巧便携手电筒应用，通过已安装的 Qualcomm ISP 相机驱动控制后置 LED。
+
+| 小巧窗口 | 展开的设置 |
+| --- | --- |
+| <a href="QUALCOMM/assets/nabu-light-1.1.1-en.png"><img src="QUALCOMM/assets/nabu-light-1.1.1-en.png" alt="Nabu Light 1.1.1 小巧窗口" width="360"></a> | <a href="QUALCOMM/assets/nabu-light-1.1.1-settings-en.png"><img src="QUALCOMM/assets/nabu-light-1.1.1-settings-en.png" alt="Nabu Light 1.1.1 展开的设置" width="360"></a> |
+
+| 手电筒 EXE | 源码 ZIP |
+| --- | --- |
+| **[下载 EXE](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Nabu-Flashlight.exe)** | **[下载 ZIP](https://github.com/deskcj/xiaomi-pad5-windows11-camera/raw/refs/heads/main/downloads/Nabu-Flashlight-Sources-1.1.1.zip)** |
+
+- **模式：** 常亮、闪烁、快速闪烁、SOS，以及使用俄语或英语字母的自定义摩尔斯电码消息。
+- **清晰状态：** 模式运行时，电源图标保持点亮；选定模式和运行时间持续显示。
+- **设置：** 摩尔斯点时长、消息及自动关闭计时器。主题跟随 Windows，也可手动选择浅色/深色。应用界面提供英语和俄语（EN/RU）切换。现有 Qualcomm ISP 驱动的手电筒亮度固定。
+
+1. 从 [Qualcomm ISP 页面](QUALCOMM/README.zh-CN.md#下载) 下载并安装当前的相机驱动，关闭其他相机应用，然后运行 **Nabu-Flashlight.exe**。手电筒应用无需安装或管理员权限。
+2. 选择模式并点击 **TURN ON**。打开 **Settings** 可调整计时器或摩尔斯消息。
+3. 点击 **TURN OFF** 或按 **Esc** 停止。关闭应用也会关闭灯光；**空格键**切换开关。
